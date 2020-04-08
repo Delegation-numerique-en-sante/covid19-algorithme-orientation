@@ -8,6 +8,6 @@ Afin que toutes les initiatives qui participent à la gestion de la crise sanita
 
 # Contact
 
-Pour toute questions, contactez [mobilisation-covid@sante.gouv.fr](mailto:mobilisation-covid@sante.gouv.fr).
+Pour toute question, contactez [mobilisation-covid@sante.gouv.fr](mailto:mobilisation-covid@sante.gouv.fr).
 
 
