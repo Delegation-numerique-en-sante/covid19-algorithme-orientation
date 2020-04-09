@@ -66,6 +66,7 @@ Toute implémentation référencée doit impérativement :
 
 ** Ce que contient ce dépôt
 
+- un [[file:guide-evaluation-implementations.md][guide pour aider à l'évaluation des implémentations]] ;
 - une présentation des [[file:pseudo-code.org][éléments formels de l'algorithme]] à respecter ;
 - des recommandations pour le [[file:referencement.org][référencement]] de votre application ;
 - des recommandations pour l'[[file:implementation.org][implémentation]] de l'algorithme ;
