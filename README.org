@@ -21,11 +21,31 @@ Voir le [[https://delegation-numerique-en-sante.github.io/covid19-algorithme-ori
 
 [[file:doc-algo-orientation-covid19.png]]
 
+** Présentation générale de la documentation
+
+Dans ce dépôt, il faut bien distinguer plusieurs éléments :
+
+- le *questionnaire*, composé des questions possibles et des réponses possibles pour chaque question ;
+- le *parcours*, qui est une version /ordonnée/ du questionnaire
+- les *données saisies* par l'utilisateurs (par exemple l'âge) ;
+- les *données calculées* à partir des données saisies (par exemple la tranche d'âge) ;
+- l'*algorithme*, qui est le calcul sur les /données saisies et calculées/ déterminant le message d'orientation.
+
+Le /questionnaire/ propose un /parcours/ utilisateur qui permet de
+recevoir des informations (les /données saisies/), d'en déduire des
+valeurs intermédiaires (les /données calculées/) et de proposer un
+message d'orientation, calculé à la fois à partir des valeurs saisies
+et des valeurs intermédiaires.
+
+Ces éléments donnent lieu à plusieurs présentations:
+
+- Le [[https://delegation-numerique-en-sante.github.io/covid19-algorithme-orientation/algorithme-orientation-covid19.html][document officiel]] présente le questionnaire et l'algorithme de façon linéaire et synthétique.
+- La page d'[[file:implementation.org][implémentation]] donne des détails sur les données saisies, les données calculées et leur sauvegarde pour partage.
+- La page de [[file:pseudo-code.org][pseudo-code]] présente le questionnaire, le parcours et l'algorithme de façon analytique.
+
 ** Document officiel
 
-Le document officiel de l'algorithme d'orientation COVID19 est publié
-par le ministère des Solidarités et de la Santé.  Il est [[https://delegation-numerique-en-sante.github.io/covid19-algorithme-orientation/algorithme-orientation-covid19.html][lisible en
-ligne]] et [[https://esante.gouv.fr/algorithme-orientation][téléchargeable ici]].
+Le document officiel de l'algorithme d'orientation COVID19 est publié par le ministère des Solidarités et de la Santé.  Il est [[https://delegation-numerique-en-sante.github.io/covid19-algorithme-orientation/algorithme-orientation-covid19.html][lisible en ligne]] et [[https://esante.gouv.fr/algorithme-orientation][téléchargeable ici]].
 
 ** Référencement
 
