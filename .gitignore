@@ -21,6 +21,7 @@ scratch.clj
 *odt
 *docx
 *tex
+guide-pour-evaluation-algorithme.org
 orientation-covid19-data.org
 docs/js/*
 docs/css/*
