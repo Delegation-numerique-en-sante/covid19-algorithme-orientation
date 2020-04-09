@@ -16,6 +16,11 @@ sur le site du ministère des Solidarités et de la Santé.
 Si vous êtes admis au référencement, votre solution sera listée sur le
 [[https://solidarites-sante.gouv.fr/soins-et-maladies/maladies/maladies-infectieuses/coronavirus/coronavirus-questions-reponses][site du ministère des Solidarité et de la Santé]].
 
+S'il est constaté des divergences entre votre implémentation de
+l'algorithme et la version préconisée par le ministère des Solidarité
+et de la Santé, votre solution pourra être retirée des solutions
+référencées.
+
 ** Prérequis techniques pour le référencement
 
 - Vous =DEVEZ= indiquer quelle version de l'algorithme vous utilisez.
