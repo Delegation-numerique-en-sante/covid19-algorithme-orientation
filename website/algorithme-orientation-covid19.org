@@ -12,10 +12,12 @@ orientation donnée au répondant (par exemple "Appelez le 15").
 Les réponses au questionnaire permettent de calculer des variables
 dont les valeurs finales vont ensuite déterminer l'orientation du
 répondant.  Ces variables sont soit des variables booléennes (par
-exemple : est ou n'est pas diabétique) soit des variables de comptage
-(par exemple 0, 1 ou 2 facteurs de gravité majeures). Chaque question
-met à jour une variable booléenne et, possiblement, incrémente une
-variable de comptage.
+exemple : le répondant est ou n'est pas diabétique) soit des variables
+de comptage (par exemple les facteurs de gravité et le facteur
+pronostique défavorable), soit des variables continues (l'indice de
+masse corporelle (IMC), un nombre décimal).  Chaque réponse met à jour
+une variable booléenne et, possiblement, incrémente une variable de
+comptage ou calcule l'IMC.
 
 L'algorithme se présente comme un arbre de décision qui doit être
 parcouru de façon séquentielle et en fonction des valeurs finales de
