@@ -5,11 +5,22 @@
 
 * Présentation générale
 
-Ce document présente le questionnaire d'auto-évaluation COVID19 et l'algorithme traitant les réponses au questionnaire pour afficher une orientation donnée au répondant (par exemple "Appelez le 15").
+Ce document présente le questionnaire d'auto-évaluation COVID19 et
+l'algorithme traitant les réponses au questionnaire pour afficher une
+orientation donnée au répondant (par exemple "Appelez le 15").
 
-Pour le questionnaire : toutes les questions sont susceptibles de changer la valeur d'au moins une variable.  Pour chaque question, certaines réponses modifient ou non la valeur d'une ou plusieurs variables.
+Les réponses au questionnaire permettent de calculer des variables
+dont les valeurs finales vont ensuite déterminer l'orientation du
+répondant.  Ces variables sont soit des variables booléennes (par
+exemple : est ou n'est pas diabétique) soit des variables de comptage
+(par exemple 0, 1 ou 2 facteurs de gravité majeures). Chaque question
+met à jour une variable booléenne et, possiblement, incrémente une
+variable de comptage.
 
-Pour l'algorithme : il se présente comme un arbre de décision qui doit être parcouru de façon séquentielle et en fonction des valeurs finales des variables.
+L'algorithme se présente comme un arbre de décision qui doit être
+parcouru de façon séquentielle et en fonction des valeurs finales de
+toutes les variables, pour déterminer le message d'orientation à
+afficher.
 
 Version du document : =2020-04-06=
 
