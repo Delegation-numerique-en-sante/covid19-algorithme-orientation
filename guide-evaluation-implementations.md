@@ -14,7 +14,7 @@ Les demandes d'évaluation peuvent être suivies dans la catégorie
 Si vous êtes volontaire pour aider à l'évaluation des implémentations
 de l'algorithme, envoyez un mail à `mobilisation-covid@sante.gouv.fr` en
 demandant à être invité comme collaborateur de ce dépôt avec le rôle
-"Triage".
+`Triage`.
 
 N'hésitez pas à indiquer les langages de programmation avec lesquels
 vous êtes à l'aise et le temps dont vous disposez.
@@ -35,7 +35,7 @@ interactive via [cette page](https://delegation-numerique-en-sante.github.io/cov
 
 ## Une fois que c'est fait
 
-1.  Choisissez un ticket dans la catégorie [Référencement](https://github.com/Delegation-numerique-en-sante/covid19-algorithme-orientation/issues?q=is%3Aissue+is%3Aopen+label%3AR%C3%A9f%C3%A9rencement) de ce dépôt et
+1.  Choisissez un ticket dans catégorie [Évaluation](https://github.com/Delegation-numerique-en-sante/covid19-algorithme-orientation/labels/%C3%89valuation) de ce dépôt et
     assignez-vous le ticket.  Vous pouvez ajouter un mot indiquant que
     vous commencez à évaluer l'implémentation.
 
@@ -50,6 +50,6 @@ interactive via [cette page](https://delegation-numerique-en-sante.github.io/cov
 
 ## Une question ?
 
-Envoyez un mail à `mobilisation-covid@sante.gouv.fr` ou ouvrez un ticket
-sur ce dépôt.
+Envoyez un mail à `mobilisation-covid@sante.gouv.fr` ou à
+`bastien.guerry@data.gouv.fr` ou bien ouvrez un ticket sur ce dépôt.
 
