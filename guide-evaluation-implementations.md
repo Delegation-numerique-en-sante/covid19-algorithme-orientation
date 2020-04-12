@@ -51,5 +51,5 @@ interactive via [cette page](https://delegation-numerique-en-sante.github.io/cov
 ## Une question ?
 
 Envoyez un mail à `mobilisation-covid@sante.gouv.fr` ou à
-`bastien.guerry@data.gouv.fr` ou bien ouvrez un ticket sur ce dépôt.
+`bastien.guerry@data.gouv.fr` ou bien [ouvrez un ticket](https://github.com/Delegation-numerique-en-sante/covid19-algorithme-orientation/issues/new) sur ce dépôt.
 
