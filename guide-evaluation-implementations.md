@@ -44,12 +44,11 @@ interactive via [cette page](https://delegation-numerique-en-sante.github.io/cov
 3.  Concluez avec la synthèse de votre évaluation et une recommandation
     générale.
 
-4.  Assignez le ticket à `@HelaG` ou `@bzg` pour vérification et fermeture
+4.  Assignez le ticket à `@HelaG`, `@bzg` ou `@maukoquiroga` pour vérification et fermeture
     du ticket.
 
 
 ## Une question ?
 
-Envoyez un mail à `mobilisation-covid@sante.gouv.fr` ou à
-`bastien.guerry@data.gouv.fr` ou bien [ouvrez un ticket](https://github.com/Delegation-numerique-en-sante/covid19-algorithme-orientation/issues/new) sur ce dépôt.
+Envoyez un mail à `mobilisation-covid@sante.gouv.fr` ou bien [ouvrez un ticket](https://github.com/Delegation-numerique-en-sante/covid19-algorithme-orientation/issues/new) sur ce dépôt.
 
