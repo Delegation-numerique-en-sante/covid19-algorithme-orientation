@@ -6,7 +6,7 @@ de l'algorithme par des solutions qui souhaitent être [référencées](referenc
 le site du ministère des Solidarités et de la Santé.
 
 Les demandes d'évaluation peuvent être suivies dans la catégorie
-[Référencement](https://github.com/Delegation-numerique-en-sante/covid19-algorithme-orientation/issues?q=is%3Aissue+is%3Aopen+label%3AR%C3%A9f%C3%A9rencement) des tickets ouverts sur ce dépôt.
+[Évaluation](https://github.com/Delegation-numerique-en-sante/covid19-algorithme-orientation/labels/%C3%89valuation) des tickets ouverts sur ce dépôt.
 
 
 ## Si vous êtes volontaire
