@@ -31,9 +31,6 @@
 (def conditional-score-outputs (:conditional-score-outputs config))
 (def sticky-help (reagent/atom ""))
 
-;; UI variables
-(def bigger {:font-size "2em" :text-decoration "none"})
-
 ;; home-page and start-page
 (def home-page
   (first (remove nil? (map #(when (:home-page %) (keyword (:node %)))
@@ -72,9 +69,8 @@
          (reset! clipboard-atom nil))
       :reagent-render
       (fn []
-        [:a.button.text
+        [:button.button.is-info.is-light.is-size-4
          {:title                 (i18n [:copy-to-clipboard])
-          :style                 bigger
           :data-clipboard-target target}
          label])})))
 
@@ -146,18 +142,17 @@
      (when (and (not force-help) @show-help-global
                 (not-empty help))
        [:div.level-right
-        [:a.level-item.button.is-text
-         {:style    bigger
-          :title    (i18n [:display-help])
+        [:button.level-item.button.is-info.is-light.is-size-4
+         {:title    (i18n [:display-help])
           :on-click #(swap! show-help not)}
          "💬"]])
      ;; Done: display the copy-to-clipboard button
      [:div.level-right
       [:div.level-item
-       [:a.button.is-text
-        {:style    bigger
-         :title    (i18n [:toggle-summary-style])
-         :on-click #(swap! show-summary-answers not)} "🔗"]
+       [:button.button.is-info.is-light.is-size-4
+        {:title    (i18n [:toggle-summary-style])
+         :on-click #(swap! show-summary-answers not)} "🔗"]]
+      [:div.level-item
        [clipboard-button "📋" "#copy-this"]]])])
 
 (defn footer []
@@ -281,9 +276,8 @@
 
 (defn restart-mailto-buttons []
   [:div.level-right
-   [:a.button.level-item
-    {:style bigger
-     :title (i18n [:redo])
+   [:a.button.level-item.is-info.is-light.is-size-4
+    {:title (i18n [:redo])
      :href  (rfe/href start-page)} "🔃"]
    (when (not-empty (:mail-to config))
      (let [contents (or (not-empty (remove nil? (:answers (peek @history))))
@@ -293,9 +287,8 @@
                          (map strip-html-tags)
                          (string/join "%0D%0A%0D%0A")
                          (fmt/format (i18n [:mail-body])))]
-       [:a.button.level-item
-        {:style bigger
-         :title (i18n [:mail-to-message])
+       [:a.button.level-item.is-info.is-light.is-size-4
+        {:title (i18n [:mail-to-message])
          :href  (str "mailto:" (:mail-to config)
                      "?subject=" (i18n [:mail-subject])
                      "&body="
