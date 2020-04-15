@@ -72,7 +72,7 @@ Ce document est [téléchargeable en version PDF](https://esante.gouv.fr/algorit
 -   *Avez-vous une fatigue inhabituelle ces derniers jours ?* `OUI / NON`
     -   Si `OUI` : *Cette fatigue vous oblige-t-elle à vous reposer plus de la moitié de la journée ?* `OUI / NON (OUI => Facteur de gravité mineur`)
 -   *Êtes-vous dans l'impossibilité de vous alimenter ou de boire DEPUIS 24 HEURES OU PLUS ?* `OUI / NON (OUI => Facteur de gravité majeur`)
--   *Dans les dernières 24 heures, avez-vous noté un manque de souffle INHABITUEL lorsque vous parlez ou faites un petit effort ?* `OUI / NON (OUI => Facteur de gravité majeur`)
+-   *Dans les dernières 24 heures, avez-vous noté un manque de souffle INHABITUEL lorsque vous parlez ou faites un petit effort ?* `OUI / NON => Facteur de gravité majeur.`
 
 
 <a id="org16977a9"></a>
