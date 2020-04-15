@@ -22,7 +22,4 @@ scratch.clj
 *docx
 *tex
 orientation-covid19-data.org
-docs/js/*
-docs/css/*
-docs/fonts/*
 guide-evaluation-implementations.org
