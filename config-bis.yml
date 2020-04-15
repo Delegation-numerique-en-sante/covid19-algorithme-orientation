@@ -20,7 +20,7 @@ header:
   title:    "Démonstrateur pour l'implémentation de l'algorithme d'orientation COVID-19"
   logo:     "https://solidarites-sante.gouv.fr/IMG/siteon0.jpg"
   color:    "is-primary"
-  subtitle: "Ce site sert de **documentation** et ne doit pas être utilisé pour vous tester.<br/>**Cas avec l'arbre optimisé**.<br/>Retour à la [documentation](/covid19-algorithme-orientation/)."
+  subtitle: "Ce site sert seulement de **documentation**.<br/>Pour vous tester, vous pouvez utilisez [cette page de gouvernement.fr](https://www.gouvernement.fr/info-coronavirus/orientation-medicale).<br/>**Cas avec le parcours abrégé**.<br/>Retour à la [documentation](/covid19-algorithme-orientation/)."
 
 # Website footer
 footer:
