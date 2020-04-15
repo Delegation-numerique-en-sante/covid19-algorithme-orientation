@@ -1,3 +1,3 @@
 all:
-	cp resources/public/js/*js docs/js/
-	cp resources/public/css/* docs/css/
+	cp -f resources/public/js/*js docs/js/
+	cp -f resources/public/css/* docs/css/
