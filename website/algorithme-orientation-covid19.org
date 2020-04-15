@@ -34,21 +34,21 @@ Ce document est [[https://esante.gouv.fr/algorithme-orientation][téléchargeabl
 
 ** Symptômes
 
-- /Pensez-vous avoir eu de la fièvre ces derniers jours (frissons, sueurs) ?/ =OUI / NON / Je ne sais pas= (=Je ne sais pas > OUI=)
+- /Pensez-vous avoir eu de la fièvre ces derniers jours (frissons, sueurs) ?/ =OUI / NON / Je ne sais pas (Je ne sais pas -> OUI)=
   - /Quelle a été votre température la plus élevée ces dernières 48h ?/
-    - *< 35,5°C* => Facteur de gravité mineur
+    - *< 35,5°C* =-> Facteur de gravité mineur=
     - 35,5°C - 37,7°C
     - 37,8°C - 38,9°C
-    - *>= 39°C* => Facteur de gravité mineur
+    - *>= 39°C* =-> Facteur de gravité mineur=
     - Non renseignée & OUI à question précédente = fièvre présente.
 - /Avez-vous une toux ou une augmentation de votre toux habituelle ces derniers jours ?/ =OUI / NON=
 - /Avez-vous noté une forte diminution de votre goût ou de votre odorat ces derniers jours ?/ =OUI / NON=
 - /Avez-vous un mal de gorge ou des douleurs musculaires ou des courbatures inhabituelles ces derniers jours ?/ =OUI / NON=
 - /Avez-vous de la diarrhée ces dernières 24 heures (au moins 3 selles molles) ?/ =OUI / NON=
 - /Avez-vous une fatigue inhabituelle ces derniers jours ?/ =OUI / NON=
-  - Si =OUI= : /Cette fatigue vous oblige-t-elle à vous reposer plus de la moitié de la journée ?/ =OUI / NON (OUI => Facteur de gravité mineur=)
-- /Êtes-vous dans l'impossibilité de vous alimenter ou de boire DEPUIS 24 HEURES OU PLUS ?/ =OUI / NON (OUI => Facteur de gravité majeur=)
-- /Dans les dernières 24 heures, avez-vous noté un manque de souffle INHABITUEL lorsque vous parlez ou faites un petit effort ?/ =OUI / NON => Facteur de gravité majeur.=
+  - Si =OUI= : /Cette fatigue vous oblige-t-elle à vous reposer plus de la moitié de la journée ?/ =OUI / NON (OUI -> Facteur de gravité mineur)=
+- /Êtes-vous dans l'impossibilité de vous alimenter ou de boire DEPUIS 24 HEURES OU PLUS ?/ =OUI / NON (OUI => Facteur de gravité majeur)=
+- /Dans les dernières 24 heures, avez-vous noté un manque de souffle INHABITUEL lorsque vous parlez ou faites un petit effort ?/ =OUI / NON (OUI -> Facteur de gravité majeur)=
 
 ** Facteur pronostique défavorable lié au terrain
 
