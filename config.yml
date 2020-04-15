@@ -28,7 +28,7 @@ footer:
  contact:  "mobilisation-covid@sante.gouv.fr"
 
 # Allow users to send you emails with the summary?
-mail-to: "mobilisation-covid@sante.gouv.fr"
+mail-to: ""
 
 # Display help along with questions by default?
 display-help: true
