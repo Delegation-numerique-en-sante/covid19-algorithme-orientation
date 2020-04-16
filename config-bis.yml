@@ -74,9 +74,6 @@ score-variables:
   height:
     display: "Taille (centimètres)"
     value: 0
-  fever:
-    display: "Fièvre"
-    value: "Non"
   temperature:
     display: "Température"
     value: "NSP"
@@ -170,6 +167,7 @@ tree:
 
   - node:    "1.1"
     start-page: true
+    progress:   "[1 22]"
     text:    "Quel est votre âge ?"
     help: "**Pour l'implémentation:** quand l'âge est inférieur à 15 ans, aucune donnée ne doit être collectée et la personne doit être redirigée toute de suite vers un message de sortie."
     choices:
@@ -197,25 +195,9 @@ tree:
 
   - node:    "1.2"
     start-page: true
-    progress:   "[1 21]"
+    progress:   "[2 22]"
     text:    "Êtes-vous dans l'impossibilité de vous alimenter ou boire DEPUIS 24 HEURES OU PLUS ?"
     help: "**Pour l'implémentation:** il s'agit ici de tester le premier facteur de gravité majeur."
-    choices:
-    - answer:  "Oui"
-      score:
-        major-severity-factors:
-          value: 1
-      goto:
-        conditional-score-outputs: true
-        default: "1.2bis"
-    - answer:  "Non"
-      goto: "1.2bis"
-
-  - node:    "1.2bis"
-    start-page: true
-    progress:   "[2 21]"
-    text:    "Dans les dernières 24 heures, avez-vous noté un manque de souffle INHABITUEL lorsque vous parlez ou faites un petit effort ?"
-    help: "**Pour l'implémentation:** il s'agit ici de tester le deuxième facteur de gravité majeur."
     choices:
     - answer:  "Oui"
       score:
@@ -227,26 +209,24 @@ tree:
     - answer:  "Non"
       goto: "1.3"
 
-  - node:       "1.3"
-    progress:   "[3 21]"
-    text:       "Pensez-vous avoir eu de la fièvre ces derniers jours (frissons, sueurs) ?"
+  - node:    "1.3"
     start-page: true
+    progress:   "[3 22]"
+    text:    "Dans les dernières 24 heures, avez-vous noté un manque de souffle INHABITUEL lorsque vous parlez ou faites un petit effort ?"
+    help: "**Pour l'implémentation:** il s'agit ici de tester le deuxième facteur de gravité majeur."
     choices:
     - answer:  "Oui"
       score:
-        fever:
-          value: "Oui"
-      goto:    "1.3bis"
+        major-severity-factors:
+          value: 1
+      goto:
+        conditional-score-outputs: true
+        default: "1.4"
     - answer:  "Non"
-      goto:    "1.4"
-    - answer:  "Je ne sais pas"
-      goto:    "1.4"
-      score:
-        fever:
-          value: "NSP"
+      goto: "1.4"
 
-  - node:       "1.3bis"
-    progress:   "[4 21]"
+  - node:       "1.4"
+    progress:   "[4 22]"
     text:       "Quelle a été votre température la plus élevée ces dernières 48 heures ?"
     choices:
     - answer:  "**Inférieure** ou égale à 35,4°C"
@@ -268,6 +248,8 @@ tree:
       goto:    "1.4"
     - answer:  "**Supérieure** ou égale à 39°C"
       score:
+        temperature:
+          value: "sup_39"
         minor-severity-factors:
           value: 1
       goto:    "1.4"
@@ -279,7 +261,7 @@ tree:
       goto:    "1.4"
 
   - node:    "1.4"
-    progress:   "[5 21]"
+    progress:   "[5 22]"
     text:    "Avez-vous une fatigue inhabituelle ces derniers jours ?"
     choices:
     - answer:  "Oui"
@@ -288,7 +270,7 @@ tree:
       goto:    "1.5"
 
   - node:    "1.4.1"
-    progress:   "[5 21]"
+    progress:   "[6 22]"
     text:    "Cette fatigue vous oblige-t-elle à vous reposer plus de la moitié de la journée ?"
     choices:
     - answer:  "Oui"
@@ -300,7 +282,7 @@ tree:
       goto:    "1.5"
 
   - node:    "1.5"
-    progress:   "[6 21]"
+    progress:   "[7 22]"
     text:    "Avez-vous une toux ou une augmentation de votre toux habituelle ces derniers jours ?"
     choices:
     - answer:  "Oui"
@@ -312,7 +294,7 @@ tree:
       goto:    "1.6"
 
   - node:      "1.6"
-    progress:   "[7 21]"
+    progress:   "[8 22]"
     text:      "Avez-vous noté une forte diminution de votre goût ou de votre odorat ces derniers jours ?"
     choices:
     - answer:  "Oui"
@@ -324,7 +306,7 @@ tree:
       goto:    "1.7"
 
   - node:    "1.7"
-    progress:   "[8 21]"
+    progress:   "[9 22]"
     text:    "Avez-vous un mal de gorge ou des douleurs musculaires ou des courbatures inhabituelles ces derniers jours ?"
     choices:
     - answer:  "Oui"
@@ -336,7 +318,7 @@ tree:
       goto:    "1.8"
 
   - node:    "1.8"
-    progress:   "[9 21]"
+    progress:   "[10 22]"
     text:    "Avez-vous de la diarrhée ces dernières 24 heures (au moins 3 selles molles) ?"
     choices:
     - answer:  "Oui"
@@ -348,7 +330,7 @@ tree:
       goto:    "2.2"
 
   - node:    "2.2"
-    progress:   "[10 21]"
+    progress:   "[11 22]"
     text:    "Quel est votre poids en kilogrammes ?"
     help: "**Pour l'implémentation:** demandez la saisie du poids exact."
     choices:
@@ -384,7 +366,7 @@ tree:
           value: 110
 
   - node:    "2.3"
-    progress:   "[11 21]"
+    progress:   "[12 22]"
     text:    "Quelle est votre taille ?"
     help: "**Pour l'implémentation:** demandez la saisie de la taille exacte en centimètres."
     choices:
@@ -420,7 +402,7 @@ tree:
           value: 190
 
   - node:    "2.4"
-    progress:   "[12 21]"
+    progress:   "[13 22]"
     help: "**Pour l'implémentation:** vous pouvez utiliser une case à cocher."
     text:    "Avez-vous une hypertension artérielle mal équilibrée ? Ou une maladie cardiaque ou vasculaire ? Ou prenez-vous un traitement à visée cardiologique ?"
     choices:
@@ -439,7 +421,7 @@ tree:
           value: 1
 
   - node:    "2.5"
-    progress:   "[13 21]"
+    progress:   "[14 22]"
     help: "**Pour l'implémentation:** vous pouvez utiliser une case à cocher."
     text:    "Êtes-vous diabétique ?"
     choices:
@@ -452,7 +434,7 @@ tree:
       goto:    "2.6"
 
   - node:    "2.6"
-    progress:   "[14 21]"
+    progress:   "[15 22]"
     help: "**Pour l'implémentation:** vous pouvez utiliser une case à cocher."
     text:    "Avez-vous ou avez-vous eu un cancer dans les 3 dernières années ?"
     choices:
@@ -465,7 +447,7 @@ tree:
       goto:    "2.7"
 
   - node:    "2.7"
-    progress:   "[15 21]"
+    progress:   "[16 22]"
     help: "**Pour l'implémentation:** vous pouvez utiliser une case à cocher."
     text:    "Avez-vous une maladie respiratoire ? Ou êtes-vous suivi par un pneumologue ?"
     choices:
@@ -478,7 +460,7 @@ tree:
       goto:    "2.8"
 
   - node:    "2.8"
-    progress:   "[16 21]"
+    progress:   "[17 22]"
     help: "**Pour l'implémentation:** vous pouvez utiliser une case à cocher."
     text:    "Avez-vous une insuffisance rénale chronique dialysée ?"
     choices:
@@ -491,7 +473,7 @@ tree:
       goto:    "2.9"
 
   - node:    "2.9"
-    progress:   "[17 21]"
+    progress:   "[18 22]"
     help: "**Pour l'implémentation:** vous pouvez utiliser une case à cocher."
     text:    "Avez-vous une maladie chronique du foie ?"
     choices:
@@ -504,7 +486,7 @@ tree:
       goto:    "2.10"
 
   - node:    "2.10"
-    progress:   "[18 21]"
+    progress:   "[19 22]"
     help: "**Pour l'implémentation:** pas de case à cocher."
     text:    "Êtes-vous enceinte ?"
     choices:
@@ -520,7 +502,7 @@ tree:
       goto:    "2.12"
 
   - node:    "2.11"
-    progress:   "[19 21]"
+    progress:   "[20 22]"
     help: "**Pour l'implémentation:** si vous utilisez une case à cocher, ignorez la réponse \"Je ne sais pas\"."
     text:    "Avez-vous une maladie connue pour diminuer vos défenses immunitaires ?"
     choices:
@@ -536,7 +518,7 @@ tree:
       goto:    "2.12"
 
   - node:    "2.12"
-    progress:   "[20 21]"
+    progress:   "[21 22]"
     help: "**Pour l'implémentation:** si vous utilisez une case à cocher, ignorez la réponse \"Je ne sais pas\"."
     text:    "Prenez-vous un traitement immunosuppresseur ?"
     help: "C’est un traitement qui diminue vos défenses contre les infections. Voici quelques exemples : corticoïdes, méthotrexate, ciclosporine, tacrolimus, azathioprine, cyclophosphamide (liste non exhaustive)."
@@ -553,7 +535,7 @@ tree:
       goto:    "3.1"
 
   - node:    "3.1"
-    progress:   "[21 21]"
+    progress:   "[22 22]"
     text:    "Quel est le code postal du lieu où vous résidez actuellement ?"
     help: "**Pour l'implémentation:** la saisie de cette information doit être facultative."
     choices:
