@@ -554,9 +554,8 @@ tree:
 
   - node:    "3.1"
     progress:   "[21 21]"
-
-    text:    "Quel est votre code postal ?"
-    # help: "**Pour l'implémentation:** la saisie de cette information doit être facultative."
+    text:    "Quel est le code postal du lieu où vous résidez actuellement ?"
+    help: "**Pour l'implémentation:** la saisie de cette information doit être facultative."
     choices:
     - answer:  "[Code postal]"
       goto:    "fin"
