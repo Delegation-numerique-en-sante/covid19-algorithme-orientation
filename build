@@ -1,14 +1,14 @@
 #!/bin/bash
 
+rm -fr resources/public/js/*
+
 compile_upload_js () {
-    rm -fr resources/public/js/*
     clj -A:js
     echo "static js generated"
 }
 
 # Update another implementation example
 compile_upload_js_bis () {
-    rm -fr resources/public/js/*
     clj -A:js-bis
     echo "static js generated"
 }
