@@ -33,7 +33,7 @@
 
    [:div.container
     [:br]
-    [:h1.title "Exemple de réponse (input)"]
+    [:h1.title "Exemple de réponse"]
     [:pre.language-klipse exemple-de-reponse]]
 
    [:div.container

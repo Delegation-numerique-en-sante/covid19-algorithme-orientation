@@ -1,6 +1,6 @@
 ;; Vous pouvez modifier les valeurs ci-dessous.
 (def exemple-de-reponse
-  {:fever                  true  ; 0 (pas de fièvre) ou 1 (fièvre)
+  {:fever                  true  ; Dépend de la température
    :diarrhea               false ; Idem
    :cough                  true  ; Idem
    :sore_throat_aches      false ; Idem
