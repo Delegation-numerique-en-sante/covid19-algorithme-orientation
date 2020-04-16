@@ -34,13 +34,12 @@ Ce document est [[https://esante.gouv.fr/algorithme-orientation][téléchargeabl
 
 ** Symptômes
 
-- /Pensez-vous avoir eu de la fièvre ces derniers jours (frissons, sueurs) ?/ =OUI / NON / Je ne sais pas (Je ne sais pas -> OUI)=
-  - /Quelle a été votre température la plus élevée ces dernières 48h ?/
-    - *< 35,5°C* =-> Facteur de gravité mineur=
-    - 35,5°C - 37,7°C
-    - 37,8°C - 38,9°C
-    - *>= 39°C* =-> Facteur de gravité mineur=
-    - Non renseignée & OUI à question précédente = fièvre présente.
+- /Quelle a été votre température la plus élevée ces dernières 48h ?/
+  - *< 35,5°C* =-> Facteur de gravité mineur=
+  - 35,5°C - 37,7°C
+  - 37,8°C - 38,9°C
+  - *>= 39°C* =-> Facteur de gravité mineur=
+  - *Je ne sais pas* =-> Facteur de gravité mineur=
 - /Avez-vous une toux ou une augmentation de votre toux habituelle ces derniers jours ?/ =OUI / NON=
 - /Avez-vous noté une forte diminution de votre goût ou de votre odorat ces derniers jours ?/ =OUI / NON=
 - /Avez-vous un mal de gorge ou des douleurs musculaires ou des courbatures inhabituelles ces derniers jours ?/ =OUI / NON=
@@ -79,8 +78,7 @@ Le facteur pronostique est considéré positif s'il y a au moins 1 item *OUI* ou
 ** Définition des facteurs de gravité
 
 - Facteurs de gravité *mineurs* :
-  - Fièvre >= 39°C
-  - Fièvre < 35,5°C
+  - Fièvre >= 39°C ou < 35,5°C ou "Je ne sais pas"
   - Fatigue : alitement > 50% du temps diurne
 
 - Facteurs de gravité *majeurs* :
