@@ -12,20 +12,17 @@
   (.toFixed (/ p (Math/pow (/ t 100.0) 2)) 2))
 
 (defn preprocess-scores [scores]
-  (let [temperature  (:value (:temperature scores))
-        fever_answer (:value (:fever scores))
-        fever_value  (or (= fever_answer "NSP")
-                         (and (= fever_answer "Oui")
-                              (or (= temperature "inf_35.5")
-                                  (= temperature "sup_39")
-                                  (= temperature "NSP"))))
-        fever-map    {:fever {:value fever_value :display "Fièvre"}}
-        bmi-val      (compute-bmi (:value (:weight scores))
-                                  (:value (:height scores)))
-        bmi-map      {:bmi {:value bmi-val :display "BMI"}}
-        scores       (merge (dissoc scores :fever) fever-map bmi-map)
-        scores       (update-in scores [:pronostic-factors :value]
-                                #(if (>= bmi-val 30) (inc %) %))]
+  (let [temperature (:value (:temperature scores))
+        fever_value (or (= temperature "inf_35.5")
+                        (= temperature "sup_39")
+                        (= temperature "NSP"))
+        fever-map   {:fever {:value fever_value :display "Fièvre"}}
+        bmi-val     (compute-bmi (:value (:weight scores))
+                                 (:value (:height scores)))
+        bmi-map     {:bmi {:value bmi-val :display "BMI"}}
+        scores      (merge (dissoc scores :fever) fever-map bmi-map)
+        scores      (update-in scores [:pronostic-factors :value]
+                               #(if (>= bmi-val 30) (inc %) %))]
     ;; Return preprocessed scores:
     scores))
 
