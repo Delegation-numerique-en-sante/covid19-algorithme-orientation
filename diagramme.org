@@ -26,7 +26,7 @@ elseif (IF fièvre AND toux) then (oui)
           endif
        endif
 
-elseif (IF fièvre XOR (diarrhée OR (toux AND douleurs) OR (toux AND anosmie) OR (douleurs AND anosmie)) then (oui)
+elseif (IF fièvre XOR (diarrhée OR (toux AND douleurs) OR (toux AND anosmie) OR (douleurs AND anosmie)) then (oui))
        if (IF 0 facteur pronostique) then (oui)
            if (IF 0 facteur de gravité mineur) then (oui)
               if (IF moins de 50 ans) then (oui)
