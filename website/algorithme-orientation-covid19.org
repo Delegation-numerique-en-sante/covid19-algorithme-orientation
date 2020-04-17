@@ -1,9 +1,9 @@
 #+title: Algorithme d'orientation COVID 19
 #+author: Ministère des Solidarités et de la Santé
 #+date: 6 avril 2020
-#+options: toc:2 num:2 H:4
+#+options: toc:2 H:4
 
-* Présentation générale
+* 1 Présentation générale
 
 Ce document présente le questionnaire d'auto-évaluation COVID19 et
 l'algorithme traitant les réponses au questionnaire pour afficher une
@@ -30,9 +30,9 @@ Ce document est [[https://esante.gouv.fr/algorithme-orientation][téléchargeabl
 
 *Attention : cette documentation, le questionnaire et l'algorithme sont potentiellement modifiables après étude de cas et veille scientifique.*
 
-* Questionnaire d’auto-évaluation
+* 2 Questionnaire d’auto-évaluation
 
-** Symptômes
+** 2.1 Symptômes
 
 - /Quelle a été votre température la plus élevée ces dernières 48h ?/
   - *< 35,5°C* =-> Facteur de gravité mineur=
@@ -49,7 +49,7 @@ Ce document est [[https://esante.gouv.fr/algorithme-orientation][téléchargeabl
 - /Êtes-vous dans l'impossibilité de vous alimenter ou de boire DEPUIS 24 HEURES OU PLUS ?/ =OUI / NON (OUI => Facteur de gravité majeur)=
 - /Dans les dernières 24 heures, avez-vous noté un manque de souffle INHABITUEL lorsque vous parlez ou faites un petit effort ?/ =OUI / NON (OUI -> Facteur de gravité majeur)=
 
-** Facteur pronostique défavorable lié au terrain
+** 2.2 Facteur pronostique défavorable lié au terrain
 
 - /Quel est votre âge ?/
   - < 15 ans
@@ -71,11 +71,11 @@ Ce document est [[https://esante.gouv.fr/algorithme-orientation][téléchargeabl
 
 Le facteur pronostique est considéré positif s'il y a au moins 1 item *OUI* ou en gras (âge supérieur ou égal à 70 ans, indice de masse corporelle supérieur à 30 kg/m²).
 
-** Autre question
+** 2.3 Autre question
 
-- /Quel est votre code postal ?/
+- /Quel est le code postal de votre lieu de résidence actuel ?/
 
-** Définition des facteurs de gravité
+** 2.4 Définition des facteurs de gravité
 
 - Facteurs de gravité *mineurs* :
   - Fièvre >= 39°C ou < 35,5°C ou "Je ne sais pas"
@@ -85,30 +85,25 @@ Le facteur pronostique est considéré positif s'il y a au moins 1 item *OUI* ou
   - Gêne respiratoire
   - Difficultés importantes pour s’alimenter ou boire depuis plus de 24 heures
 
-** Calcul de l'indice de masse corporelle (IMC)
+** 2.5 Calcul de l'indice de masse corporelle (IMC)
 
 L'indice de masse corporelle est égal au =POIDS= en kilogrammes divisé par le carré de la =TAILLE= en mètres.
 
-* Diagramme de l'arbre de décision
-
-#+HTML: <a href="https://raw.githubusercontent.com/Delegation-numerique-en-sante/covid19-algorithme-orientation/master/diagramme-algorithme-orientation-covid19.png"><img src="https://raw.githubusercontent.com/Delegation-numerique-en-sante/covid19-algorithme-orientation/master/diagramme-algorithme-orientation-covid19.png" alg="Diagramme de l'arbre de décision pour l'algorithme d'orientation COVID 19" /></a>
-
-* Définition de l'arbre de décision
+* 3 Définition de l'arbre de décision
 
 Message à afficher pour tous : /Restez chez vous au maximum en attendant que les symptômes disparaissent. Prenez votre température deux fois par jour. Rappel des mesures d’hygiène. Un dispositif national grand public de soutien psychologique au bénéfice des personnes qui en auraient besoin est accessible via le numéro vert : 0 800 130 000./
 
-** Patient de moins de 15 ans
+** 3.1 Patient de moins de 15 ans
 
 : Cette application n’est pas faite pour les personnes de moins de 15 ans.
 : Prenez contact avec votre médecin généraliste au moindre doute.
 : En cas d’urgence, appelez le 15.
 
-** Tout patient avec au moins un facteur de gravité majeur
+** 3.2 Tout patient avec au moins un facteur de gravité majeur
 
 =Appelez le 15.=
 
-** Tout patient avec fièvre et toux
-
+** 3.3 Tout patient avec fièvre et toux
 *** Tout patient sans facteur pronostique
 
 : Votre situation peut relever d’un COVID 19. 
@@ -127,29 +122,21 @@ Message à afficher pour tous : /Restez chez vous au maximum en attendant que le
 : Demandez une téléconsultation ou un médecin généraliste ou une visite à domicile.
 : Si vous n'arrivez pas à obtenir de consultation, appelez le 15.
 
-** Tout patient avec fièvre ou (sans fièvre et avec (diarrhée ou (toux et douleurs) ou (toux et anosmie))
-
+** 3.4 Tout patient avec fièvre ou (sans fièvre et avec (diarrhée ou (toux et douleurs) ou (toux et anosmie))
 *** Tout patient sans facteur pronostique
-
-**** Si pas de facteur de gravité mineur
-
-: Votre situation peut relever d’un COVID 19 qu’il faut surveiller.
-: Si de nouveaux symptômes apparaissent, refaites le test ou consultez votre médecin.
-: Nous vous conseillons de rester à votre domicile.
-
-Si moins de 50 ans :
+**** Si pas de facteur de gravité mineur et moins de 50 ans
 
 : Votre situation peut relever d’un COVID 19 qu’il faut surveiller.
 : Si de nouveaux symptômes apparaissent, refaites le test ou consultez votre médecin.
 : Nous vous conseillons de rester à votre domicile.
 
-Sinon :
+**** Si pas de facteur de gravité mineur et 50 ans ou plus
 
 : Votre situation peut relever d’un COVID 19.
 : Demandez une téléconsultation ou un médecin généraliste ou une visite à domicile.
 : Appelez le 15 si une gêne respiratoire ou des difficultés importantes pour vous alimenter ou boire apparaissent pendant plus de 24 heures.
 
-**** Sinon (1 ou plusieurs facteurs de gravité mineurs)
+**** Si 1 ou plusieurs facteurs de gravité mineurs
 
 : Votre situation peut relever d’un COVID 19.
 : Demandez une téléconsultation ou un médecin généraliste ou une visite à domicile.
@@ -171,7 +158,7 @@ Sinon :
 
 # Pour tout patient orienté vers une téléconsultation ou médecin généraliste : préciser "appelez le 15 si une gêne respiratoire ou des difficultés importantes pour s’alimenter ou boire pendant plus de 24 heures apparaissent".
 
-** Tout patient sans fièvre avec un seul symptôme parmi toux, douleurs, anosmie
+** 3.5 Tout patient sans fièvre avec un seul symptôme parmi toux, douleurs, anosmie
 
 *** Au moins un facteur pronostique
 
@@ -184,9 +171,13 @@ Sinon :
 : Si de nouveaux symptômes apparaissent, refaites le test ou consultez votre médecin.
 : Nous vous conseillons de rester à votre domicile.
 
-** Tout patient sans fièvre ni aucun autre symptôme
+** 3.6 Tout patient sans fièvre ni aucun autre symptôme
 
 : Votre situation ne relève probablement pas du COVID 19.
 : N’hésitez pas à contacter votre médecin en cas de doute.
 : Vous pouvez refaire le test en cas de nouveau symptôme pour réévaluer la situation.
 : Pour toute information concernant le COVID 19, composer le 0 800 130 000.
+* 4 Diagramme de l'arbre de décision
+
+#+HTML: <a href="https://raw.githubusercontent.com/Delegation-numerique-en-sante/covid19-algorithme-orientation/master/diagramme-algorithme-orientation-covid19.png"><img src="https://raw.githubusercontent.com/Delegation-numerique-en-sante/covid19-algorithme-orientation/master/diagramme-algorithme-orientation-covid19.png" alg="Diagramme de l'arbre de décision pour l'algorithme d'orientation COVID 19" /></a>
+
