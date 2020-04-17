@@ -163,6 +163,7 @@ tree:
       goto:   "1.1"
 
   - node:       "1.1"
+    start-page: true
     progress:   "[1 22]"
     text:       "Quelle a été votre température la plus élevée ces dernières 48 heures ?"
     choices:
