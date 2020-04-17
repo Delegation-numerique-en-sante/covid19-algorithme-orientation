@@ -4,20 +4,20 @@ title Algorithme d'orientation COVID19
 
 start
 
-if (SI moins de 15 ans) then (moins de 15 ans)
+if (IF moins de 15 ans) then (moins de 15 ans)
    :FIN1;
    stop
 
-elseif (SI >=1 facteur de gravité majeurs) then (oui)
+elseif (IF >=1 facteur de gravité majeurs) then (oui)
    :FIN5;
    stop
 
-elseif (SI fièvre ET toux) then (oui)
-       if (SI 0 facteur pronostique) then 
+elseif (IF fièvre AND toux) then (oui)
+       if (IF 0 facteur pronostique) then 
           :FIN6;
           stop
        else (Plus de facteurs pronostiques)
-          if (SI 0 OU 1 facteur de gravité mineur) then (oui)
+          if (IF 0 OR 1 facteur de gravité mineur) then (oui)
              :FIN6;
              stop
           else (non)
@@ -26,10 +26,10 @@ elseif (SI fièvre ET toux) then (oui)
           endif
        endif
 
-elseif (SI fièvre OU diarrhée OU (toux ET douleurs) OU (toux ET anosmie)) then (oui)
-       if (SI 0 facteur pronostique) then (oui)
-           if (SI 0 facteur de gravité mineur) then (oui)
-              if (SI moins de 50 ans) then (oui)
+elseif (IF fièvre XOR (diarrhée OR (toux AND douleurs) OR (toux AND anosmie) OR (douleurs AND anosmie)) then (oui)
+       if (IF 0 facteur pronostique) then (oui)
+           if (IF 0 facteur de gravité mineur) then (oui)
+              if (IF moins de 50 ans) then (oui)
                  :FIN2;
                  stop;
               else (non)
@@ -41,7 +41,7 @@ elseif (SI fièvre OU diarrhée OU (toux ET douleurs) OU (toux ET anosmie)) then
               stop;
            endif
         else (non)
-           if (SI 0 OU 1 facteur de gravité mineur) then (oui)
+           if (IF 0 OR 1 facteur de gravité mineur) then (oui)
               :FIN3;
               stop
            else (non)
@@ -50,8 +50,8 @@ elseif (SI fièvre OU diarrhée OU (toux ET douleurs) OU (toux ET anosmie)) then
            endif
         endif
 
-elseif (SI toux OU douleurs OU anosmie) then (oui)
-       if (SI 0 facteur pronostique) then (oui)
+elseif (IF toux XOR douleurs XOR anosmie) then (oui)
+       if (IF 0 facteur pronostique) then (oui)
           :FIN2;
           stop
        else (non)
@@ -59,7 +59,7 @@ elseif (SI toux OU douleurs OU anosmie) then (oui)
           stop
        endif
 
-else (Aucun symptôme)
+else (NOT toux AND NOT douleurs AND NOT anosmie)
      :FIN8;
      stop
 endif
