@@ -6,10 +6,11 @@
 (def bulma-class-replacements
   {:h1  :h1.title
    :h3  :h3.is-size-4
-   :ul  :ul.list.is-size-5
-   :ol  :ol.list.is-size-5
-   :li  :li.list-item
-   :p   :p.is-size-5
+   :h4  :h4.is-size-5
+   :ul  :ul.list
+   :ol  :ol.list
+   :li  :li.list-item.is-size-6
+   :p   :p.is-size-6
    :pre :pre.is-size-6
    })
 
