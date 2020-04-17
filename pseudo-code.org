@@ -88,32 +88,32 @@ d'orientation affiché avant la réponse à toutes les questions.
 
 Cet arbre de décision doit être parcouru de façon *séquentielle* en testant la première clause, puis la seconde, etc.
 
-:  0: SI moins de 15 ans => FIN1
-:  1:
-:  2: SI >= 1 facteurs de gravité majeurs => FIN5
-:  3:
-:  4: SI fièvre ET toux
-:  5:    SI 0 facteur pronostique => FIN6
-:  6:    SI >= 1 facteurs pronostiques
-:  7:       SI < 2 facteur de gravité mineur => FIN6
-:  8:       SI >= 2 facteurs de gravité mineurs => FIN4
-:  9:
-: 10: SI fièvre OU (pas de fièvre et (diarrhée OU (toux ET douleurs) OU (toux ET anosmie))
-: 11:    SI 0 facteur pronostique
-: 12:       SI 0 facteur de gravité mineur
-: 13:          SI moins de 50 ans => FIN2
-: 14:          SINON => FIN3
-: 15:       SI >= 1 facteur de gravité mineur => FIN3
-: 16:    SI >= 1 facteurs pronostiques
-: 17:       SI < 2 facteur de gravité mineur => FIN3
-: 18:       SI >= 2 facteurs de gravité mineurs => FIN4
-: 19:
-: 20: SI toux OU douleurs OU anosmie
-: 21:    SI 0 facteur pronostique => FIN2
-: 22:    SI >= 1 facteurs pronostiques => FIN7
-: 23:
-: 24: SI NI toux NI douleurs NI anosmie => FIN8
-
+:  1: IF moins de 15 ans => FIN1
+:  2: 
+:  3: IF >= 1 facteurs de gravité majeurs => FIN5
+:  4: 
+:  5: IF fièvre AND toux
+:  6:    IF 0 facteur pronostique => FIN6
+:  7:    IF >= 1 facteurs pronostiques
+:  8:       IF < 2 facteur de gravité mineur => FIN6
+:  9:       IF >= 2 facteurs de gravité mineurs => FIN4
+: 10: 
+: 11: IF fièvre OR (NOT fièvre AND (diarrhée OR (toux AND douleurs) OR (toux AND anosmie) OR (douleurs AND anosmie)))
+: 12:    IF 0 facteur pronostique
+: 13:       IF 0 facteur de gravité mineur
+: 14:          IF moins de 50 ans => FIN2
+: 15:          IFNON => FIN3
+: 16:       IF >= 1 facteur de gravité mineur => FIN3
+: 17:    IF >= 1 facteurs pronostiques
+: 18:       IF < 2 facteur de gravité mineur => FIN3
+: 19:       IF >= 2 facteurs de gravité mineurs => FIN4
+: 20: 
+: 21: IF toux XOR douleurs XOR anosmie
+: 22:    IF 0 facteur pronostique => FIN2
+: 23:    IF >= 1 facteurs pronostiques => FIN7
+: 24: 
+: 25: IF NOT toux AND NOT douleurs AND NOT anosmie => FIN8
+   
 *** Diagramme de l'arbre de décision
 
 [[file:diagramme-algorithme-orientation-covid19.png]]
