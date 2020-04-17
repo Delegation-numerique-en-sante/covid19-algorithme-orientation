@@ -99,10 +99,12 @@
                       orientation_consultation_surveillance_3
                       orientation_consultation_surveillance_2)))
           ;; Branche 4
-          (or fever diarrhea
+          (or fever
+              diarrhea
               (and cough sore_throat_aches)
-              (and cough agueusia_anosmia))
-          (do (when println? (println "Branch 4: fever and other symptoms"))
+              (and cough agueusia_anosmia)
+              (and sore_throat_aches agueusia_anosmia))
+          (do (when println? (println "Branch 4: fever or other symptoms"))
               (cond (= pronostic-factors 0)
                     (if (= minor-severity-factors 0)
                       (if (= age-range "from_15_to_49")
@@ -114,8 +116,10 @@
                       orientation_consultation_surveillance_1
                       orientation_consultation_surveillance_2)))
           ;; Branche 5
-          (or cough sore_throat_aches agueusia_anosmia)
-          (do (when println? (println "Branch 5: no fever and one other symptom"))
+          (or (and cough (not sore_throat_aches) (not agueusia_anosmia))
+              (and (not cough) sore_throat_aches (not agueusia_anosmia))
+              (and (not cough) (not sore_throat_aches) agueusia_anosmia))
+          (do (when println? (println "Branch 5: no fever and only one other symptom"))
               (if (= pronostic-factors 0)
                 orientation_domicile_surveillance_1
                 orientation_consultation_surveillance_4))
@@ -123,7 +127,7 @@
           (and (not cough)
                (not sore_throat_aches)
                (not agueusia_anosmia))
-          (do (when println? (println "Branche 6: no symptom"))
+          (do (when println? (println "Branche 6: no symptom at all"))
               orientation_surveillance))]
     ;; Return the expected map:
     {:res response

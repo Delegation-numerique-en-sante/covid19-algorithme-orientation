@@ -71,9 +71,11 @@
                   orientation_consultation_surveillance_3
                   orientation_consultation_surveillance_2))
           ;; Branche 4
-          (or fever diarrhea
+          (or fever
+              diarrhea
               (and cough sore_throat_aches)
-              (and cough agueusia_anosmia))
+              (and cough agueusia_anosmia)
+              (and sore_throat_aches agueusia_anosmia))
           (cond (= pronostic-factors 0)
                 (if (= minor-severity-factors 0)
                   (if (= age_range "from_15_to_49")
@@ -85,7 +87,9 @@
                   orientation_consultation_surveillance_1
                   orientation_consultation_surveillance_2))
           ;; Branche 5
-          (or cough sore_throat_aches agueusia_anosmia)
+          (or (and cough (not sore_throat_aches) (not agueusia_anosmia))
+              (and (not cough) sore_throat_aches (not agueusia_anosmia))
+              (and (not cough) (not sore_throat_aches) agueusia_anosmia))
           (if (= pronostic-factors 0)
             orientation_domicile_surveillance_1
             orientation_consultation_surveillance_4)
