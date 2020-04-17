@@ -1,0 +1,44 @@
+* 2020-04-17
+
+** L'arbre de décision a été corrigé pour les 4ème et 5ème clauses
+
+La 4ème clause disait:
+
+: "IF fièvre XOR (diarrhée OR (toux AND douleurs) OR (toux AND anosmie))"
+
+Elle dit désormais:
+
+: IF fièvre XOR (diarrhée OR (toux AND douleurs) OR (toux AND anosmie) OR (douleurs AND anosmie))
+
+La 5ème clause disait:
+
+: IF toux OR douleurs OR anosmie
+ 
+Elle dit désormais:
+
+: IF toux XOR douleurs XOR anosmie
+
+Voir le [[file:pseudo-code.org][pseudo-code]].
+
+** Une seule question pour la fièvre
+
+La fièvre était demandée en deux temps : d'abord une question pour
+savoir si le répondant avait de la fièvre, une autre pour demander la
+température.  Il n'y a désormais qu'une seule question, celle sur la
+température.
+
+En conséquence, les solutions ne doivent plus envoyer de valeur ~fever~
+mais seulement ~fever_algo~ et ~temperature_cat~ : voir [[file:implementation.org][l'implémentation]].
+
+À noter que si le répondant indique "Je ne sais pas", cela est
+considéré ensuite dans l'algorithme comme indiquant de la fièvre.
+
+** Clarification sur la question du code postal
+
+La question sur le code postal a été précisée : il s'agit de demander
+le code postal du lieu de résidence actuel, pas du domicile.
+
+** Ajout d'un fichier ChangeLog.org
+
+Tous les changements sur l'algorithme ayant un impact potentiel sur
+les implémentations seront désormais notés dans ce fichier.
