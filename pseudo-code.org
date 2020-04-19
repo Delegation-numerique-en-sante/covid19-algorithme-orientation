@@ -102,7 +102,7 @@ Cet arbre de décision doit être parcouru de façon *séquentielle* en testant 
 : 12:    IF 0 facteur pronostique
 : 13:       IF 0 facteur de gravité mineur
 : 14:          IF moins de 50 ans => FIN2
-: 15:          IFNON => FIN3
+: 15:          ELSE => FIN3
 : 16:       IF >= 1 facteur de gravité mineur => FIN3
 : 17:    IF >= 1 facteurs pronostiques
 : 18:       IF < 2 facteur de gravité mineur => FIN3
