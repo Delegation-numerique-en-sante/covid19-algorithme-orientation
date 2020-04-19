@@ -24,47 +24,48 @@ elle doit aussi changer de nom.
 
 Si vous souhaitez que votre solution soit [[file:referencement.org][référencée]], vous devez impérativement collecter les valeurs ci-dessous.
 
-| Nom de la variable             | Description                          | Saisi ou calculé (1) ? | Type               | Exemple ou valeurs possibles                                  |
-|--------------------------------+--------------------------------------+------------------------+--------------------+---------------------------------------------------------------|
-| =algo_version=                   | Version de l'algorithme              | Appli                  | string YYYY-MM-DD  | Ex. "2020-04-06"                                              |
-| =form_version=                   | Version du formulaire                | Appli                  | string YYYY-MM-DD  | Ex. "2020-04-06"                                              |
-| =date= (2)                       | Date de saisie                       | Appli                  | date ISO 8601      | Ex. 2020-04-02T05:24:57.711-00:00                             |
-| =duration= (2)                   | Durée de saisie en secondes          | Appli                  | integer            | Ex. 316                                                       |
-| =postal_code= (3)                | Le code postal                       | Saisi ou déduit        | string             | Ex. "75019" ou "63XXX"                                        |
-| =orientation=                    | Le message d'orientation final       | Calculé                | string             | Ex. "orientation_SAMU"                                        |
-|--------------------------------+--------------------------------------+------------------------+--------------------+---------------------------------------------------------------|
-| =age_range=                      | Tranche d'âge                        | Calculé                | string             | "inf_15" "from_15_to_49" "from_50_to_69" ou "sup_70"          |
-|--------------------------------+--------------------------------------+------------------------+--------------------+---------------------------------------------------------------|
-| =sore_throat_aches=              | Mal de gorge ou douleurs             | Saisi                  | boolean            | ~true~ ou ~false~                                                 |
-| =agueusia_anosmia=               | Perte de goût et d'odorat            | Saisi                  | boolean            | ~true~ ou ~false~                                                 |
-| =breathlessness=                 | Essoufflement                        | Saisi                  | boolean            | ~true~ ou ~false~                                                 |
-| =cough=                          | Toux                                 | Saisi                  | boolean            | ~true~ ou ~false~                                                 |
-| =diarrhea=                       | Diarrhée                             | Saisi                  | boolean            | ~true~ ou ~false~                                                 |
-| =tiredness=                      | Fatigue                              | Saisi                  | boolean            | ~true~ ou ~false~                                                 |
-| =tiredness_details=              | Alitement >=50% du temps diurne      | Saisi (si ~tirednress~)  | boolean            | ~true~ ou ~false~                                                 |
-|--------------------------------+--------------------------------------+------------------------+--------------------+---------------------------------------------------------------|
-| =imc=                            | Indice de masse corporelle           | Calculé                | float (1 décimale) | Ex. 29.8                                                      |
-| =breathing_disease=              | Maladie respiratoire                 | Saisi                  | boolean            | ~true~ ou ~false~                                                 |
-| =cancer=                         | Cancer actuel ou < moins de 3 ans    | Saisi                  | boolean            | ~true~ ou ~false~                                                 |
-| =diabetes=                       | Diabète                              | Saisi                  | boolean            | ~true~ ou ~false~                                                 |
-| =feeding_day=                    | Difficulté pour manger/boire         | Saisi                  | boolean            | ~true~ ou ~false~                                                 |
-| =kidney_disease=                 | Insuffisance rénale                  | Saisi                  | boolean            | ~true~ ou ~false~                                                 |
-| =liver_disease=                  | Maladie chronique du foie            | Saisi                  | boolean            | ~true~ ou ~false~                                                 |
-| =pregnant=                       | Enceinte                             | Saisi                  | integer            | 0 (non) ou 1 ou 888 ("Non applicable")                        |
-|--------------------------------+--------------------------------------+------------------------+--------------------+---------------------------------------------------------------|
-| =temperature_cat=                | Catégorie de température             | Saisi                  | string             | "inf_35.5" "35.5-37.7" "37.8-38.9" "sup_39" "NSP"             |
-| =fever_algo= (4)                 | Fièvre (algo)                        | Calculé                | boolean            | ~true~ (temperature_cat=[ ~inf_35.5~ ou ~sup_39~ ou ~NSP~ ]) ou ~false~ |
-| =heart_disease=                  | Maladie cardiaque                    | Saisi                  | integer            | 0 (non) ou 1 ou 999 ("Je ne sais pas")                        |
-| =heart_disease_algo=             | Maladie cardiaque (algo)             | Calculé                | boolean            | ~true~ (1 ou 999) ou ~false~ (0)                                  |
-| =immunosuppressant_disease=      | Maladie défenses immunitaires        | Saisi                  | integer            | 0 (non) ou 1 ou 999 ("Je ne sais pas")                        |
-| =immunosuppressant_disease_algo= | Maladie défenses immunitaires (algo) | Calculé                | boolean            | ~true~ (1) ou ~false~ (0 ou 999)                                  |
-| =immunosuppressant_drug=         | Traitement immunodépresseur          | Saisi                  | integer            | 0 (non) ou 1 ou 999 ("Je ne sais pas")                        |
-| =immunosuppressant_drug_algo=    | Traitement immunodépresseur (algo)   | Calculé                | boolean            | ~true~ (1) ou ~false~ (0 ou 999)                                  |
+| Nom de la variable             | Description                          | Saisi ou calculé (1) ? | Type                | Exemple ou valeurs possibles                                  |
+|--------------------------------+--------------------------------------+------------------------+---------------------+---------------------------------------------------------------|
+| =algo_version=                   | Version de l'algorithme              | Appli                  | string (YYYY-MM-DD) | Ex: "2020-04-06"                                              |
+| =form_version=                   | Version du formulaire                | Appli                  | string (YYYY-MM-DD) | Ex: "2020-04-06"                                              |
+| =date= (2)                       | Date de saisie                       | Appli                  | string (ISO 8601)   | Ex: "2020-04-02T05:24:57.711-00:00"                           |
+| =duration= (2)                   | Durée de saisie en secondes          | Appli                  | number              | Ex: 316                                                       |
+| =postal_code= (3)                | Le code postal                       | Saisi ou déduit        | string              | Ex: "75019" ou "63XXX"                                        |
+| =orientation=                    | Le message d'orientation final       | Calculé                | string              | Ex: "orientation_SAMU"                                        |
+| =id=                             | Identifiant unique                   | Appli ou serveur       | uuid                | Ex: "1e0dfed7-503a-4f21-8517-f0d0081495ce"                    |
+|--------------------------------+--------------------------------------+------------------------+---------------------+---------------------------------------------------------------|
+| =age_range=                      | Tranche d'âge                        | Calculé                | string              | "inf_15" "from_15_to_49" "from_50_to_69" ou "sup_70"          |
+|--------------------------------+--------------------------------------+------------------------+---------------------+---------------------------------------------------------------|
+| =sore_throat_aches=              | Mal de gorge ou douleurs             | Saisi                  | boolean             | ~true~ ou ~false~                                                 |
+| =agueusia_anosmia=               | Perte de goût et d'odorat            | Saisi                  | boolean             | ~true~ ou ~false~                                                 |
+| =breathlessness=                 | Essoufflement                        | Saisi                  | boolean             | ~true~ ou ~false~                                                 |
+| =cough=                          | Toux                                 | Saisi                  | boolean             | ~true~ ou ~false~                                                 |
+| =diarrhea=                       | Diarrhée                             | Saisi                  | boolean             | ~true~ ou ~false~                                                 |
+| =tiredness=                      | Fatigue                              | Saisi                  | boolean             | ~true~ ou ~false~                                                 |
+| =tiredness_details=              | Alitement >=50% du temps diurne      | Saisi (si ~tirednress~)  | boolean             | ~true~ ou ~false~                                                 |
+|--------------------------------+--------------------------------------+------------------------+---------------------+---------------------------------------------------------------|
+| =imc=                            | Indice de masse corporelle           | Calculé                | number (1 décimale) | Ex: 29.8                                                      |
+| =breathing_disease=              | Maladie respiratoire                 | Saisi                  | boolean             | ~true~ ou ~false~                                                 |
+| =cancer=                         | Cancer actuel ou < moins de 3 ans    | Saisi                  | boolean             | ~true~ ou ~false~                                                 |
+| =diabetes=                       | Diabète                              | Saisi                  | boolean             | ~true~ ou ~false~                                                 |
+| =feeding_day=                    | Difficulté pour manger/boire         | Saisi                  | boolean             | ~true~ ou ~false~                                                 |
+| =kidney_disease=                 | Insuffisance rénale                  | Saisi                  | boolean             | ~true~ ou ~false~                                                 |
+| =liver_disease=                  | Maladie chronique du foie            | Saisi                  | boolean             | ~true~ ou ~false~                                                 |
+| =pregnant=                       | Enceinte                             | Saisi                  | number              | 0 (non) ou 1 ou 888 ("Non applicable")                        |
+|--------------------------------+--------------------------------------+------------------------+---------------------+---------------------------------------------------------------|
+| =temperature_cat=                | Catégorie de température             | Saisi                  | string              | "inf_35.5" "35.5-37.7" "37.8-38.9" "sup_39" "NSP"             |
+| =fever_algo= (4)                 | Fièvre (algo)                        | Calculé                | boolean             | ~true~ (temperature_cat=[ ~inf_35.5~ ou ~sup_39~ ou ~NSP~ ]) ou ~false~ |
+| =heart_disease=                  | Maladie cardiaque                    | Saisi                  | number              | 0 (non) ou 1 ou 999 ("Je ne sais pas")                        |
+| =heart_disease_algo=             | Maladie cardiaque (algo)             | Calculé                | boolean             | ~true~ (1 ou 999) ou ~false~ (0)                                  |
+| =immunosuppressant_disease=      | Maladie défenses immunitaires        | Saisi                  | number              | 0 (non) ou 1 ou 999 ("Je ne sais pas")                        |
+| =immunosuppressant_disease_algo= | Maladie défenses immunitaires (algo) | Calculé                | boolean             | ~true~ (1) ou ~false~ (0 ou 999)                                  |
+| =immunosuppressant_drug=         | Traitement immunodépresseur          | Saisi                  | number              | 0 (non) ou 1 ou 999 ("Je ne sais pas")                        |
+| =immunosuppressant_drug_algo=    | Traitement immunodépresseur (algo)   | Calculé                | boolean             | ~true~ (1) ou ~false~ (0 ou 999)                                  |
 
 - (1) Indique si la valeur est déterminée directement par la saisie ou doit être calculée - toutes les variables en =_algo= sont calcuées.
-- (2) En fonction des détails d'implémentation, =date= et =duration= peuvent être envoyées soit depuis le navigateur soit calculées sur le serveur.
+- (2) En fonction des détails d'implémentation, =date=, =duration= et =id= peuvent être envoyées soit depuis le navigateur soit définies côté serveur.
 - (3) La sauvegarde pour partage du code postal n'est pas obligatoire mais *fortement recommandé*, au moins pour récupérer le département.
-- (4) La valeur de =fever_algo= est déduite de =fever= (qui doit être =1= ou =999=) /et/ de =temperature_cat= (qui doit être =inf_35.5= ou =sup_39= ou =NSP=).
+- (4) La valeur de =fever_algo= est déduite de =temperature_cat= qui doit être =inf_35.5= ou =sup_39= ou =NSP=.
 
 ** Variables intermédaires (facteurs, âge, poids et taille, autres)
 
@@ -79,23 +80,20 @@ Si vous souhaitez que votre solution soit [[file:referencement.org][référencé
 ** Variables qui peuvent ou non être calculées sur le serveur
 
 - =algo_version= et =form_version= peuvent être envoyés par le navigateur.
-- Les variables =*_algo=, =date= et =duration= peuvent être envoyées par le navigateur ou calculées sur le serveur.
+- Les variables =*_algo=, =date=, =duration=, =id= peuvent être envoyées par le navigateur ou calculées sur le serveur.
 
-** Variables qui correspondent à l'orientation affichée
+** Valeurs possibles de la variable =orientation=
 
-Toutes les variables sont des entier (/integer/) dont la valeur est =1= quand le message d'orientation est affiché :
-
-- =orientation_moins_de_15_ans= : FIN1
-- =orientation_domicile_surveillance_1= : FIN2
-- =orientation_consultation_surveillance_1= : FIN3
-- =orientation_consultation_surveillance_2= : FIN4
-- =orientation_SAMU= : FIN5
-- =orientation_consultation_surveillance_3= : FIN6
-- =orientation_consultation_surveillance_4= : FIN7
-- =orientation_surveillance= : FIN8
+- =orientation_moins_de_15_ans= (FIN1)
+- =orientation_domicile_surveillance_1= (FIN2)
+- =orientation_consultation_surveillance_1= (FIN3)
+- =orientation_consultation_surveillance_2= (FIN4)
+- =orientation_SAMU= (FIN5)
+- =orientation_consultation_surveillance_3= (FIN6)
+- =orientation_consultation_surveillance_4= (FIN7)
+- =orientation_surveillance= (FIN8)
 
 Voir la signification des =FIN*= dans [[https://github.com/Delegation-numerique-en-sante/covid19-algorithme-orientation/blob/master/pseudo-code.org#conclusions-possibles][cette section]] du pseudo code.
 
 Si le répondant a moins de quinze ans, les données du formulaire
-/peuvent/ ne pas être stockées : dans ce cas, la variable
-=orientation_moins_de_15_ans= aura pour valeur =888= (non applicable.)
+/peuvent/ ne pas être stockées.
