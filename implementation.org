@@ -1,7 +1,7 @@
 #+title: Implémentation de l'algorithme d'orientation COVID 19
 
 Si vous souhaitez faire [[file:referencement.org][référencer]] votre implémentation de
-l'algorithme d'orientation, il est impératif de suivre le [[https://github.com/Delegation-numerique-en-sante/covid19-algorithme-orientation/blob/master/docs/json/openapi3.json][schéma de
+l'algorithme d'orientation, il est impératif de suivre le [[https://github.com/Delegation-numerique-en-sante/covid19-algorithme-orientation-check/blob/master/schema.json][schéma de
 données officiel]].
 
 Nous résumons ci-dessous la liste des variables à collecter, ainsi que

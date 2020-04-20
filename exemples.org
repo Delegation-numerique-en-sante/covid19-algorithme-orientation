@@ -22,14 +22,14 @@ voir [[https://delegation-numerique-en-sante.github.io/covid19-algorithme-orient
 
 ** Exemple d'API Web
 
-Vous pouvez lire le schéma de données et tester les requêtes d'une
-l'API via le [[https://proxy-orientation.covid19.etalab.gouv.fr/swagger][swagger]] de l'API mise en place par Etalab.
+Vous pouvez tester un exemple d'API via le [[https://proxy-orientation.covid19.etalab.gouv.fr/swagger][swagger]] mis en place par
+Etalab pour le [[https://www.gouvernement.fr/info-coronavirus/orientation-medicale][questionnaire d'orientation]] Covid-19 de gouvernement.fr.
 
 ** Idées de tests à faire sur l'implémentation de votre algorithme
 
-- Toutes les *variables* du [[https://github.com/Delegation-numerique-en-sante/covid19-algorithme-orientation-schema-donnees][schéma de données]] sont-elles prises en compte ?
-- Toutes les *questions* du [[https://github.com/Delegation-numerique-en-sante/covid19-algorithme-orientation-schema-donnees][schéma de données]] sont-elles posées ?
-- Toutes les *conclusions* du [[https://github.com/Delegation-numerique-en-sante/covid19-algorithme-orientation-schema-donnees][schéma de données]] sont-elles présentes ?
+- Toutes les *variables* du [[https://github.com/Delegation-numerique-en-sante/covid19-algorithme-orientation-check/blob/master/schema.json][schéma de données]] sont-elles prises en compte ?
+- Toutes les *questions* du [[https://github.com/Delegation-numerique-en-sante/covid19-algorithme-orientation-check/blob/master/schema.json][schéma de données]] sont-elles posées ?
+- Toutes les *conclusions* du [[https://github.com/Delegation-numerique-en-sante/covid19-algorithme-orientation-check/blob/master/schema.json][schéma de données]] sont-elles présentes ?
 - La formule de l'indice de masse corporelle est-elle correcte ?
 - Mon implémentation aboutit-elle à au moins un message d'orientation ?
 - Mon implémentation fait-elle que chaque message d'orientation est possiblement affiché ?

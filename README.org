@@ -51,7 +51,7 @@ Le document officiel de l'algorithme d'orientation Covid-19 est publié par le m
 
 Toutes les applications d'information, d'orientation et de triage qui
 réutilisent cet algorithme sont référencées sur le [[https://solidarites-sante.gouv.fr/soins-et-maladies/maladies/maladies-infectieuses/coronavirus/coronavirus-questions-reponses][site du ministère
-des Solidarité et de la Santé]].
+des Solidarités et de la Santé]].
 
 Si vous implémentez cet algorithme et souhaitez partager vos données,
 renseignez [[http://www.sesam-vitale.fr/web/sesam-vitale/recensement-innovations-covid-19][ce formulaire en ligne]] ou écrivez-nous à l'adresse
@@ -61,8 +61,11 @@ référencée sur le site du ministère des Solidarité et de la Santé.
 Toute implémentation référencée doit impérativement :
 
 1. respecter [[file:pseudo-code.org][l'algorithme d'orientation]] Covid-19 ;
-2. utiliser le [[https://github.com/Delegation-numerique-en-sante/covid19-algorithme-orientation-schema-donnees][schéma de données]] officiel ;
+2. utiliser le [[https://github.com/Delegation-numerique-en-sante/covid19-algorithme-orientation-check/blob/master/schema.json][schéma de données]] officiel ;
 3. et suivre les recommandations d'[[file:implementation.org][implémentation]].
+
+Pour savoir si les données csv que vous produisez sont correctes, vous
+pouvez utiliser cet [[https://github.com/Delegation-numerique-en-sante/covid19-algorithme-orientation-check][outil de validation]].
 
 ** Ce que contient ce dépôt
 
