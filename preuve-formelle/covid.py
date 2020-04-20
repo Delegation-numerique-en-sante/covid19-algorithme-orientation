@@ -27,6 +27,7 @@ s.add(facteurs_gravite_majeur >= 0)
 # Contraintes sur la définition des facteurs gravité mineurs : la fièvre en
 # fait partie.
 s.add(Implies(fievre, facteurs_gravite_mineur > 0))
+s.add(facteurs_gravite_mineur <= 2)
 s.add(Implies(facteurs_gravite_mineur == 2, fievre))
 
 # Liste des variables du problème
@@ -79,7 +80,7 @@ def algo_6e5e17a():
     implies_done(facteurs_gravite_majeur >= 1, 5)
     #
     # SI fièvre ET toux
-    cond1 = Or(fievre, toux)
+    cond1 = And(fievre, toux)
     #    SI 0 facteur pronostique => FIN6
     implies_done(And(cond1, facteurs_pronostiques == 0), 6)
     #    SI >= 1 facteurs pronostiques
@@ -119,7 +120,6 @@ def algo_6e5e17a():
     implies_done(And(Not(toux), Not(douleurs), Not(anosmie)), 8)
 
     return done
-
 
 # Maintenant que l'algorithme est encodé dans Z3, on peut essayer de prouver
 # les théorèmes. Cette fonction wrappe la fonction "check" de Z3 avec une
