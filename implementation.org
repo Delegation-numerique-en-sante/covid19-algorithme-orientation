@@ -32,7 +32,6 @@ Si vous souhaitez que votre solution soit [[file:referencement.org][référencé
 | =duration= (2)                   | Durée de saisie en secondes          | Appli                  | number              | Ex: 316                                                       |
 | =postal_code= (3)                | Le code postal                       | Saisi ou déduit        | string              | Ex: "75019" ou "63XXX"                                        |
 | =orientation=                    | Le message d'orientation final       | Calculé                | string              | Ex: "orientation_SAMU"                                        |
-| =id=                             | Identifiant unique                   | Appli ou serveur       | uuid                | Ex: "1e0dfed7-503a-4f21-8517-f0d0081495ce"                    |
 |--------------------------------+--------------------------------------+------------------------+---------------------+---------------------------------------------------------------|
 | =age_range=                      | Tranche d'âge                        | Calculé                | string              | "inf_15" "from_15_to_49" "from_50_to_69" ou "sup_70"          |
 |--------------------------------+--------------------------------------+------------------------+---------------------+---------------------------------------------------------------|
