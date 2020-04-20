@@ -1,29 +1,29 @@
 
 # Table des matières
 
--   [1 Présentation générale](#orgd9653e0)
--   [2 Questionnaire d’auto-évaluation](#org47b6fba)
-    -   [2.1 Symptômes](#org7720d91)
-    -   [2.2 Facteur pronostique défavorable lié au terrain](#org63fb415)
-    -   [2.3 Autre question](#org96d7b9b)
-    -   [2.4 Définition des facteurs de gravité](#org7dfa98c)
-    -   [2.5 Calcul de l'indice de masse corporelle (IMC)](#orgd498598)
--   [3 Définition de l'arbre de décision](#orgeeb93de)
-    -   [3.1 Patient de moins de 15 ans](#org37695db)
-    -   [3.2 Tout patient avec au moins un facteur de gravité majeur](#orgd30ddb5)
-    -   [3.3 Tout patient avec fièvre et toux](#orgafe0911)
-    -   [3.4 Tout patient avec fièvre ou (sans fièvre et avec (diarrhée ou (toux et douleurs) ou (toux et anosmie))](#org78a7980)
-    -   [3.5 Tout patient sans fièvre avec un seul symptôme parmi toux, douleurs, anosmie](#org66577a8)
-    -   [3.6 Tout patient sans fièvre ni aucun autre symptôme](#org46dbc8f)
--   [4 Diagramme de l'arbre de décision](#orgd7d7e0f)
+-   [1 Présentation générale](#org16a5bc1)
+-   [2 Questionnaire d’auto-évaluation](#orgae818f6)
+    -   [2.1 Symptômes](#orgf9e54e9)
+    -   [2.2 Facteur pronostique défavorable lié au terrain](#org6e783c3)
+    -   [2.3 Autre question](#orgbb579e7)
+    -   [2.4 Définition des facteurs de gravité](#org9d9c78b)
+    -   [2.5 Calcul de l'indice de masse corporelle (IMC)](#orgc4472e9)
+-   [3 Définition de l'arbre de décision](#org3e156c3)
+    -   [3.1 Patient de moins de 15 ans](#org562ff70)
+    -   [3.2 Tout patient avec au moins un facteur de gravité majeur](#org18d4720)
+    -   [3.3 Tout patient avec fièvre et toux](#org9c40279)
+    -   [3.4 Tout patient avec fièvre ou (sans fièvre et avec (diarrhée ou (toux et douleurs) ou (toux et anosmie))](#orgf3f255d)
+    -   [3.5 Tout patient sans fièvre avec un seul symptôme parmi toux, douleurs, anosmie](#org3b3d264)
+    -   [3.6 Tout patient sans fièvre ni aucun autre symptôme](#orgac01399)
+-   [4 Diagramme de l'arbre de décision](#org2967659)
 
 
 
-<a id="orgd9653e0"></a>
+<a id="org16a5bc1"></a>
 
 # 1 Présentation générale
 
-Ce document présente le questionnaire d'auto-évaluation COVID19 et
+Ce document présente le questionnaire d'auto-évaluation Covid-19 et
 l'algorithme traitant les réponses au questionnaire pour afficher une
 orientation donnée au répondant (par exemple "Appelez le 15").
 
@@ -49,12 +49,12 @@ Ce document est [téléchargeable en version PDF](https://esante.gouv.fr/algorit
 **Attention : cette documentation, le questionnaire et l'algorithme sont potentiellement modifiables après étude de cas et veille scientifique.**
 
 
-<a id="org47b6fba"></a>
+<a id="orgae818f6"></a>
 
 # 2 Questionnaire d’auto-évaluation
 
 
-<a id="org7720d91"></a>
+<a id="orgf9e54e9"></a>
 
 ## 2.1 Symptômes
 
@@ -74,7 +74,7 @@ Ce document est [téléchargeable en version PDF](https://esante.gouv.fr/algorit
 -   *Dans les dernières 24 heures, avez-vous noté un manque de souffle INHABITUEL lorsque vous parlez ou faites un petit effort ?* `OUI / NON (OUI -> Facteur de gravité majeur)`
 
 
-<a id="org63fb415"></a>
+<a id="org6e783c3"></a>
 
 ## 2.2 Facteur pronostique défavorable lié au terrain
 
@@ -99,14 +99,14 @@ Ce document est [téléchargeable en version PDF](https://esante.gouv.fr/algorit
 Le facteur pronostique est considéré positif s'il y a au moins 1 item **OUI** ou en gras (âge supérieur ou égal à 70 ans, indice de masse corporelle supérieur à 30 kg/m²).
 
 
-<a id="org96d7b9b"></a>
+<a id="orgbb579e7"></a>
 
 ## 2.3 Autre question
 
 -   *Quel est le code postal de votre lieu de résidence actuel ?*
 
 
-<a id="org7dfa98c"></a>
+<a id="org9d9c78b"></a>
 
 ## 2.4 Définition des facteurs de gravité
 
@@ -119,21 +119,21 @@ Le facteur pronostique est considéré positif s'il y a au moins 1 item **OUI** 
     -   Difficultés importantes pour s’alimenter ou boire depuis plus de 24 heures
 
 
-<a id="orgd498598"></a>
+<a id="orgc4472e9"></a>
 
 ## 2.5 Calcul de l'indice de masse corporelle (IMC)
 
 L'indice de masse corporelle est égal au `POIDS` en kilogrammes divisé par le carré de la `TAILLE` en mètres.
 
 
-<a id="orgeeb93de"></a>
+<a id="org3e156c3"></a>
 
 # 3 Définition de l'arbre de décision
 
 Message à afficher pour tous : *Restez chez vous au maximum en attendant que les symptômes disparaissent. Prenez votre température deux fois par jour. Rappel des mesures d’hygiène. Un dispositif national grand public de soutien psychologique au bénéfice des personnes qui en auraient besoin est accessible via le numéro vert : 0 800 130 000.*
 
 
-<a id="org37695db"></a>
+<a id="org562ff70"></a>
 
 ## 3.1 Patient de moins de 15 ans
 
@@ -142,21 +142,21 @@ Message à afficher pour tous : *Restez chez vous au maximum en attendant que le
     En cas d’urgence, appelez le 15.
 
 
-<a id="orgd30ddb5"></a>
+<a id="org18d4720"></a>
 
 ## 3.2 Tout patient avec au moins un facteur de gravité majeur
 
 `Appelez le 15.`
 
 
-<a id="orgafe0911"></a>
+<a id="org9c40279"></a>
 
 ## 3.3 Tout patient avec fièvre et toux
 
 
 ### Tout patient sans facteur pronostique
 
-    Votre situation peut relever d’un COVID 19. 
+    Votre situation peut relever d’un Covid-19. 
     Demandez une téléconsultation ou un médecin généraliste ou une visite à domicile (SOS médecins, etc.)
 
 
@@ -165,18 +165,18 @@ Message à afficher pour tous : *Restez chez vous au maximum en attendant que le
 
 #### Si un ou deux facteurs de gravité mineurs
 
-    Votre situation peut relever d’un COVID 19.
+    Votre situation peut relever d’un Covid-19.
     Demandez une téléconsultation ou un médecin généraliste ou une visite à domicile (SOS médecins, etc.)
 
 
 #### Avec au moins deux facteurs de gravité mineurs
 
-    Votre situation peut relever d’un COVID 19.
+    Votre situation peut relever d’un Covid-19.
     Demandez une téléconsultation ou un médecin généraliste ou une visite à domicile.
     Si vous n'arrivez pas à obtenir de consultation, appelez le 15.
 
 
-<a id="org78a7980"></a>
+<a id="orgf3f255d"></a>
 
 ## 3.4 Tout patient avec fièvre ou (sans fièvre et avec (diarrhée ou (toux et douleurs) ou (toux et anosmie))
 
@@ -186,21 +186,21 @@ Message à afficher pour tous : *Restez chez vous au maximum en attendant que le
 
 #### Si pas de facteur de gravité mineur et moins de 50 ans
 
-    Votre situation peut relever d’un COVID 19 qu’il faut surveiller.
+    Votre situation peut relever d’un Covid-19 qu’il faut surveiller.
     Si de nouveaux symptômes apparaissent, refaites le test ou consultez votre médecin.
     Nous vous conseillons de rester à votre domicile.
 
 
 #### Si pas de facteur de gravité mineur et 50 ans ou plus
 
-    Votre situation peut relever d’un COVID 19.
+    Votre situation peut relever d’un Covid-19.
     Demandez une téléconsultation ou un médecin généraliste ou une visite à domicile.
     Appelez le 15 si une gêne respiratoire ou des difficultés importantes pour vous alimenter ou boire apparaissent pendant plus de 24 heures.
 
 
 #### Si 1 ou plusieurs facteurs de gravité mineurs
 
-    Votre situation peut relever d’un COVID 19.
+    Votre situation peut relever d’un Covid-19.
     Demandez une téléconsultation ou un médecin généraliste ou une visite à domicile.
     Appelez le 15 si une gêne respiratoire ou des difficultés importantes pour vous alimenter ou boire apparaissent pendant plus de 24 heures.
 
@@ -210,49 +210,49 @@ Message à afficher pour tous : *Restez chez vous au maximum en attendant que le
 
 #### Si zéro ou un facteur de gravité mineur
 
-    Votre situation peut relever d’un COVID 19.
+    Votre situation peut relever d’un Covid-19.
     Demandez une téléconsultation ou un médecin généraliste ou une visite à domicile.
     Appelez le 15 si une gêne respiratoire ou des difficultés importantes pour vous alimenter ou boire apparaissent pendant plus de 24 heures.
 
 
 #### Si au moins deux facteurs de gravité mineurs
 
-    Votre situation peut relever d’un COVID 19.
+    Votre situation peut relever d’un Covid-19.
     Demandez une téléconsultation ou un médecin généraliste ou une visite à domicile.
     Si vous n'arrivez pas à obtenir de consultation, appelez le 15.
 
 
-<a id="org66577a8"></a>
+<a id="org3b3d264"></a>
 
 ## 3.5 Tout patient sans fièvre avec un seul symptôme parmi toux, douleurs, anosmie
 
 
 ### Au moins un facteur pronostique
 
-    Votre situation peut relever d’un COVID 19. Un avis médical est recommandé.
+    Votre situation peut relever d’un Covid-19. Un avis médical est recommandé.
     Au moindre doute, appelez le 15. Nous vous conseillons de rester à votre domicile.
 
 
 ### Pas de facteur pronostique
 
-    Votre situation peut relever d’un COVID 19 qu’il faut surveiller.
+    Votre situation peut relever d’un Covid-19 qu’il faut surveiller.
     Si de nouveaux symptômes apparaissent, refaites le test ou consultez votre médecin.
     Nous vous conseillons de rester à votre domicile.
 
 
-<a id="org46dbc8f"></a>
+<a id="orgac01399"></a>
 
 ## 3.6 Tout patient sans fièvre ni aucun autre symptôme
 
-    Votre situation ne relève probablement pas du COVID 19.
+    Votre situation ne relève probablement pas du Covid-19.
     N’hésitez pas à contacter votre médecin en cas de doute.
     Vous pouvez refaire le test en cas de nouveau symptôme pour réévaluer la situation.
-    Pour toute information concernant le COVID 19, composer le 0 800 130 000.
+    Pour toute information concernant le Covid-19, composer le 0 800 130 000.
 
 
-<a id="orgd7d7e0f"></a>
+<a id="org2967659"></a>
 
 # 4 Diagramme de l'arbre de décision
 
-<a href="https://raw.githubusercontent.com/Delegation-numerique-en-sante/covid19-algorithme-orientation/master/diagramme-algorithme-orientation-covid19.png"><img src="https://raw.githubusercontent.com/Delegation-numerique-en-sante/covid19-algorithme-orientation/master/diagramme-algorithme-orientation-covid19.png" alg="Diagramme de l'arbre de décision pour l'algorithme d'orientation COVID 19" /></a>
+<a href="https://raw.githubusercontent.com/Delegation-numerique-en-sante/covid19-algorithme-orientation/master/diagramme-algorithme-orientation-covid19.png"><img src="https://raw.githubusercontent.com/Delegation-numerique-en-sante/covid19-algorithme-orientation/master/diagramme-algorithme-orientation-covid19.png" alg="Diagramme de l'arbre de décision pour l'algorithme d'orientation Covid-19" /></a>
 

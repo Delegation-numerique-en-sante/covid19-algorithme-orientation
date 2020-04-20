@@ -1,4 +1,4 @@
-# Programme de vérification formelle de l'algorithme d'orientation COVID19
+# Programme de vérification formelle de l'algorithme d'orientation Covid-19
 
 ## Installation
 

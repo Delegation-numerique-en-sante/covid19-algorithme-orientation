@@ -1,11 +1,11 @@
-#+title: Documentation de l'algorithme d'orientation COVID19
+#+title: Documentation de l'algorithme d'orientation Covid-19
 
-=Version: 2020-04-06=
+=Version: 2020-04-17=
 
 ** Introduction et contexte
 
 Ce dépôt contient une présentation de l'algorithme d'orientation
-COVID19 officiellement publié par le ministère des Solidarités et de
+Covid-19 officiellement publié par le ministère des Solidarités et de
 la Santé.
 
 L'algorithme est défini par un comité scientifique, appelé CovidTélé,
@@ -45,7 +45,7 @@ Ces éléments donnent lieu à plusieurs présentations:
 
 ** Document officiel
 
-Le document officiel de l'algorithme d'orientation COVID19 est publié par le ministère des Solidarités et de la Santé.  Il est [[https://delegation-numerique-en-sante.github.io/covid19-algorithme-orientation/algorithme-orientation-covid19.html][lisible en ligne]] et [[https://esante.gouv.fr/algorithme-orientation][téléchargeable ici]].
+Le document officiel de l'algorithme d'orientation Covid-19 est publié par le ministère des Solidarités et de la Santé.  Il est [[https://delegation-numerique-en-sante.github.io/covid19-algorithme-orientation/algorithme-orientation-covid19.html][lisible en ligne]] et [[https://esante.gouv.fr/algorithme-orientation][téléchargeable ici]].
 
 ** Référencement
 
@@ -60,7 +60,7 @@ référencée sur le site du ministère des Solidarité et de la Santé.
 
 Toute implémentation référencée doit impérativement :
 
-1. respecter [[file:pseudo-code.org][l'algorithme d'orientation]] COVID19 ;
+1. respecter [[file:pseudo-code.org][l'algorithme d'orientation]] Covid-19 ;
 2. utiliser le [[https://github.com/Delegation-numerique-en-sante/covid19-algorithme-orientation-schema-donnees][schéma de données]] officiel ;
 3. et suivre les recommandations d'[[file:implementation.org][implémentation]].
 
