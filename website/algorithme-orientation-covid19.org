@@ -34,7 +34,7 @@ Ce document est [[https://esante.gouv.fr/algorithme-orientation][téléchargeabl
 
 ** 2.1 Symptômes
 
-- /Quelle a été votre température la plus élevée ces dernières 48h ?/
+- /Quelle a été votre température la plus élevée ces dernières 48 heures ?/
   - *< 35,5°C* =-> Facteur de gravité mineur=
   - 35,5°C - 37,7°C
   - 37,8°C - 38,9°C
