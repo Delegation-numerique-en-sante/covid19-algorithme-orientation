@@ -93,6 +93,12 @@ Merci à Denis Merigoux pour la contribution de la [[file:preuve-formelle/][preu
 Merci à Simon Chignard pour ses conseils sur la contextualisation des
 informations concernant cette documentation.
 
+Merci à Jean-Matthieu Schertzer d'être intervenu pour signaler un
+problème.  Vous pouvez utilement consulter l'[[https://datajms.com/post/covid_scoring_system_presentation/][article de blog]] qu'il
+consacre à une version simplifiée de l'algorithme de décision et à une
+comparaison entre l'approche par arbre de décision et l'approche par
+système de points, toutes deux logiquement équivalentes.
+
 ** Licence
 
 2020 Délégation ministérielle du numérique en santé et les contributeurs du dépôt.
