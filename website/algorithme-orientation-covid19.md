@@ -1,25 +1,25 @@
 
 # Table des matières
 
--   [1 Présentation générale](#orgb708dbf)
--   [2 Questionnaire d’auto-évaluation](#orgef21019)
-    -   [2.1 Symptômes](#orgd36dab9)
-    -   [2.2 Facteur pronostique défavorable lié au terrain](#org54b0aed)
-    -   [2.3 Autre question](#orgbda28a2)
-    -   [2.4 Définition des facteurs de gravité](#orge23bb13)
-    -   [2.5 Calcul de l'indice de masse corporelle (IMC)](#org64b3c01)
--   [3 Définition de l'arbre de décision](#org0c71fd3)
-    -   [3.1 Patient de moins de 15 ans](#org500638d)
-    -   [3.2 Tout patient avec au moins un facteur de gravité majeur](#org8f129e7)
-    -   [3.3 Tout patient avec fièvre et toux](#org612312a)
-    -   [3.4 Tout patient avec fièvre ou (sans fièvre et avec (diarrhée ou (toux et douleurs) ou (toux et anosmie))](#org81e3044)
-    -   [3.5 Tout patient sans fièvre avec un seul symptôme parmi toux, douleurs, anosmie](#org6f2ca8d)
-    -   [3.6 Tout patient sans fièvre ni aucun autre symptôme](#org921017b)
--   [4 Diagramme de l'arbre de décision](#orgdf387bc)
+-   [1 Présentation générale](#org88b7ba2)
+-   [2 Questionnaire d’auto-évaluation](#orgbe59266)
+    -   [2.1 Symptômes](#orgcb4476e)
+    -   [2.2 Facteur pronostique défavorable lié au terrain](#org667b16e)
+    -   [2.3 Autre question](#org6080f23)
+    -   [2.4 Définition des facteurs de gravité](#org95cc20a)
+    -   [2.5 Calcul de l'indice de masse corporelle (IMC)](#org054c73e)
+-   [3 Définition de l'arbre de décision](#orgdae9ee4)
+    -   [3.1 Patient de moins de 15 ans](#org748658d)
+    -   [3.2 Tout patient avec au moins un facteur de gravité majeur](#org312ca7b)
+    -   [3.3 Tout patient avec fièvre et toux](#orgfdf8f0e)
+    -   [3.4 Tout patient avec fièvre ou (sans fièvre et avec (diarrhée ou (toux et douleurs) ou (toux et anosmie))](#org9ff010c)
+    -   [3.5 Tout patient sans fièvre avec un seul symptôme parmi toux, douleurs, anosmie](#org5566eaa)
+    -   [3.6 Tout patient sans fièvre ni aucun autre symptôme](#org9cf83b2)
+-   [4 Diagramme de l'arbre de décision](#org8901180)
 
 
 
-<a id="orgb708dbf"></a>
+<a id="org88b7ba2"></a>
 
 # 1 Présentation générale
 
@@ -42,19 +42,19 @@ parcouru de façon séquentielle et en fonction des valeurs finales de
 toutes les variables, pour déterminer le message d'orientation à
 afficher.
 
-Version du document : `2020-04-06`
+Version du document : `2020-04-17`
 
 Ce document est [téléchargeable en version PDF](https://esante.gouv.fr/algorithme-orientation).
 
 **Attention : cette documentation, le questionnaire et l'algorithme sont potentiellement modifiables après étude de cas et veille scientifique.**
 
 
-<a id="orgef21019"></a>
+<a id="orgbe59266"></a>
 
 # 2 Questionnaire d’auto-évaluation
 
 
-<a id="orgd36dab9"></a>
+<a id="orgcb4476e"></a>
 
 ## 2.1 Symptômes
 
@@ -74,7 +74,7 @@ Ce document est [téléchargeable en version PDF](https://esante.gouv.fr/algorit
 -   *Dans les dernières 24 heures, avez-vous noté un manque de souffle INHABITUEL lorsque vous parlez ou faites un petit effort ?* `OUI / NON (OUI -> Facteur de gravité majeur)`
 
 
-<a id="org54b0aed"></a>
+<a id="org667b16e"></a>
 
 ## 2.2 Facteur pronostique défavorable lié au terrain
 
@@ -99,14 +99,14 @@ Ce document est [téléchargeable en version PDF](https://esante.gouv.fr/algorit
 Le facteur pronostique est considéré positif s'il y a au moins 1 item **OUI** ou en gras (âge supérieur ou égal à 70 ans, indice de masse corporelle supérieur à 30 kg/m²).
 
 
-<a id="orgbda28a2"></a>
+<a id="org6080f23"></a>
 
 ## 2.3 Autre question
 
 -   *Quel est le code postal de votre lieu de résidence actuel ?*
 
 
-<a id="orge23bb13"></a>
+<a id="org95cc20a"></a>
 
 ## 2.4 Définition des facteurs de gravité
 
@@ -119,21 +119,21 @@ Le facteur pronostique est considéré positif s'il y a au moins 1 item **OUI** 
     -   Difficultés importantes pour s’alimenter ou boire depuis plus de 24 heures
 
 
-<a id="org64b3c01"></a>
+<a id="org054c73e"></a>
 
 ## 2.5 Calcul de l'indice de masse corporelle (IMC)
 
 L'indice de masse corporelle est égal au `POIDS` en kilogrammes divisé par le carré de la `TAILLE` en mètres.
 
 
-<a id="org0c71fd3"></a>
+<a id="orgdae9ee4"></a>
 
 # 3 Définition de l'arbre de décision
 
 Message à afficher pour tous : *Restez chez vous au maximum en attendant que les symptômes disparaissent. Prenez votre température deux fois par jour. Rappel des mesures d’hygiène. Un dispositif national grand public de soutien psychologique au bénéfice des personnes qui en auraient besoin est accessible via le numéro vert : 0 800 130 000.*
 
 
-<a id="org500638d"></a>
+<a id="org748658d"></a>
 
 ## 3.1 Patient de moins de 15 ans
 
@@ -142,14 +142,14 @@ Message à afficher pour tous : *Restez chez vous au maximum en attendant que le
     En cas d’urgence, appelez le 15.
 
 
-<a id="org8f129e7"></a>
+<a id="org312ca7b"></a>
 
 ## 3.2 Tout patient avec au moins un facteur de gravité majeur
 
 `Appelez le 15.`
 
 
-<a id="org612312a"></a>
+<a id="orgfdf8f0e"></a>
 
 ## 3.3 Tout patient avec fièvre et toux
 
@@ -176,7 +176,7 @@ Message à afficher pour tous : *Restez chez vous au maximum en attendant que le
     Si vous n'arrivez pas à obtenir de consultation, appelez le 15.
 
 
-<a id="org81e3044"></a>
+<a id="org9ff010c"></a>
 
 ## 3.4 Tout patient avec fièvre ou (sans fièvre et avec (diarrhée ou (toux et douleurs) ou (toux et anosmie))
 
@@ -222,7 +222,7 @@ Message à afficher pour tous : *Restez chez vous au maximum en attendant que le
     Si vous n'arrivez pas à obtenir de consultation, appelez le 15.
 
 
-<a id="org6f2ca8d"></a>
+<a id="org5566eaa"></a>
 
 ## 3.5 Tout patient sans fièvre avec un seul symptôme parmi toux, douleurs, anosmie
 
@@ -240,7 +240,7 @@ Message à afficher pour tous : *Restez chez vous au maximum en attendant que le
     Nous vous conseillons de rester à votre domicile.
 
 
-<a id="org921017b"></a>
+<a id="org9cf83b2"></a>
 
 ## 3.6 Tout patient sans fièvre ni aucun autre symptôme
 
@@ -250,7 +250,7 @@ Message à afficher pour tous : *Restez chez vous au maximum en attendant que le
     Pour toute information concernant le Covid-19, composer le 0 800 130 000.
 
 
-<a id="orgdf387bc"></a>
+<a id="org8901180"></a>
 
 # 4 Diagramme de l'arbre de décision
 
