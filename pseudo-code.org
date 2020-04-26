@@ -98,7 +98,7 @@ Cet arbre de décision doit être parcouru de façon *séquentielle* en testant 
 :  8:       IF < 2 facteur de gravité mineur => FIN6
 :  9:       IF >= 2 facteurs de gravité mineurs => FIN4
 : 10: 
-: 11: IF fièvre XOR (diarrhée OR (toux AND douleurs) OR (toux AND anosmie) OR (douleurs AND anosmie))
+: 11: IF fièvre OR (diarrhée OR (toux AND douleurs) OR (toux AND anosmie) OR (douleurs AND anosmie))
 : 12:    IF 0 facteur pronostique
 : 13:       IF 0 facteur de gravité mineur
 : 14:          IF moins de 50 ans => FIN2
