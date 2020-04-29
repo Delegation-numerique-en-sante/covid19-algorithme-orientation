@@ -1,6 +1,6 @@
 #+title: Documentation de l'algorithme d'orientation Covid-19
 
-=Version: 2020-04-17=
+=Version: 2020-04-29=
 
 ** Introduction et contexte
 
