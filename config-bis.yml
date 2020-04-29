@@ -101,7 +101,7 @@ score-variables:
 
 # Sync with pseudo-code.org:
 # Priority 1 -> less_15
-# Priority 6 -> domicile_surveillance_1
+# Priority 6 -> home_surveillance
 # Priority 4 -> consultation_surveillance_1
 # Priority 3 -> consultation_surveillance_2
 # Priority 2 -> SAMU
@@ -140,7 +140,7 @@ conditional-score-outputs:
     priority: 5
     notification: "is-warning"
     message: "Votre situation peut relever d’un COVID 19. Un avis médical est recommandé. Au moindre doute, appelez le [15](tel:15). Nous vous conseillons de rester à votre domicile."
-  domicile_surveillance_1:
+  home_surveillance:
     priority: 6
     message: "Votre situation peut relever d’un COVID 19 qu’il faut surveiller. Si de nouveaux symptômes apparaissent, refaites le test ou consultez votre médecin. Nous vous conseillons de rester à votre domicile."
     notification: "is-warning"

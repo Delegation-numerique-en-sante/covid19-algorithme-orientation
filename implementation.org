@@ -85,7 +85,7 @@ respecter [[https://github.com/Delegation-numerique-en-sante/covid19-algorithme-
 ** Valeurs possibles de la variable =orientation=
 
 - =less_15= (FIN1)
-- =domicile_surveillance_1= (FIN2)
+- =home_surveillance= (FIN2)
 - =consultation_surveillance_1= (FIN3)
 - =consultation_surveillance_2= (FIN4)
 - =SAMU= (FIN5)

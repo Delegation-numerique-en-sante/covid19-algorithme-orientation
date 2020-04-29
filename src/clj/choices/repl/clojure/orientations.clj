@@ -3,7 +3,7 @@
 (def orientations
   {:less_15
    "Cette application n’est pas faite pour les personnes de moins de 15 ans. Prenez contact avec votre médecin généraliste au moindre doute. En cas d’urgence, appelez le 15."
-   :domicile_surveillance_1
+   :home_surveillance
    "Votre situation peut relever d’un COVID 19 qu’il faut surveiller. Si de nouveaux symptômes apparaissent, refaites le test ou consultez votre médecin. Nous vous conseillons de rester à votre domicile."
    :consultation_surveillance_1
    "Votre situation peut relever d’un COVID 19. Demandez une téléconsultation ou un médecin généraliste ou une visite à domicile. Appelez le 15 si une gêne respiratoire ou des difficultés importantes pour vous alimenter ou boire apparaissent pendant plus de 24 heures."

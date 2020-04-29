@@ -10,7 +10,7 @@
                 pronostic-factors]} reponse
         {:keys
          [less_15
-          domicile_surveillance_1
+          home_surveillance
           consultation_surveillance_1
           consultation_surveillance_2
           SAMU
@@ -46,7 +46,7 @@
           (cond (= pronostic-factors 0)
                 (if (= minor-severity-factors 0)
                   (if (= age-range "from_15_to_49")
-                    domicile_surveillance_1
+                    home_surveillance
                     consultation_surveillance_1)
                   consultation_surveillance_1)
                 (>= pronostic-factors 1)
@@ -59,7 +59,7 @@
           (and (not cough) (not sore_throat_aches) agueusia_anosmia))
       (do (println "Branch 5: no fever and one other symptom")
           (if (= pronostic-factors 0)
-            domicile_surveillance_1
+            home_surveillance
             consultation_surveillance_4))
       ;; Branche 6
       (and (not cough)
