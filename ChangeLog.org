@@ -1,5 +1,12 @@
 * 2020-04-29
 
+** Ajout d'un identifiant unique
+
+Le tableau des données du fichier =implementation.org= contient une
+nouvelle ligne pour l'ajout d'un identifiant unique, optionnel.
+
+Vous reporter au [[https://github.com/Delegation-numerique-en-sante/covid19-algorithme-orientation-check/][dépôt du schéma de données]] pour les détails.
+
 ** Nouvelles valeurs acceptables pour la variable "orientation"
 
  - less_15

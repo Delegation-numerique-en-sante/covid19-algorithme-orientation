@@ -22,8 +22,9 @@ elle doit aussi changer de nom.
 
 ** Variables à obligatoirement sauvegarder pour partage
 
-Si vous souhaitez que votre solution soit [[file:referencement.org][référencée]], vous collecter
-les valeurs ci-dessous et respecter [[https://github.com/Delegation-numerique-en-sante/covid19-algorithme-orientation-check/blob/2020-04-17/schema.json][ce schéma de données]].
+Si vous souhaitez que votre solution soit [[file:referencement.org][référencée]], le csv contenant
+vos données doit contenir les valeurs présentées dans ce tableau et
+respecter [[https://github.com/Delegation-numerique-en-sante/covid19-algorithme-orientation-check/blob/2020-04-17/schema.json][ce schéma de données]].
 
 | Nom de la variable             | Description                          | Saisi ou calculé (1) ? | Type                | Exemple ou valeurs possibles                                  |
 |--------------------------------+--------------------------------------+------------------------+---------------------+---------------------------------------------------------------|
@@ -32,7 +33,7 @@ les valeurs ci-dessous et respecter [[https://github.com/Delegation-numerique-en
 | =date= (2)                       | Date de saisie                       | Appli                  | string (ISO 8601)   | Ex: "2020-04-02T05:24:57.711-00:00"                           |
 | =duration= (2)                   | Durée de saisie en secondes          | Appli                  | number              | Ex: 316                                                       |
 | =postal_code= (3)                | Le code postal                       | Saisi ou déduit        | string              | Ex: "75019" ou "63XXX"                                        |
-| =orientation=                    | Le message d'orientation final       | Calculé                | string              | Ex: "SAMU"                                        |
+| =orientation=                    | Le message d'orientation final       | Calculé                | string              | Ex: "SAMU"                                                    |
 |--------------------------------+--------------------------------------+------------------------+---------------------+---------------------------------------------------------------|
 | =age_range=                      | Tranche d'âge                        | Calculé                | string              | "inf_15" "from_15_to_49" "from_50_to_69" ou "sup_70"          |
 | =imc=                            | Indice de masse corporelle           | Calculé                | number (1 décimale) | Ex: 29.8                                                      |
@@ -60,20 +61,20 @@ les valeurs ci-dessous et respecter [[https://github.com/Delegation-numerique-en
 | =immunosuppressant_disease_algo= | Maladie défenses immunitaires (algo) | Calculé                | boolean             | ~true~ (1) ou ~false~ (0 ou 999)                                  |
 | =immunosuppressant_drug=         | Traitement immunodépresseur          | Saisi                  | number              | 0 (non) ou 1 ou 999 ("Je ne sais pas")                        |
 | =immunosuppressant_drug_algo=    | Traitement immunodépresseur (algo)   | Calculé                | boolean             | ~true~ (1) ou ~false~ (0 ou 999)                                  |
+|--------------------------------+--------------------------------------+------------------------+---------------------+---------------------------------------------------------------|
+| =id= (5)                         | Identifiant unique                   | Calculé                | uuid                | "7b3215d8-ef17-4bd8-b441-c74a36dfcd67"                        |
 
 - (1) Indique si la valeur est déterminée directement par la saisie ou doit être calculée - toutes les variables en =_algo= sont calcuées.
 - (2) En fonction des détails d'implémentation, =date=, =duration= et =id= peuvent être envoyées soit depuis le navigateur soit définies côté serveur.
 - (3) La sauvegarde pour partage du code postal n'est pas obligatoire mais *fortement recommandé*, au moins pour récupérer le département.
 - (4) La valeur de =fever_algo= est déduite de =temperature_cat= qui doit être =inf_35.5= ou =sup_39= ou =NSP=.
+- (5) L'identifiant unique (un =uuid=) est optionnel.
 
 ** Variables intermédaires (facteurs, âge, poids et taille, autres)
 
 - Les variables =*_algo= sont calculées à partir de la saisie utilisateur : par exemple une valeur de =heart_disease= à =999= ("Je ne sais pas") implique une valeur de =heart_disease_algo= à =true= (équivalent à une réponse "oui").  Ces variables doivent /toutes/ être sauvegardées pour le partage éventuel des données.
-
 - Les variables servant au calcul des facteurs de gravité mineurs et majeurs ou du facteur pronostique servent à la mise en oeuvre de l'algorithme et à l'affichage du message d'orientation mais elles n'ont pas à être sauvegardées pour partage ultérieur.
-
 - =age_range= est calculé à partir de la saisie exacte de l'âge.  Seule la tranche d'âge doit être sauvegardée pour partage éventuel des données.
-
 - L'indice de masse corporelle (=imc=) est calculé à partir du poids et de la taille.  Seul l'IMC doit être sauvegardé pour partage des données.
 
 ** Variables qui peuvent ou non être calculées sur le serveur
