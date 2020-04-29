@@ -24,11 +24,11 @@ Vous reporter au [[https://github.com/Delegation-numerique-en-sante/covid19-algo
 
 La 4ème clause disait:
 
-: "IF fièvre XOR (diarrhée OR (toux AND douleurs) OR (toux AND anosmie))"
+: "IF fièvre OR (diarrhée OR (toux AND douleurs) OR (toux AND anosmie))"
 
 Elle dit désormais:
 
-: IF fièvre XOR (diarrhée OR (toux AND douleurs) OR (toux AND anosmie) OR (douleurs AND anosmie))
+: IF fièvre OR (diarrhée OR (toux AND douleurs) OR (toux AND anosmie) OR (douleurs AND anosmie))
 
 La 5ème clause disait:
 
