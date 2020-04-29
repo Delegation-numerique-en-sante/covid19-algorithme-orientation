@@ -24,7 +24,7 @@ elle doit aussi changer de nom.
 
 Si vous souhaitez que votre solution soit [[file:referencement.org][référencée]], le csv contenant
 vos données doit contenir les valeurs présentées dans ce tableau et
-respecter [[https://github.com/Delegation-numerique-en-sante/covid19-algorithme-orientation-check/blob/2020-04-17/schema.json][ce schéma de données]].
+respecter [[https://github.com/Delegation-numerique-en-sante/covid19-algorithme-orientation-check/blob/master/schema.json][ce schéma de données]].
 
 | Nom de la variable             | Description                          | Saisi ou calculé (1) ? | Type                | Exemple ou valeurs possibles                                  |
 |--------------------------------+--------------------------------------+------------------------+---------------------+---------------------------------------------------------------|

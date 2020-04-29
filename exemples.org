@@ -18,7 +18,7 @@ Vous pouvez [[https://delegation-numerique-en-sante.github.io/covid19-algorithme
 
 Pour avoir une idée des données partageables par les structures
 mettant en oeuvre une implémentation de l'algorithme d'orientation,
-voir [[https://github.com/Delegation-numerique-en-sante/covid19-algorithme-orientation-check/blob/master/2020-04-17-example.csv][ce fichier csv]].
+voir [[https://github.com/Delegation-numerique-en-sante/covid19-algorithme-orientation-check/blob/master/example.csv][ce fichier csv]].
 
 ** Exemple d'API Web
 
