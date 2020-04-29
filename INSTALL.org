@@ -60,9 +60,3 @@ et que chaque conclusion est atteinte au moins par une possibilité de
 réponse.
 
 Vous pouvez aussi lancer une [[file:preuve-formelle/][preuve formelle avec Z3]].
-
-** Déployer les fichiers statiques depuis ce dépôt
-
-Une seule commande :
-
-: ./build
