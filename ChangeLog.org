@@ -1,3 +1,16 @@
+* 2020-04-29
+
+** Nouvelles valeurs acceptables pour la variable "orientation"
+
+ - less_15
+ - home_surveillance
+ - consultation_surveillance_1
+ - consultation_surveillance_2
+ - SAMU
+ - consultation_surveillance_3
+ - consultation_surveillance_4
+ - surveillance
+
 * 2020-04-17
 
 ** L'arbre de décision a été corrigé pour les 4ème et 5ème clauses

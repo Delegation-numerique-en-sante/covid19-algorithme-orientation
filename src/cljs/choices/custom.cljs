@@ -43,33 +43,33 @@
                 sore_throat_aches diarrhea
                 minor-severity-factors
                 major-severity-factors
-                pronostic-factors]}        resultats
+                pronostic-factors]} resultats
         ;; Set the possible conclusions
-        {:keys [orientation_moins_de_15_ans
-                orientation_domicile_surveillance_1
-                orientation_consultation_surveillance_1
-                orientation_consultation_surveillance_2
-                orientation_SAMU
-                orientation_consultation_surveillance_3
-                orientation_consultation_surveillance_4
-                orientation_surveillance]} conclusions
+        {:keys [less_15
+                domicile_surveillance_1
+                consultation_surveillance_1
+                consultation_surveillance_2
+                SAMU
+                consultation_surveillance_3
+                consultation_surveillance_4
+                surveillance]}      conclusions
         ;; Set the final conclusion to one of the FIN*
         conclusion
         (cond
           ;; Branche 1
           (= age_range "inf_15")
-          orientation_moins_de_15_ans
+          less_15
           ;; Branche 2
           (>= major-severity-factors 1)
-          orientation_SAMU
+          SAMU
           ;; Branche 3
           (and fever cough)
           (cond (= pronostic-factors 0)
-                orientation_consultation_surveillance_3
+                consultation_surveillance_3
                 (>= pronostic-factors 1)
                 (if (< minor-severity-factors 2)
-                  orientation_consultation_surveillance_3
-                  orientation_consultation_surveillance_2))
+                  consultation_surveillance_3
+                  consultation_surveillance_2))
           ;; Branche 4
           (or fever
               diarrhea
@@ -79,25 +79,25 @@
           (cond (= pronostic-factors 0)
                 (if (= minor-severity-factors 0)
                   (if (= age_range "from_15_to_49")
-                    orientation_domicile_surveillance_1
-                    orientation_consultation_surveillance_1)
-                  orientation_consultation_surveillance_1)
+                    domicile_surveillance_1
+                    consultation_surveillance_1)
+                  consultation_surveillance_1)
                 (>= pronostic-factors 1)
                 (if (< minor-severity-factors 2)
-                  orientation_consultation_surveillance_1
-                  orientation_consultation_surveillance_2))
+                  consultation_surveillance_1
+                  consultation_surveillance_2))
           ;; Branche 5
           (or (and cough (not sore_throat_aches) (not agueusia_anosmia))
               (and (not cough) sore_throat_aches (not agueusia_anosmia))
               (and (not cough) (not sore_throat_aches) agueusia_anosmia))
           (if (= pronostic-factors 0)
-            orientation_domicile_surveillance_1
-            orientation_consultation_surveillance_4)
+            domicile_surveillance_1
+            consultation_surveillance_4)
           ;; Branche 6
           (and (not cough)
                (not sore_throat_aches)
                (not agueusia_anosmia))
-          orientation_surveillance)]
+          surveillance)]
     ;; Return the expected map:
     {:notification (get conclusion :notification)
      :stick-help   (get conclusion :sticky-help)

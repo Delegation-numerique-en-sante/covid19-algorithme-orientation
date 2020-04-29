@@ -32,7 +32,7 @@ les valeurs ci-dessous et respecter [[https://github.com/Delegation-numerique-en
 | =date= (2)                       | Date de saisie                       | Appli                  | string (ISO 8601)   | Ex: "2020-04-02T05:24:57.711-00:00"                           |
 | =duration= (2)                   | Durée de saisie en secondes          | Appli                  | number              | Ex: 316                                                       |
 | =postal_code= (3)                | Le code postal                       | Saisi ou déduit        | string              | Ex: "75019" ou "63XXX"                                        |
-| =orientation=                    | Le message d'orientation final       | Calculé                | string              | Ex: "orientation_SAMU"                                        |
+| =orientation=                    | Le message d'orientation final       | Calculé                | string              | Ex: "SAMU"                                        |
 |--------------------------------+--------------------------------------+------------------------+---------------------+---------------------------------------------------------------|
 | =age_range=                      | Tranche d'âge                        | Calculé                | string              | "inf_15" "from_15_to_49" "from_50_to_69" ou "sup_70"          |
 | =imc=                            | Indice de masse corporelle           | Calculé                | number (1 décimale) | Ex: 29.8                                                      |
@@ -83,14 +83,14 @@ les valeurs ci-dessous et respecter [[https://github.com/Delegation-numerique-en
 
 ** Valeurs possibles de la variable =orientation=
 
-- =orientation_moins_de_15_ans= (FIN1)
-- =orientation_domicile_surveillance_1= (FIN2)
-- =orientation_consultation_surveillance_1= (FIN3)
-- =orientation_consultation_surveillance_2= (FIN4)
-- =orientation_SAMU= (FIN5)
-- =orientation_consultation_surveillance_3= (FIN6)
-- =orientation_consultation_surveillance_4= (FIN7)
-- =orientation_surveillance= (FIN8)
+- =less_15= (FIN1)
+- =domicile_surveillance_1= (FIN2)
+- =consultation_surveillance_1= (FIN3)
+- =consultation_surveillance_2= (FIN4)
+- =SAMU= (FIN5)
+- =consultation_surveillance_3= (FIN6)
+- =consultation_surveillance_4= (FIN7)
+- =surveillance= (FIN8)
 
 Voir la signification des =FIN*= dans [[https://github.com/Delegation-numerique-en-sante/covid19-algorithme-orientation/blob/master/pseudo-code.org#conclusions-possibles][cette section]] du pseudo code.
 

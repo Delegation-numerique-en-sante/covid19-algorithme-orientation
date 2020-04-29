@@ -97,14 +97,14 @@ score-variables:
     value: 0
 
 # Sync with pseudo-code.org:
-# Priority 1 -> orientation_moins_de_15_ans
-# Priority 6 -> orientation_domicile_surveillance_1
-# Priority 4 -> orientation_consultation_surveillance_1
-# Priority 3 -> orientation_consultation_surveillance_2
-# Priority 2 -> orientation_SAMU
-# Priority 7 -> orientation_consultation_surveillance_3
-# Priority 5 -> orientation_consultation_surveillance_4
-# Priority 8 -> orientation_surveillance
+# Priority 1 -> less_15
+# Priority 6 -> domicile_surveillance_1
+# Priority 4 -> consultation_surveillance_1
+# Priority 3 -> consultation_surveillance_2
+# Priority 2 -> SAMU
+# Priority 7 -> consultation_surveillance_3
+# Priority 5 -> consultation_surveillance_4
+# Priority 8 -> surveillance
 #
 # Set conditional output depending on scores.
 # Each entry is composed of the name of the condition (you can pick up
@@ -115,37 +115,37 @@ score-variables:
 # (3) anything else is a "condition", which lists variables and their minimal
 # values for the condition to be met.
 conditional-score-outputs:
-  orientation_moins_de_15_ans:
+  less_15:
     priority: 1
     node: "fin-moins-de-15-ans"
     message: "Cette application n’est pas faite pour les personnes de moins de 15 ans.<br/>Prenez contact avec votre médecin généraliste au moindre doute.<br/>En cas d’urgence, appelez le [15](tel:15)."
     notification: "is-danger"
-  orientation_SAMU:
+  SAMU:
     priority: 2
     # node: "fin"
     message: "Appelez le [15](tel:15)."
     notification: "is-danger"
-  orientation_consultation_surveillance_2:
+  consultation_surveillance_2:
     priority: 3
     message: "Votre situation peut relever d’un COVID 19. Demandez une téléconsultation ou un médecin généraliste ou une visite à domicile. Si vous n'arrivez pas à obtenir de consultation, appelez le [15](tel:16)."
     notification: "is-danger"
-  orientation_consultation_surveillance_1:
+  consultation_surveillance_1:
     priority: 4
     notification: "is-warning"
     message: "Votre situation peut relever d’un COVID 19. Demandez une téléconsultation ou un médecin généraliste ou une visite à domicile. Appelez le [15](tel:15) si une gêne respiratoire ou des difficultés importantes pour vous alimenter ou boire apparaissent pendant plus de 24 heures."
-  orientation_consultation_surveillance_4:
+  consultation_surveillance_4:
     priority: 5
     notification: "is-warning"
     message: "Votre situation peut relever d’un COVID 19. Un avis médical est recommandé. Au moindre doute, appelez le [15](tel:15). Nous vous conseillons de rester à votre domicile."
-  orientation_domicile_surveillance_1:
+  domicile_surveillance_1:
     priority: 6
     message: "Votre situation peut relever d’un COVID 19 qu’il faut surveiller. Si de nouveaux symptômes apparaissent, refaites le test ou consultez votre médecin. Nous vous conseillons de rester à votre domicile."
     notification: "is-warning"
-  orientation_consultation_surveillance_3:
+  consultation_surveillance_3:
     priority: 7
     notification: "is-warning"
     message: "Votre situation peut relever d’un COVID 19. Demandez une téléconsultation ou un médecin généraliste ou une visite à domicile (SOS médecins, etc.)."
-  orientation_surveillance:
+  surveillance:
     priority: 8
     notification: "is-success"
     message: "Votre situation ne relève probablement pas du COVID 19. N’hésitez pas à contacter votre médecin en cas de doute. Vous pouvez refaire le test en cas de nouveau symptôme pour réévaluer la situation. Pour toute information concernant le COVID 19, composer le 0 800 130 000."
