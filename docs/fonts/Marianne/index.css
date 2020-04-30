@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "Marianne";
+  font-style: normal;
+  font-weight: bold;
+  src: local("Marianne Bold"), local("Marianne-Bold"), url("Marianne-Bold.woff2") format("woff2"), url("Marianne-Bold.woff") format("woff");
+}
+
+/* latin */
+@font-face {
+  font-family: "Marianne";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Marianne Bold"), local("Marianne-Bold"), url("Marianne-Regular.woff2") format("woff2"), url("Marianne-Regular.woff") format("woff");
+}
