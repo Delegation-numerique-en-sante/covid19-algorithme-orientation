@@ -33,7 +33,7 @@ if [[ $1 == "json" ]]; then
     clj -m choices.json
 fi
 
-if [[ $1 == "all" ]]; then
+if [[ $1 == "all" ]] || [[ $1 == "" ]]; then
     compile_upload_js
     compile_upload_js_bis
     clj -m choices.json
