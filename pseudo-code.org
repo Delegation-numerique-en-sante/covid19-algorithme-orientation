@@ -37,7 +37,7 @@
 
 *** Facteur pronostique défavorable lié au terrain
 
-- =OUI= si l'âge est supérieur ou égal à 70 ans
+- =OUI= si l'âge est supérieur ou égal à 65 ans
 - =OUI= si l'indice de masse corporelle est supérieur ou égal à 30 kg/m²
 - Si =OUI= ou =Je ne sais pas= à la question sur l'hypertension artérielle
 - Si =OUI= pour "diabétique"

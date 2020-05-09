@@ -35,7 +35,7 @@ respecter [[https://github.com/Delegation-numerique-en-sante/covid19-algorithme-
 | =postal_code= (3)                | Le code postal                       | Saisi ou déduit        | string              | Ex: "75019" ou "63XXX"                                        |
 | =orientation=                    | Le message d'orientation final       | Calculé                | string              | Ex: "SAMU"                                                    |
 |--------------------------------+--------------------------------------+------------------------+---------------------+---------------------------------------------------------------|
-| =age_range=                      | Tranche d'âge                        | Calculé                | string              | "inf_15" "from_15_to_49" "from_50_to_69" ou "sup_70"          |
+| =age_range=                      | Tranche d'âge                        | Calculé                | string              | "inf_15" "from_15_to_49" "from_50_to_64" ou "sup_65"          |
 | =imc=                            | Indice de masse corporelle           | Calculé                | number (1 décimale) | Ex: 29.8                                                      |
 |--------------------------------+--------------------------------------+------------------------+---------------------+---------------------------------------------------------------|
 | =feeding_day=                    | Difficulté pour manger/boire         | Saisi                  | boolean             | ~true~ ou ~false~                                                 |
