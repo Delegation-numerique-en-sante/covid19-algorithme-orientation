@@ -1,6 +1,6 @@
 #+title: Algorithme d'orientation Covid-19
 #+author: Ministère des Solidarités et de la Santé
-#+date: 29 avril 2020
+#+date: 9 mai 2020
 #+options: toc:2 H:4
 
 * 1 Présentation générale
@@ -24,7 +24,7 @@ parcouru de façon séquentielle et en fonction des valeurs finales de
 toutes les variables, pour déterminer le message d'orientation à
 afficher.
 
-Version du document : =2020-04-29=
+Version du document : =2020-05-09=
 
 Ce document est [[https://esante.gouv.fr/algorithme-orientation][téléchargeable en version PDF]].
 
@@ -54,8 +54,8 @@ Ce document est [[https://esante.gouv.fr/algorithme-orientation][téléchargeabl
 - /Quel est votre âge ?/
   - < 15 ans
   - >= 15 et < 50 ans
-  - >= 50 et < 70 ans
-  - *>= 70 ans*
+  - >= 50 et < 65 ans
+  - *>= 65 ans*
 - /Quel est votre poids ? Quelle est votre taille ?/
   - Indice de masse corporelle (IMC) < 30 kg/m²
   - *Indice de masse corporelle (IMC) >= 30 kg/m²*
@@ -69,7 +69,7 @@ Ce document est [[https://esante.gouv.fr/algorithme-orientation][téléchargeabl
 - /Avez-vous une maladie connue pour diminuer vos défenses immunitaires/ *OUI* / NON / Je ne sais pas (NON)
 - /Prenez-vous un traitement immunosuppresseur ? C’est un traitement qui diminue vos défenses contre les infections.  Voici quelques exemples : corticoïdes, méthotrexate, ciclosporine, tacrolimus, azathioprine, cyclophosphamide (liste non exhaustive)./ *OUI* / NON / Je ne sais pas (NON)
 
-Le facteur pronostique est considéré positif s'il y a au moins 1 item *OUI* ou en gras (âge supérieur ou égal à 70 ans, indice de masse corporelle supérieur à 30 kg/m²).
+Le facteur pronostique est considéré positif s'il y a au moins 1 item *OUI* ou en gras (âge supérieur ou égal à 65 ans, indice de masse corporelle supérieur à 30 kg/m²).
 
 ** 2.3 Autre question
 
