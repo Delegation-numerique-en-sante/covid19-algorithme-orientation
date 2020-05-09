@@ -5,16 +5,16 @@
   {:less_15
    "Cette application n’est pas faite pour les personnes de moins de 15 ans. Prenez contact avec votre médecin généraliste au moindre doute. En cas d’urgence, appelez le 15."
    :home_surveillance
-   "Votre situation peut relever d’un COVID 19 qu’il faut surveiller. Si de nouveaux symptômes apparaissent, refaites le test ou consultez votre médecin. Nous vous conseillons de rester à votre domicile."
+   "Votre situation peut relever d’un COVID 19 qu’il faut surveiller. Si de nouveaux symptômes apparaissent, refaites le test ou consultez votre médecin. Nous vous conseillons de rester à votre domicile. En attendant et pour casser les chaînes de transmission, nous vous conseillons de vous isoler et de respecter les gestes barrières pour protéger vos proches."
    :consultation_surveillance_1
-   "Votre situation peut relever d’un COVID 19. Demandez une téléconsultation ou un médecin généraliste ou une visite à domicile. Appelez le 15 si une gêne respiratoire ou des difficultés importantes pour vous alimenter ou boire apparaissent pendant plus de 24 heures."
+   "Votre situation peut relever d’un COVID 19. Demandez une téléconsultation ou un médecin généraliste ou une visite à domicile. Appelez le 15 si une gêne respiratoire ou des difficultés importantes pour vous alimenter ou boire apparaissent pendant plus de 24 heures. En attendant et pour casser les chaînes de transmission, nous vous conseillons de vous isoler et de respecter les gestes barrières pour protéger vos proches."
    :consultation_surveillance_2
-   "Votre situation peut relever d’un COVID 19. Demandez une téléconsultation ou un médecin généraliste ou une visite à domicile. Si vous n'arrivez pas à obtenir de consultation, appelez le 15."
+   "Votre situation peut relever d’un COVID 19. Demandez une téléconsultation ou un médecin généraliste ou une visite à domicile. Si vous n'arrivez pas à obtenir de consultation, appelez le 15. En attendant et pour casser les chaînes de transmission, nous vous conseillons de vous isoler et de respecter les gestes barrières pour protéger vos proches."
    :SAMU "Appelez le 15."
    :consultation_surveillance_3
-   "Votre situation peut relever d’un COVID 19. Demandez une téléconsultation ou un médecin généraliste ou une visite à domicile (SOS médecins, etc.)"
+   "Votre situation peut relever d’un COVID 19. Demandez une téléconsultation ou un médecin généraliste ou une visite à domicile (SOS médecins, etc.) En attendant et pour casser les chaînes de transmission, nous vous conseillons de vous isoler et de respecter les gestes barrières pour protéger vos proches."
    :consultation_surveillance_4
-   "Votre situation peut relever d’un COVID 19. Un avis médical est recommandé. Au moindre doute, appelez le 15. Nous vous conseillons de rester à votre domicile."
+   "Votre situation peut relever d’un COVID 19. Un avis médical est recommandé. Au moindre doute, appelez le 15. Nous vous conseillons de rester à votre domicile. En attendant et pour casser les chaînes de transmission, nous vous conseillons de vous isoler et de respecter les gestes barrières pour protéger vos proches."
    :surveillance
    "Votre situation ne relève probablement pas du COVID 19. N’hésitez pas à contacter votre médecin en cas de doute. Vous pouvez refaire le test en cas de nouveau symptôme pour réévaluer la situation. Pour toute information concernant le COVID 19, composer le 0 800 130 000."})
 </pre></div><div class="container"><br><h1 class="title">Fonctions de prétraitement</h1><pre class="language-klipse">;; Fonction de calcul de l'indice de masse corporelle
@@ -25,8 +25,8 @@
 (defn get-age-range [reponse]
   (cond (< (:age reponse) 15) "inf_15"
         (< (:age reponse) 50) "from_15_to_49"
-        (< (:age reponse) 70) "from_50_to_69"
-        :else                 "sup_70"))
+        (< (:age reponse) 70) "from_50_to_64"
+        :else                 "sup_65"))
 
 ;; Fonction pour mettre le bmi, age-range dans la réponse, et
 ;; incrémenter les facteurs pronostiques ou de gravité
@@ -37,7 +37,7 @@
         reponse   (merge reponse {:bmi bmi-val})
         reponse   (merge reponse {:age-range age-range})
         reponse   (update-in reponse [:pronostic-factors]
-                             #(if (= (:age-range reponse) "sup_70") (inc %) %))
+                             #(if (= (:age-range reponse) "sup_65") (inc %) %))
         reponse   (update-in reponse [:pronostic-factors]
                              #(if (>= bmi-val 30) (inc %) %))
         reponse   (dissoc reponse :weight :height :age)]
