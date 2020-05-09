@@ -11,7 +11,7 @@
 (def config (inline-yaml-resource "config.yml"))
 (def conditional-score-outputs (:conditional-score-outputs config))
 
-(s/def ::age (s/int-in 14 71))
+(s/def ::age (s/int-in 14 66))
 (s/def ::weight (s/int-in 59 111)) ;; kgs
 (s/def ::height (s/int-in 139 191)) ;; cm
 (s/def ::cough boolean?)
@@ -40,8 +40,8 @@
 (defn get-age-range [scores]
   (cond (< (:age scores) 15) "inf_15"
         (< (:age scores) 50) "from_15_to_49"
-        (< (:age scores) 70) "from_50_to_69"
-        :else                "sup_70"))
+        (< (:age scores) 65) "from_50_to_64"
+        :else                "sup_65"))
 
 (defn preprocess-scores [scores]
   (let [bmi-val   (or (:bmi scores)
@@ -52,7 +52,7 @@
         scores    (merge scores {:bmi bmi-val})
         scores    (merge scores {:age-range age-range})
         scores    (update-in scores [:pronostic-factors]
-                             #(if (= (:age-range scores) "sup_70") (inc %) %))
+                             #(if (= (:age-range scores) "sup_65") (inc %) %))
         scores    (update-in scores [:pronostic-factors]
                              #(if (>= bmi-val 30) (inc %) %))
         scores    (dissoc scores :weight :height :age)]
@@ -61,43 +61,43 @@
 
 (defn conditional-score-result [response & [println?]]
   (let [;; Set the possible final orientations:
-        {:keys [orientation_moins_de_15_ans
-                orientation_domicile_surveillance_1
-                orientation_consultation_surveillance_1
-                orientation_consultation_surveillance_2
-                orientation_SAMU
-                orientation_consultation_surveillance_3
-                orientation_consultation_surveillance_4
-                orientation_surveillance]} conditional-score-outputs
+        {:keys [less_15
+                domicile_surveillance
+                consultation_surveillance_1
+                consultation_surveillance_2
+                SAMU
+                consultation_surveillance_3
+                consultation_surveillance_4
+                surveillance]}      conditional-score-outputs
         ;; Preprocess the response to set age-range, bmi, and possibly
         ;; increment pronostic-factors and minor/major-severity-factors:
-        response                           (preprocess-scores response)
+        response                    (preprocess-scores response)
         ;; Get the value needed for computing the orientation:
         {:keys [age-range fever cough agueusia_anosmia
                 sore_throat_aches diarrhea
                 minor-severity-factors
                 major-severity-factors
-                pronostic-factors]}        response
+                pronostic-factors]} response
         ;; Set the final conclusion to one of the orientation message:
         conclusion
         (cond
           ;; Branche 1
           (= age-range "inf_15")
           (do (when println? (println "Branch 1: less than 15 years"))
-              orientation_moins_de_15_ans)
+              less_15)
           ;; Branche 2
           (>= major-severity-factors 1)
           (do (when println? (println "Branch 2: at least one major gravity factor"))
-              orientation_SAMU)
+              SAMU)
           ;; Branche 3
           (and fever cough)
           (do (when println? (println "Branch 3: fever and cough"))
               (cond (= pronostic-factors 0)
-                    orientation_consultation_surveillance_3
+                    consultation_surveillance_3
                     (>= pronostic-factors 1)
                     (if (< minor-severity-factors 2)
-                      orientation_consultation_surveillance_3
-                      orientation_consultation_surveillance_2)))
+                      consultation_surveillance_3
+                      consultation_surveillance_2)))
           ;; Branche 4
           (or fever
               diarrhea
@@ -108,27 +108,27 @@
               (cond (= pronostic-factors 0)
                     (if (= minor-severity-factors 0)
                       (if (= age-range "from_15_to_49")
-                        orientation_domicile_surveillance_1
-                        orientation_consultation_surveillance_1)
-                      orientation_consultation_surveillance_1)
+                        domicile_surveillance
+                        consultation_surveillance_1)
+                      consultation_surveillance_1)
                     (>= pronostic-factors 1)
                     (if (< minor-severity-factors 2)
-                      orientation_consultation_surveillance_1
-                      orientation_consultation_surveillance_2)))
+                      consultation_surveillance_1
+                      consultation_surveillance_2)))
           ;; Branche 5
           (or (and cough (not sore_throat_aches) (not agueusia_anosmia))
               (and (not cough) sore_throat_aches (not agueusia_anosmia))
               (and (not cough) (not sore_throat_aches) agueusia_anosmia))
           (do (when println? (println "Branch 5: no fever and only one other symptom"))
               (if (= pronostic-factors 0)
-                orientation_domicile_surveillance_1
-                orientation_consultation_surveillance_4))
+                domicile_surveillance
+                consultation_surveillance_4))
           ;; Branche 6
           (and (not cough)
                (not sore_throat_aches)
                (not agueusia_anosmia))
           (do (when println? (println "Branche 6: no symptom at all"))
-              orientation_surveillance))]
+              surveillance))]
     ;; Return the expected map:
     {:res response
      :msg (get conclusion :message)}))
@@ -143,7 +143,7 @@
                   age-range bmi
                   response]
       (logic/membero
-       age-range ["inf_15" "from_15_to_49" "from_50_to_69" "sup_70"])
+       age-range ["inf_15" "from_15_to_49" "from_50_to_64" "sup_65"])
       (fd/in bmi (fd/interval 29 30))
       (logic/membero fever [true false])
       (logic/membero cough [true false])
