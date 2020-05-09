@@ -1,25 +1,25 @@
 
 # Table des matières
 
--   [1 Présentation générale](#orgccbb2ef)
--   [2 Questionnaire d’auto-évaluation](#org631dbd2)
-    -   [2.1 Symptômes](#org836a1a3)
-    -   [2.2 Facteur pronostique défavorable lié au terrain](#org3671c4a)
-    -   [2.3 Autre question](#org8acbde1)
-    -   [2.4 Définition des facteurs de gravité](#orgb10b994)
-    -   [2.5 Calcul de l'indice de masse corporelle (IMC)](#orgf279956)
--   [3 Définition de l'arbre de décision](#org3a83d27)
-    -   [3.1 Patient de moins de 15 ans](#org7bfe57d)
-    -   [3.2 Tout patient avec au moins un facteur de gravité majeur](#org1b5fec5)
-    -   [3.3 Tout patient avec fièvre et toux](#org95fe48a)
-    -   [3.4 Tout patient avec fièvre ou (sans fièvre et avec (diarrhée ou (toux et douleurs) ou (toux et anosmie))](#org0e3cec7)
-    -   [3.5 Tout patient sans fièvre avec un seul symptôme parmi toux, douleurs, anosmie](#org13763a9)
-    -   [3.6 Tout patient sans fièvre ni aucun autre symptôme](#orgcc560c8)
--   [4 Diagramme de l'arbre de décision](#org6939135)
+-   [1 Présentation générale](#org68723a0)
+-   [2 Questionnaire d’auto-évaluation](#orgf4e160e)
+    -   [2.1 Symptômes](#org2f60298)
+    -   [2.2 Facteur pronostique défavorable lié au terrain](#org48c2794)
+    -   [2.3 Autre question](#org38608a0)
+    -   [2.4 Définition des facteurs de gravité](#orgabb8099)
+    -   [2.5 Calcul de l'indice de masse corporelle (IMC)](#org6ff1fd0)
+-   [3 Définition de l'arbre de décision](#orgb1057c2)
+    -   [3.1 Patient de moins de 15 ans](#org6977c0c)
+    -   [3.2 Tout patient avec au moins un facteur de gravité majeur](#org046a031)
+    -   [3.3 Tout patient avec fièvre et toux](#org9c2f63b)
+    -   [3.4 Tout patient avec fièvre ou (sans fièvre et avec (diarrhée ou (toux et douleurs) ou (toux et anosmie))](#org7af63dd)
+    -   [3.5 Tout patient sans fièvre avec un seul symptôme parmi toux, douleurs, anosmie](#orgfc525c5)
+    -   [3.6 Tout patient sans fièvre ni aucun autre symptôme](#org673ffd0)
+-   [4 Diagramme de l'arbre de décision](#org5657cfd)
 
 
 
-<a id="orgccbb2ef"></a>
+<a id="org68723a0"></a>
 
 # 1 Présentation générale
 
@@ -49,12 +49,12 @@ Ce document est [téléchargeable en version PDF](https://esante.gouv.fr/algorit
 **Attention : cette documentation, le questionnaire et l'algorithme sont potentiellement modifiables après étude de cas et veille scientifique.**
 
 
-<a id="org631dbd2"></a>
+<a id="orgf4e160e"></a>
 
 # 2 Questionnaire d’auto-évaluation
 
 
-<a id="org836a1a3"></a>
+<a id="org2f60298"></a>
 
 ## 2.1 Symptômes
 
@@ -74,7 +74,7 @@ Ce document est [téléchargeable en version PDF](https://esante.gouv.fr/algorit
 -   *Dans les dernières 24 heures, avez-vous noté un manque de souffle INHABITUEL lorsque vous parlez ou faites un petit effort ?* `OUI / NON (OUI -> Facteur de gravité majeur)`
 
 
-<a id="org3671c4a"></a>
+<a id="org48c2794"></a>
 
 ## 2.2 Facteur pronostique défavorable lié au terrain
 
@@ -99,14 +99,14 @@ Ce document est [téléchargeable en version PDF](https://esante.gouv.fr/algorit
 Le facteur pronostique est considéré positif s'il y a au moins 1 item **OUI** ou en gras (âge supérieur ou égal à 65 ans, indice de masse corporelle supérieur à 30 kg/m²).
 
 
-<a id="org8acbde1"></a>
+<a id="org38608a0"></a>
 
 ## 2.3 Autre question
 
 -   *Quel est le code postal de votre lieu de résidence actuel ?*
 
 
-<a id="orgb10b994"></a>
+<a id="orgabb8099"></a>
 
 ## 2.4 Définition des facteurs de gravité
 
@@ -119,45 +119,52 @@ Le facteur pronostique est considéré positif s'il y a au moins 1 item **OUI** 
     -   Difficultés importantes pour s’alimenter ou boire depuis plus de 24 heures
 
 
-<a id="orgf279956"></a>
+<a id="org6ff1fd0"></a>
 
 ## 2.5 Calcul de l'indice de masse corporelle (IMC)
 
 L'indice de masse corporelle est égal au `POIDS` en kilogrammes divisé par le carré de la `TAILLE` en mètres.
 
 
-<a id="org3a83d27"></a>
+<a id="orgb1057c2"></a>
 
 # 3 Définition de l'arbre de décision
 
 Message à afficher pour tous : *Restez chez vous au maximum en attendant que les symptômes disparaissent. Prenez votre température deux fois par jour. Rappel des mesures d’hygiène. Un dispositif national grand public de soutien psychologique au bénéfice des personnes qui en auraient besoin est accessible via le numéro vert : 0 800 130 000.*
 
 
-<a id="org7bfe57d"></a>
+<a id="org6977c0c"></a>
 
 ## 3.1 Patient de moins de 15 ans
 
     Cette application n’est pas faite pour les personnes de moins de 15 ans.
     Prenez contact avec votre médecin généraliste au moindre doute.
+    
     En cas d’urgence, appelez le 15.
 
 
-<a id="org1b5fec5"></a>
+<a id="org046a031"></a>
 
 ## 3.2 Tout patient avec au moins un facteur de gravité majeur
 
 `Appelez le 15.`
 
 
-<a id="org95fe48a"></a>
+<a id="org9c2f63b"></a>
 
 ## 3.3 Tout patient avec fièvre et toux
 
 
 ### Tout patient sans facteur pronostique
 
-    Votre situation peut relever d’un Covid-19. 
-    Demandez une téléconsultation ou un médecin généraliste ou une visite à domicile (SOS médecins, etc.)
+    Votre situation peut relever d’un Covid-19.
+    
+    Demandez une téléconsultation ou un médecin généraliste ou une visite
+    à domicile (SOS médecins, etc.)
+    
+    En attendant et pour casser les chaînes de transmission, nous vous
+    conseillons de vous isoler et de respecter les gestes barrières pour
+    protéger vos proches.
 
 
 ### Tout patient avec un facteur pronostique ou plus
@@ -166,17 +173,29 @@ Message à afficher pour tous : *Restez chez vous au maximum en attendant que le
 #### Si un ou deux facteurs de gravité mineurs
 
     Votre situation peut relever d’un Covid-19.
-    Demandez une téléconsultation ou un médecin généraliste ou une visite à domicile (SOS médecins, etc.)
+    
+    Demandez une téléconsultation ou un médecin généraliste ou une visite
+    à domicile (SOS médecins, etc.)
+    
+    En attendant et pour casser les chaînes de transmission, nous vous
+    conseillons de vous isoler et de respecter les gestes barrières pour
+    protéger vos proches.
 
 
 #### Avec au moins deux facteurs de gravité mineurs
 
     Votre situation peut relever d’un Covid-19.
-    Demandez une téléconsultation ou un médecin généraliste ou une visite à domicile.
-    Si vous n'arrivez pas à obtenir de consultation, appelez le 15.
+    
+    Demandez une téléconsultation ou un médecin généraliste ou une visite
+    à domicile.  Si vous n'arrivez pas à obtenir de consultation, appelez
+    le 15.
+    
+    En attendant et pour casser les chaînes de transmission, nous vous
+    conseillons de vous isoler et de respecter les gestes barrières pour
+    protéger vos proches.
 
 
-<a id="org0e3cec7"></a>
+<a id="org7af63dd"></a>
 
 ## 3.4 Tout patient avec fièvre ou (sans fièvre et avec (diarrhée ou (toux et douleurs) ou (toux et anosmie))
 
@@ -187,22 +206,42 @@ Message à afficher pour tous : *Restez chez vous au maximum en attendant que le
 #### Si pas de facteur de gravité mineur et moins de 50 ans
 
     Votre situation peut relever d’un Covid-19 qu’il faut surveiller.
-    Si de nouveaux symptômes apparaissent, refaites le test ou consultez votre médecin.
-    Nous vous conseillons de rester à votre domicile.
+    
+    Si de nouveaux symptômes apparaissent, refaites le test ou consultez
+    votre médecin.  Nous vous conseillons de rester à votre domicile.
+    
+    En attendant et pour casser les chaînes de transmission, nous vous
+    conseillons de vous isoler et de respecter les gestes barrières pour
+    protéger vos proches.
 
 
 #### Si pas de facteur de gravité mineur et 50 ans ou plus
 
     Votre situation peut relever d’un Covid-19.
+    
     Demandez une téléconsultation ou un médecin généraliste ou une visite à domicile.
-    Appelez le 15 si une gêne respiratoire ou des difficultés importantes pour vous alimenter ou boire apparaissent pendant plus de 24 heures.
+    
+    Appelez le 15 si une gêne respiratoire ou des difficultés importantes
+    pour vous alimenter ou boire apparaissent pendant plus de 24 heures.
+    
+    En attendant et pour casser les chaînes de transmission, nous vous
+    conseillons de vous isoler et de respecter les gestes barrières pour
+    protéger vos proches.
 
 
 #### Si 1 ou plusieurs facteurs de gravité mineurs
 
     Votre situation peut relever d’un Covid-19.
-    Demandez une téléconsultation ou un médecin généraliste ou une visite à domicile.
-    Appelez le 15 si une gêne respiratoire ou des difficultés importantes pour vous alimenter ou boire apparaissent pendant plus de 24 heures.
+    
+    Demandez une téléconsultation ou un médecin généraliste ou une visite
+    à domicile.
+    
+    Appelez le 15 si une gêne respiratoire ou des difficultés importantes
+    pour vous alimenter ou boire apparaissent pendant plus de 24 heures.
+    
+    En attendant et pour casser les chaînes de transmission, nous vous
+    conseillons de vous isoler et de respecter les gestes barrières pour
+    protéger vos proches.
 
 
 ### Tout patient avec un facteur pronostique ou plus
@@ -211,18 +250,33 @@ Message à afficher pour tous : *Restez chez vous au maximum en attendant que le
 #### Si zéro ou un facteur de gravité mineur
 
     Votre situation peut relever d’un Covid-19.
-    Demandez une téléconsultation ou un médecin généraliste ou une visite à domicile.
-    Appelez le 15 si une gêne respiratoire ou des difficultés importantes pour vous alimenter ou boire apparaissent pendant plus de 24 heures.
+    
+    Demandez une téléconsultation ou un médecin généraliste ou une visite
+    à domicile.
+    
+    Appelez le 15 si une gêne respiratoire ou des difficultés importantes
+    pour vous alimenter ou boire apparaissent pendant plus de 24 heures.
+    
+    En attendant et pour casser les chaînes de transmission, nous vous
+    conseillons de vous isoler et de respecter les gestes barrières pour
+    protéger vos proches.
 
 
 #### Si au moins deux facteurs de gravité mineurs
 
     Votre situation peut relever d’un Covid-19.
-    Demandez une téléconsultation ou un médecin généraliste ou une visite à domicile.
+    
+    Demandez une téléconsultation ou un médecin généraliste ou une visite
+    à domicile.
+    
     Si vous n'arrivez pas à obtenir de consultation, appelez le 15.
+    
+    En attendant et pour casser les chaînes de transmission, nous vous
+    conseillons de vous isoler et de respecter les gestes barrières pour
+    protéger vos proches.
 
 
-<a id="org13763a9"></a>
+<a id="orgfc525c5"></a>
 
 ## 3.5 Tout patient sans fièvre avec un seul symptôme parmi toux, douleurs, anosmie
 
@@ -230,27 +284,44 @@ Message à afficher pour tous : *Restez chez vous au maximum en attendant que le
 ### Au moins un facteur pronostique
 
     Votre situation peut relever d’un Covid-19. Un avis médical est recommandé.
-    Au moindre doute, appelez le 15. Nous vous conseillons de rester à votre domicile.
+    
+    Au moindre doute, appelez le 15. Nous vous conseillons de rester à
+    votre domicile.
+    
+    En attendant et pour casser les chaînes de transmission, nous vous
+    conseillons de vous isoler et de respecter les gestes barrières pour
+    protéger vos proches.
 
 
 ### Pas de facteur pronostique
 
     Votre situation peut relever d’un Covid-19 qu’il faut surveiller.
-    Si de nouveaux symptômes apparaissent, refaites le test ou consultez votre médecin.
+    
+    Si de nouveaux symptômes apparaissent, refaites le test ou consultez
+    votre médecin.
+    
     Nous vous conseillons de rester à votre domicile.
+    
+    En attendant et pour casser les chaînes de transmission, nous vous
+    conseillons de vous isoler et de respecter les gestes barrières pour
+    protéger vos proches.
 
 
-<a id="orgcc560c8"></a>
+<a id="org673ffd0"></a>
 
 ## 3.6 Tout patient sans fièvre ni aucun autre symptôme
 
     Votre situation ne relève probablement pas du Covid-19.
+    
     N’hésitez pas à contacter votre médecin en cas de doute.
-    Vous pouvez refaire le test en cas de nouveau symptôme pour réévaluer la situation.
+    
+    Vous pouvez refaire le test en cas de nouveau symptôme pour réévaluer
+    la situation.
+    
     Pour toute information concernant le Covid-19, composer le 0 800 130 000.
 
 
-<a id="org6939135"></a>
+<a id="org5657cfd"></a>
 
 # 4 Diagramme de l'arbre de décision
 

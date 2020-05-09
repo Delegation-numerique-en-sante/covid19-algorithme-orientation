@@ -97,6 +97,7 @@ Message à afficher pour tous : /Restez chez vous au maximum en attendant que le
 
 : Cette application n’est pas faite pour les personnes de moins de 15 ans.
 : Prenez contact avec votre médecin généraliste au moindre doute.
+:
 : En cas d’urgence, appelez le 15.
 
 ** 3.2 Tout patient avec au moins un facteur de gravité majeur
@@ -106,55 +107,108 @@ Message à afficher pour tous : /Restez chez vous au maximum en attendant que le
 ** 3.3 Tout patient avec fièvre et toux
 *** Tout patient sans facteur pronostique
 
-: Votre situation peut relever d’un Covid-19. 
-: Demandez une téléconsultation ou un médecin généraliste ou une visite à domicile (SOS médecins, etc.)
+: Votre situation peut relever d’un Covid-19.
+:
+: Demandez une téléconsultation ou un médecin généraliste ou une visite
+: à domicile (SOS médecins, etc.)
+:
+: En attendant et pour casser les chaînes de transmission, nous vous
+: conseillons de vous isoler et de respecter les gestes barrières pour
+: protéger vos proches.
 
 *** Tout patient avec un facteur pronostique ou plus
 
 **** Si un ou deux facteurs de gravité mineurs
 
 : Votre situation peut relever d’un Covid-19.
-: Demandez une téléconsultation ou un médecin généraliste ou une visite à domicile (SOS médecins, etc.)
+:
+: Demandez une téléconsultation ou un médecin généraliste ou une visite
+: à domicile (SOS médecins, etc.)
+:
+: En attendant et pour casser les chaînes de transmission, nous vous
+: conseillons de vous isoler et de respecter les gestes barrières pour
+: protéger vos proches.
 
 **** Avec au moins deux facteurs de gravité mineurs
 
 : Votre situation peut relever d’un Covid-19.
-: Demandez une téléconsultation ou un médecin généraliste ou une visite à domicile.
-: Si vous n'arrivez pas à obtenir de consultation, appelez le 15.
+:
+: Demandez une téléconsultation ou un médecin généraliste ou une visite
+: à domicile.  Si vous n'arrivez pas à obtenir de consultation, appelez
+: le 15.
+:
+: En attendant et pour casser les chaînes de transmission, nous vous
+: conseillons de vous isoler et de respecter les gestes barrières pour
+: protéger vos proches.
 
 ** 3.4 Tout patient avec fièvre ou (sans fièvre et avec (diarrhée ou (toux et douleurs) ou (toux et anosmie))
 *** Tout patient sans facteur pronostique
 **** Si pas de facteur de gravité mineur et moins de 50 ans
 
 : Votre situation peut relever d’un Covid-19 qu’il faut surveiller.
-: Si de nouveaux symptômes apparaissent, refaites le test ou consultez votre médecin.
-: Nous vous conseillons de rester à votre domicile.
+:
+: Si de nouveaux symptômes apparaissent, refaites le test ou consultez
+: votre médecin.  Nous vous conseillons de rester à votre domicile.
+: 
+: En attendant et pour casser les chaînes de transmission, nous vous
+: conseillons de vous isoler et de respecter les gestes barrières pour
+: protéger vos proches.
 
 **** Si pas de facteur de gravité mineur et 50 ans ou plus
 
 : Votre situation peut relever d’un Covid-19.
+: 
 : Demandez une téléconsultation ou un médecin généraliste ou une visite à domicile.
-: Appelez le 15 si une gêne respiratoire ou des difficultés importantes pour vous alimenter ou boire apparaissent pendant plus de 24 heures.
+: 
+: Appelez le 15 si une gêne respiratoire ou des difficultés importantes
+: pour vous alimenter ou boire apparaissent pendant plus de 24 heures.
+: 
+: En attendant et pour casser les chaînes de transmission, nous vous
+: conseillons de vous isoler et de respecter les gestes barrières pour
+: protéger vos proches.
 
 **** Si 1 ou plusieurs facteurs de gravité mineurs
 
 : Votre situation peut relever d’un Covid-19.
-: Demandez une téléconsultation ou un médecin généraliste ou une visite à domicile.
-: Appelez le 15 si une gêne respiratoire ou des difficultés importantes pour vous alimenter ou boire apparaissent pendant plus de 24 heures.
+:
+: Demandez une téléconsultation ou un médecin généraliste ou une visite
+: à domicile.
+: 
+: Appelez le 15 si une gêne respiratoire ou des difficultés importantes
+: pour vous alimenter ou boire apparaissent pendant plus de 24 heures.
+: 
+: En attendant et pour casser les chaînes de transmission, nous vous
+: conseillons de vous isoler et de respecter les gestes barrières pour
+: protéger vos proches.
 
 *** Tout patient avec un facteur pronostique ou plus
 
 **** Si zéro ou un facteur de gravité mineur
 
 : Votre situation peut relever d’un Covid-19.
-: Demandez une téléconsultation ou un médecin généraliste ou une visite à domicile.
-: Appelez le 15 si une gêne respiratoire ou des difficultés importantes pour vous alimenter ou boire apparaissent pendant plus de 24 heures.
+:
+: Demandez une téléconsultation ou un médecin généraliste ou une visite
+: à domicile.
+: 
+: Appelez le 15 si une gêne respiratoire ou des difficultés importantes
+: pour vous alimenter ou boire apparaissent pendant plus de 24 heures.
+: 
+: En attendant et pour casser les chaînes de transmission, nous vous
+: conseillons de vous isoler et de respecter les gestes barrières pour
+: protéger vos proches.
 
 **** Si au moins deux facteurs de gravité mineurs
 
 : Votre situation peut relever d’un Covid-19.
-: Demandez une téléconsultation ou un médecin généraliste ou une visite à domicile.
+:
+: Demandez une téléconsultation ou un médecin généraliste ou une visite
+: à domicile.
+: 
 : Si vous n'arrivez pas à obtenir de consultation, appelez le 15.
+: 
+: En attendant et pour casser les chaînes de transmission, nous vous
+: conseillons de vous isoler et de respecter les gestes barrières pour
+: protéger vos proches.
 
 # Pour tout patient orienté vers une téléconsultation ou médecin généraliste : préciser "appelez le 15 si une gêne respiratoire ou des difficultés importantes pour s’alimenter ou boire pendant plus de 24 heures apparaissent".
 
@@ -163,19 +217,36 @@ Message à afficher pour tous : /Restez chez vous au maximum en attendant que le
 *** Au moins un facteur pronostique
 
 : Votre situation peut relever d’un Covid-19. Un avis médical est recommandé.
-: Au moindre doute, appelez le 15. Nous vous conseillons de rester à votre domicile.
+:
+: Au moindre doute, appelez le 15. Nous vous conseillons de rester à
+: votre domicile.
+: 
+: En attendant et pour casser les chaînes de transmission, nous vous
+: conseillons de vous isoler et de respecter les gestes barrières pour
+: protéger vos proches.
 
 *** Pas de facteur pronostique
 
 : Votre situation peut relever d’un Covid-19 qu’il faut surveiller.
-: Si de nouveaux symptômes apparaissent, refaites le test ou consultez votre médecin.
+:
+: Si de nouveaux symptômes apparaissent, refaites le test ou consultez
+: votre médecin.
+: 
 : Nous vous conseillons de rester à votre domicile.
+: 
+: En attendant et pour casser les chaînes de transmission, nous vous
+: conseillons de vous isoler et de respecter les gestes barrières pour
+: protéger vos proches.
 
 ** 3.6 Tout patient sans fièvre ni aucun autre symptôme
 
 : Votre situation ne relève probablement pas du Covid-19.
+:
 : N’hésitez pas à contacter votre médecin en cas de doute.
-: Vous pouvez refaire le test en cas de nouveau symptôme pour réévaluer la situation.
+:
+: Vous pouvez refaire le test en cas de nouveau symptôme pour réévaluer
+: la situation.
+:
 : Pour toute information concernant le Covid-19, composer le 0 800 130 000.
 
 * 4 Diagramme de l'arbre de décision
