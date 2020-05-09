@@ -59,7 +59,7 @@ elseif (IF toux XOR douleurs XOR anosmie) then (oui)
           stop
        endif
 
-else (NOT toux AND NOT douleurs AND NOT anosmie)
+elseif (NOT toux AND NOT douleurs AND NOT anosmie)
      :FIN8;
      stop
 endif
