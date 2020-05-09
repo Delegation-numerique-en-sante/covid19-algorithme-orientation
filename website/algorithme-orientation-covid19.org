@@ -216,15 +216,14 @@ Message à afficher pour tous : /Restez chez vous au maximum en attendant que le
 
 *** Au moins un facteur pronostique
 
-: Votre situation peut relever d’un Covid-19. Un avis médical est recommandé.
-:
-: Au moindre doute, appelez le 15. Nous vous conseillons de rester à
-: votre domicile.
+: Votre situation peut relever d’un COVID 19.
 : 
-: En attendant et pour casser les chaînes de transmission, nous vous
-: conseillons de vous isoler et de respecter les gestes barrières pour
-: protéger vos proches.
-
+: Demandez une téléconsultation ou un médecin généraliste.
+: 
+: Au moindre doute, appelez le 15. En attendant et pour casser les
+: chaînes de transmission, nous vous conseillons de vous isoler et de
+: respecter les gestes barrières pour protéger vos proches.
+    
 *** Pas de facteur pronostique
 
 : Votre situation peut relever d’un Covid-19 qu’il faut surveiller.

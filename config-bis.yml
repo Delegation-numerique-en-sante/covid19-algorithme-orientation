@@ -139,7 +139,7 @@ conditional-score-outputs:
   consultation_surveillance_4:
     priority: 5
     notification: "is-warning"
-    message: "Votre situation peut relever d’un COVID 19. Un avis médical est recommandé. Au moindre doute, appelez le [15](tel:15). Nous vous conseillons de rester à votre domicile. En attendant et pour casser les chaînes de transmission, nous vous conseillons de vous isoler et de respecter les gestes barrières pour protéger vos proches."
+    message: "Votre situation peut relever d’un COVID 19. Demandez une téléconsultation ou un médecin généraliste. Au moindre doute, appelez le [15](tel:15). En attendant et pour casser les chaînes de transmission, nous vous conseillons de vous isoler et de respecter les gestes barrières pour protéger vos proches."
   home_surveillance:
     priority: 6
     message: "Votre situation peut relever d’un COVID 19 qu’il faut surveiller. Si de nouveaux symptômes apparaissent, refaites le test ou consultez votre médecin. Nous vous conseillons de rester à votre domicile. En attendant et pour casser les chaînes de transmission, nous vous conseillons de vous isoler et de respecter les gestes barrières pour protéger vos proches."

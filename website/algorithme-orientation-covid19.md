@@ -1,25 +1,25 @@
 
 # Table des matières
 
--   [1 Présentation générale](#org68723a0)
--   [2 Questionnaire d’auto-évaluation](#orgf4e160e)
-    -   [2.1 Symptômes](#org2f60298)
-    -   [2.2 Facteur pronostique défavorable lié au terrain](#org48c2794)
-    -   [2.3 Autre question](#org38608a0)
-    -   [2.4 Définition des facteurs de gravité](#orgabb8099)
-    -   [2.5 Calcul de l'indice de masse corporelle (IMC)](#org6ff1fd0)
--   [3 Définition de l'arbre de décision](#orgb1057c2)
-    -   [3.1 Patient de moins de 15 ans](#org6977c0c)
-    -   [3.2 Tout patient avec au moins un facteur de gravité majeur](#org046a031)
-    -   [3.3 Tout patient avec fièvre et toux](#org9c2f63b)
-    -   [3.4 Tout patient avec fièvre ou (sans fièvre et avec (diarrhée ou (toux et douleurs) ou (toux et anosmie))](#org7af63dd)
-    -   [3.5 Tout patient sans fièvre avec un seul symptôme parmi toux, douleurs, anosmie](#orgfc525c5)
-    -   [3.6 Tout patient sans fièvre ni aucun autre symptôme](#org673ffd0)
--   [4 Diagramme de l'arbre de décision](#org5657cfd)
+-   [1 Présentation générale](#org254a045)
+-   [2 Questionnaire d’auto-évaluation](#org10343ab)
+    -   [2.1 Symptômes](#org44992de)
+    -   [2.2 Facteur pronostique défavorable lié au terrain](#orge111744)
+    -   [2.3 Autre question](#org6bc193a)
+    -   [2.4 Définition des facteurs de gravité](#org43ba4c6)
+    -   [2.5 Calcul de l'indice de masse corporelle (IMC)](#orgdd4b2be)
+-   [3 Définition de l'arbre de décision](#org6d05fd6)
+    -   [3.1 Patient de moins de 15 ans](#org7330af3)
+    -   [3.2 Tout patient avec au moins un facteur de gravité majeur](#org8b4f069)
+    -   [3.3 Tout patient avec fièvre et toux](#org957092b)
+    -   [3.4 Tout patient avec fièvre ou (sans fièvre et avec (diarrhée ou (toux et douleurs) ou (toux et anosmie))](#org7f5765c)
+    -   [3.5 Tout patient sans fièvre avec un seul symptôme parmi toux, douleurs, anosmie](#org807a585)
+    -   [3.6 Tout patient sans fièvre ni aucun autre symptôme](#org621a26c)
+-   [4 Diagramme de l'arbre de décision](#orgad84144)
 
 
 
-<a id="org68723a0"></a>
+<a id="org254a045"></a>
 
 # 1 Présentation générale
 
@@ -49,12 +49,12 @@ Ce document est [téléchargeable en version PDF](https://esante.gouv.fr/algorit
 **Attention : cette documentation, le questionnaire et l'algorithme sont potentiellement modifiables après étude de cas et veille scientifique.**
 
 
-<a id="orgf4e160e"></a>
+<a id="org10343ab"></a>
 
 # 2 Questionnaire d’auto-évaluation
 
 
-<a id="org2f60298"></a>
+<a id="org44992de"></a>
 
 ## 2.1 Symptômes
 
@@ -74,7 +74,7 @@ Ce document est [téléchargeable en version PDF](https://esante.gouv.fr/algorit
 -   *Dans les dernières 24 heures, avez-vous noté un manque de souffle INHABITUEL lorsque vous parlez ou faites un petit effort ?* `OUI / NON (OUI -> Facteur de gravité majeur)`
 
 
-<a id="org48c2794"></a>
+<a id="orge111744"></a>
 
 ## 2.2 Facteur pronostique défavorable lié au terrain
 
@@ -99,14 +99,14 @@ Ce document est [téléchargeable en version PDF](https://esante.gouv.fr/algorit
 Le facteur pronostique est considéré positif s'il y a au moins 1 item **OUI** ou en gras (âge supérieur ou égal à 65 ans, indice de masse corporelle supérieur à 30 kg/m²).
 
 
-<a id="org38608a0"></a>
+<a id="org6bc193a"></a>
 
 ## 2.3 Autre question
 
 -   *Quel est le code postal de votre lieu de résidence actuel ?*
 
 
-<a id="orgabb8099"></a>
+<a id="org43ba4c6"></a>
 
 ## 2.4 Définition des facteurs de gravité
 
@@ -119,21 +119,21 @@ Le facteur pronostique est considéré positif s'il y a au moins 1 item **OUI** 
     -   Difficultés importantes pour s’alimenter ou boire depuis plus de 24 heures
 
 
-<a id="org6ff1fd0"></a>
+<a id="orgdd4b2be"></a>
 
 ## 2.5 Calcul de l'indice de masse corporelle (IMC)
 
 L'indice de masse corporelle est égal au `POIDS` en kilogrammes divisé par le carré de la `TAILLE` en mètres.
 
 
-<a id="orgb1057c2"></a>
+<a id="org6d05fd6"></a>
 
 # 3 Définition de l'arbre de décision
 
 Message à afficher pour tous : *Restez chez vous au maximum en attendant que les symptômes disparaissent. Prenez votre température deux fois par jour. Rappel des mesures d’hygiène. Un dispositif national grand public de soutien psychologique au bénéfice des personnes qui en auraient besoin est accessible via le numéro vert : 0 800 130 000.*
 
 
-<a id="org6977c0c"></a>
+<a id="org7330af3"></a>
 
 ## 3.1 Patient de moins de 15 ans
 
@@ -143,14 +143,14 @@ Message à afficher pour tous : *Restez chez vous au maximum en attendant que le
     En cas d’urgence, appelez le 15.
 
 
-<a id="org046a031"></a>
+<a id="org8b4f069"></a>
 
 ## 3.2 Tout patient avec au moins un facteur de gravité majeur
 
 `Appelez le 15.`
 
 
-<a id="org9c2f63b"></a>
+<a id="org957092b"></a>
 
 ## 3.3 Tout patient avec fièvre et toux
 
@@ -195,7 +195,7 @@ Message à afficher pour tous : *Restez chez vous au maximum en attendant que le
     protéger vos proches.
 
 
-<a id="org7af63dd"></a>
+<a id="org7f5765c"></a>
 
 ## 3.4 Tout patient avec fièvre ou (sans fièvre et avec (diarrhée ou (toux et douleurs) ou (toux et anosmie))
 
@@ -276,21 +276,20 @@ Message à afficher pour tous : *Restez chez vous au maximum en attendant que le
     protéger vos proches.
 
 
-<a id="orgfc525c5"></a>
+<a id="org807a585"></a>
 
 ## 3.5 Tout patient sans fièvre avec un seul symptôme parmi toux, douleurs, anosmie
 
 
 ### Au moins un facteur pronostique
 
-    Votre situation peut relever d’un Covid-19. Un avis médical est recommandé.
+    Votre situation peut relever d’un COVID 19.
     
-    Au moindre doute, appelez le 15. Nous vous conseillons de rester à
-    votre domicile.
+    Demandez une téléconsultation ou un médecin généraliste.
     
-    En attendant et pour casser les chaînes de transmission, nous vous
-    conseillons de vous isoler et de respecter les gestes barrières pour
-    protéger vos proches.
+    Au moindre doute, appelez le 15. En attendant et pour casser les
+    chaînes de transmission, nous vous conseillons de vous isoler et de
+    respecter les gestes barrières pour protéger vos proches.
 
 
 ### Pas de facteur pronostique
@@ -307,7 +306,7 @@ Message à afficher pour tous : *Restez chez vous au maximum en attendant que le
     protéger vos proches.
 
 
-<a id="org673ffd0"></a>
+<a id="org621a26c"></a>
 
 ## 3.6 Tout patient sans fièvre ni aucun autre symptôme
 
@@ -321,7 +320,7 @@ Message à afficher pour tous : *Restez chez vous au maximum en attendant que le
     Pour toute information concernant le Covid-19, composer le 0 800 130 000.
 
 
-<a id="org5657cfd"></a>
+<a id="orgad84144"></a>
 
 # 4 Diagramme de l'arbre de décision
 
