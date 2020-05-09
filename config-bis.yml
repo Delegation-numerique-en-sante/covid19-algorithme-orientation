@@ -180,18 +180,18 @@ tree:
         default: "1.1"
     - answer:  "Entre 15 et 49 ans"
       goto:    "1.1"
-    - answer:  "Entre 50 et 69 ans"
+    - answer:  "Entre 50 et 64 ans"
       score:
         age_range:
           value: "from_15_to_49"
       goto:    "1.1"
-    - answer:  "70 ans ou plus"
+    - answer:  "65 ans ou plus"
       goto:    "1.1"
       score:
         pronostic-factors:
           value: 1
         age_range:
-          value: "sup_70"
+          value: "sup_65"
 
   - node:    "1.1"
     start-page: true
