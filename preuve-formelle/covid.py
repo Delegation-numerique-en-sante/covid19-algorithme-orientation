@@ -96,8 +96,8 @@ def algo_6e5e17a():
     cond4 = (facteurs_pronostiques == 0)
     #       SI 0 facteur de gravité mineur
     cond5 = (facteurs_gravite_mineur == 0)
-    #          SI moins de 50 ans => FIN2
-    implies_done(And(cond3, cond4, cond5, age < 50), 2)
+    #          SI moins de 50 ans => FIN6
+    implies_done(And(cond3, cond4, cond5, age < 50), 6)
     #          SINON => FIN3
     implies_done(And(cond3, cond4, cond5, Not(age < 50)), 3)
     #       SI >= 1 facteur de gravité mineur => FIN3
@@ -111,8 +111,8 @@ def algo_6e5e17a():
     #
     # SI toux OU douleurs OU anosmie
     cond7 = Or(toux, douleurs, anosmie)
-    #    SI 0 facteur pronostique => FIN2
-    implies_done(And(cond7, facteurs_pronostiques == 0), 2)
+    #    SI 0 facteur pronostique => FIN6
+    implies_done(And(cond7, facteurs_pronostiques == 0), 6)
     #    SI >= 1 facteur pronostique => FIN7
     implies_done(And(cond7, facteurs_pronostiques >= 1), 7)
     #
