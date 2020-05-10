@@ -4,8 +4,6 @@
 (def orientations
   {:less_15
    "Cette application n’est pas faite pour les personnes de moins de 15 ans. Prenez contact avec votre médecin généraliste au moindre doute. En cas d’urgence, appelez le 15."
-   :home_surveillance
-   "Votre situation peut relever d’un COVID 19 qu’il faut surveiller. Si de nouveaux symptômes apparaissent, refaites le test ou consultez votre médecin. Nous vous conseillons de rester à votre domicile. En attendant et pour casser les chaînes de transmission, nous vous conseillons de vous isoler et de respecter les gestes barrières pour protéger vos proches."
    :consultation_surveillance_1
    "Votre situation peut relever d’un COVID 19. Demandez une téléconsultation ou un médecin généraliste ou une visite à domicile. Appelez le 15 si une gêne respiratoire ou des difficultés importantes pour vous alimenter ou boire apparaissent pendant plus de 24 heures. En attendant et pour casser les chaînes de transmission, nous vous conseillons de vous isoler et de respecter les gestes barrières pour protéger vos proches."
    :consultation_surveillance_2
@@ -55,7 +53,6 @@
                 pronostic-factors]} reponse
         {:keys
          [less_15
-          home_surveillance
           consultation_surveillance_1
           consultation_surveillance_2
           SAMU
@@ -91,7 +88,7 @@
           (cond (= pronostic-factors 0)
                 (if (= minor-severity-factors 0)
                   (if (= age-range "from_15_to_49")
-                    home_surveillance
+                    consultation_surveillance_3
                     consultation_surveillance_1)
                   consultation_surveillance_1)
                 (>= pronostic-factors 1)
@@ -104,7 +101,7 @@
           (and (not cough) (not sore_throat_aches) agueusia_anosmia))
       (do (println "Branch 5: no fever and one other symptom")
           (if (= pronostic-factors 0)
-            home_surveillance
+            consultation_surveillance_3
             consultation_surveillance_4))
       ;; Branche 6
       (and (not cough)
