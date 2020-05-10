@@ -30,7 +30,7 @@ elseif (IF fièvre OR (diarrhée OR (toux AND douleurs) OR (toux AND anosmie) OR
        if (IF 0 facteur pronostique) then (oui)
            if (IF 0 facteur de gravité mineur) then (oui)
               if (IF moins de 50 ans) then (oui)
-                 :FIN2;
+                 :FIN6;
                  stop;
               else (non)
                  :FIN3;
@@ -52,7 +52,7 @@ elseif (IF fièvre OR (diarrhée OR (toux AND douleurs) OR (toux AND anosmie) OR
 
 elseif (IF toux XOR douleurs XOR anosmie) then (oui)
        if (IF 0 facteur pronostique) then (oui)
-          :FIN2;
+          :FIN6;
           stop
        else (non)
           :FIN7;
