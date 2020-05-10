@@ -1,3 +1,38 @@
+* 2020-05-10
+
+** La limite pour la tranche d'âge supérieur est à 65 ans au lieu de 70 ans
+
+Les valeurs possibles pour la variable =age_range= sont désormais
+=inf_15=, =from_15_to_49=, =from_50_to_64= et =sup_65=.
+
+Voir le [[https://github.com/Delegation-numerique-en-sante/covid19-algorithme-orientation-check/blob/master/schema.json][schéma de données]] mis à jour.
+
+** Tous les messages d'orientation FIN2 ont été remplacées par ceux de la FIN6
+
+Le message d'orientation =FIN2= était :
+
+: Votre situation peut relever d’un COVID 19 qu’il faut surveiller. Si
+: de nouveaux symptômes apparaissent, refaites le test ou consultez
+: votre médecin. Nous vous conseillons de rester à votre domicile.
+
+Tous ces messages sont désormais remplacés par celui de la =FIN6= :
+
+: Votre situation peut relever d’un COVID 19. Demandez une
+: téléconsultation ou un médecin généraliste ou une visite à domicile
+: (SOS médecins, etc.) En attendant et pour casser les chaînes de
+: transmission, nous vous conseillons de vous isoler et de respecter les
+: gestes barrières pour protéger vos proches.
+
+L'orientation =FIN2= disparaît donc de l'algorithme d'orientation.
+
+** Les messages d'orientation pour FIN3, FIN4, FIN6, FIN7 ont été modifiés
+
+Pour tous ces messages, la phrase suivante à été ajoutée à la fin :
+
+: En attendant et pour casser les chaînes de transmission, nous vous
+: conseillons de vous isoler et de respecter les gestes barrières pour
+: protéger vos proches.
+
 * 2020-04-29
 
 ** Ajout d'un identifiant unique
