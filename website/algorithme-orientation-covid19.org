@@ -1,6 +1,6 @@
 #+title: Algorithme d'orientation Covid-19
 #+author: Ministère des Solidarités et de la Santé
-#+date: 9 mai 2020
+#+date: 10 mai 2020
 #+options: toc:2 H:4
 
 * 1 Présentation générale
@@ -24,7 +24,7 @@ parcouru de façon séquentielle et en fonction des valeurs finales de
 toutes les variables, pour déterminer le message d'orientation à
 afficher.
 
-Version du document : =2020-05-09=
+Version du document : =2020-05-10=
 
 Ce document est [[https://esante.gouv.fr/algorithme-orientation][téléchargeable en version PDF]].
 
@@ -145,10 +145,10 @@ Message à afficher pour tous : /Restez chez vous au maximum en attendant que le
 *** Tout patient sans facteur pronostique
 **** Si pas de facteur de gravité mineur et moins de 50 ans
 
-: Votre situation peut relever d’un Covid-19 qu’il faut surveiller.
-:
-: Si de nouveaux symptômes apparaissent, refaites le test ou consultez
-: votre médecin.  Nous vous conseillons de rester à votre domicile.
+: Votre situation peut relever d’un COVID 19.
+: 
+: Demandez une téléconsultation ou un médecin généraliste ou une visite
+: à domicile (SOS médecins, etc.)
 : 
 : En attendant et pour casser les chaînes de transmission, nous vous
 : conseillons de vous isoler et de respecter les gestes barrières pour
@@ -226,12 +226,10 @@ Message à afficher pour tous : /Restez chez vous au maximum en attendant que le
     
 *** Pas de facteur pronostique
 
-: Votre situation peut relever d’un Covid-19 qu’il faut surveiller.
-:
-: Si de nouveaux symptômes apparaissent, refaites le test ou consultez
-: votre médecin.
+: Votre situation peut relever d’un COVID 19.
 : 
-: Nous vous conseillons de rester à votre domicile.
+: Demandez une téléconsultation ou un médecin généraliste ou une visite
+: à domicile (SOS médecins, etc.)
 : 
 : En attendant et pour casser les chaînes de transmission, nous vous
 : conseillons de vous isoler et de respecter les gestes barrières pour
