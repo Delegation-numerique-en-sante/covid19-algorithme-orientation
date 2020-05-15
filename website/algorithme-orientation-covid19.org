@@ -151,7 +151,7 @@ Ce message correspond à =FIN6 (consultation_surveillance_3)= dans la [[https://
 
 Ce message correspond à =FIN4 (consultation_surveillance_2)= dans la [[https://github.com/Delegation-numerique-en-sante/covid19-algorithme-orientation/blob/master/pseudo-code.org#messages-dorientation-possibles][documentation détaillée]].
 
-** 3.4 Tout patient avec fièvre ou (sans fièvre et avec (diarrhée ou (toux et douleurs) ou (douleurs et anosmie))
+** 3.4 Tout patient avec fièvre ou (sans fièvre et avec (diarrhée ou (toux et douleurs) ou (toux et douleurs) ou (douleurs et anosmie)))
 *** Tout patient sans facteur pronostique
 **** Si pas de facteur de gravité mineur et moins de 50 ans
 
