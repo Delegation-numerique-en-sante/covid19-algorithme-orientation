@@ -114,6 +114,13 @@ Cet arbre de décision doit être parcouru de façon *séquentielle* en testant 
 : 24:
 : 25: IF NOT toux AND NOT douleurs AND NOT anosmie => FIN8
 
+Dans l'arbre ci-dessus, la variable =fièvre= correspond à la variable
+=fever_algo= décrite dans la documentation de l'[[file:implementation.org][implémentation]] : donc
+=fièvre= (ou =fever_algo=) est un booléen vrai si la personne a répondu à
+la question de la fièvre en disant (1) qu'elle ne connaît pas sa
+température ou (2) qu'elle a une température inférieure à 35,5°C ou
+(3) une température supérieure à 39°C.
+
 *** Diagramme de l'arbre de décision
 
 [[file:diagramme-algorithme-orientation-covid19.png]]
