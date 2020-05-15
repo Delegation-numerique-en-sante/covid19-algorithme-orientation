@@ -100,9 +100,13 @@ Message à afficher pour tous : /Restez chez vous au maximum en attendant que le
 :
 : En cas d’urgence, appelez le 15.
 
+Ce message correspond à =FIN1 (less_15)= dans la [[https://github.com/Delegation-numerique-en-sante/covid19-algorithme-orientation/blob/master/pseudo-code.org#messages-dorientation-possibles][documentation détaillée]].
+
 ** 3.2 Tout patient avec au moins un facteur de gravité majeur
 
 =Appelez le 15.=
+
+Ce message correspond à =FIN5 (SAMU)= dans la [[https://github.com/Delegation-numerique-en-sante/covid19-algorithme-orientation/blob/master/pseudo-code.org#messages-dorientation-possibles][documentation détaillée]].
 
 ** 3.3 Tout patient avec fièvre et toux
 *** Tout patient sans facteur pronostique
@@ -115,6 +119,8 @@ Message à afficher pour tous : /Restez chez vous au maximum en attendant que le
 : En attendant et pour casser les chaînes de transmission, nous vous
 : conseillons de vous isoler et de respecter les gestes barrières pour
 : protéger vos proches.
+
+Ce message correspond à =FIN6 (consultation_surveillance_3)= dans la [[https://github.com/Delegation-numerique-en-sante/covid19-algorithme-orientation/blob/master/pseudo-code.org#messages-dorientation-possibles][documentation détaillée]].
 
 *** Tout patient avec un facteur pronostique ou plus
 
@@ -129,6 +135,8 @@ Message à afficher pour tous : /Restez chez vous au maximum en attendant que le
 : conseillons de vous isoler et de respecter les gestes barrières pour
 : protéger vos proches.
 
+Ce message correspond à =FIN6 (consultation_surveillance_3)= dans la [[https://github.com/Delegation-numerique-en-sante/covid19-algorithme-orientation/blob/master/pseudo-code.org#messages-dorientation-possibles][documentation détaillée]].
+
 **** Avec au moins deux facteurs de gravité mineurs
 
 : Votre situation peut relever d’un Covid-19.
@@ -140,6 +148,8 @@ Message à afficher pour tous : /Restez chez vous au maximum en attendant que le
 : En attendant et pour casser les chaînes de transmission, nous vous
 : conseillons de vous isoler et de respecter les gestes barrières pour
 : protéger vos proches.
+
+Ce message correspond à =FIN4 (consultation_surveillance_2)= dans la [[https://github.com/Delegation-numerique-en-sante/covid19-algorithme-orientation/blob/master/pseudo-code.org#messages-dorientation-possibles][documentation détaillée]].
 
 ** 3.4 Tout patient avec fièvre ou (sans fièvre et avec (diarrhée ou (toux et douleurs) ou (douleurs et anosmie))
 *** Tout patient sans facteur pronostique
@@ -154,6 +164,8 @@ Message à afficher pour tous : /Restez chez vous au maximum en attendant que le
 : conseillons de vous isoler et de respecter les gestes barrières pour
 : protéger vos proches.
 
+Ce message correspond à =FIN6 (consultation_surveillance_3)= dans la [[https://github.com/Delegation-numerique-en-sante/covid19-algorithme-orientation/blob/master/pseudo-code.org#messages-dorientation-possibles][documentation détaillée]].
+
 **** Si pas de facteur de gravité mineur et 50 ans ou plus
 
 : Votre situation peut relever d’un Covid-19.
@@ -166,6 +178,8 @@ Message à afficher pour tous : /Restez chez vous au maximum en attendant que le
 : En attendant et pour casser les chaînes de transmission, nous vous
 : conseillons de vous isoler et de respecter les gestes barrières pour
 : protéger vos proches.
+
+Ce message correspond à =FIN3 (consultation_surveillance_1)= dans la [[https://github.com/Delegation-numerique-en-sante/covid19-algorithme-orientation/blob/master/pseudo-code.org#messages-dorientation-possibles][documentation détaillée]].
 
 **** Si 1 ou plusieurs facteurs de gravité mineurs
 
@@ -180,6 +194,8 @@ Message à afficher pour tous : /Restez chez vous au maximum en attendant que le
 : En attendant et pour casser les chaînes de transmission, nous vous
 : conseillons de vous isoler et de respecter les gestes barrières pour
 : protéger vos proches.
+
+Ce message correspond à =FIN3 (consultation_surveillance_1)= dans la [[https://github.com/Delegation-numerique-en-sante/covid19-algorithme-orientation/blob/master/pseudo-code.org#messages-dorientation-possibles][documentation détaillée]].
 
 *** Tout patient avec un facteur pronostique ou plus
 
@@ -197,6 +213,8 @@ Message à afficher pour tous : /Restez chez vous au maximum en attendant que le
 : conseillons de vous isoler et de respecter les gestes barrières pour
 : protéger vos proches.
 
+Ce message correspond à =FIN3 (consultation_surveillance_1)= dans la [[https://github.com/Delegation-numerique-en-sante/covid19-algorithme-orientation/blob/master/pseudo-code.org#messages-dorientation-possibles][documentation détaillée]].
+
 **** Si au moins deux facteurs de gravité mineurs
 
 : Votre situation peut relever d’un Covid-19.
@@ -209,6 +227,8 @@ Message à afficher pour tous : /Restez chez vous au maximum en attendant que le
 : En attendant et pour casser les chaînes de transmission, nous vous
 : conseillons de vous isoler et de respecter les gestes barrières pour
 : protéger vos proches.
+
+Ce message correspond à =FIN4 (consultation_surveillance_2)= dans la [[https://github.com/Delegation-numerique-en-sante/covid19-algorithme-orientation/blob/master/pseudo-code.org#messages-dorientation-possibles][documentation détaillée]].
 
 # Pour tout patient orienté vers une téléconsultation ou médecin généraliste : préciser "appelez le 15 si une gêne respiratoire ou des difficultés importantes pour s’alimenter ou boire pendant plus de 24 heures apparaissent".
 
@@ -223,7 +243,9 @@ Message à afficher pour tous : /Restez chez vous au maximum en attendant que le
 : Au moindre doute, appelez le 15. En attendant et pour casser les
 : chaînes de transmission, nous vous conseillons de vous isoler et de
 : respecter les gestes barrières pour protéger vos proches.
-    
+
+Ce message correspond à =FIN7 (consultation_surveillance_4)= dans la [[https://github.com/Delegation-numerique-en-sante/covid19-algorithme-orientation/blob/master/pseudo-code.org#messages-dorientation-possibles][documentation détaillée]].
+
 *** Pas de facteur pronostique
 
 : Votre situation peut relever d’un COVID 19.
@@ -235,6 +257,8 @@ Message à afficher pour tous : /Restez chez vous au maximum en attendant que le
 : conseillons de vous isoler et de respecter les gestes barrières pour
 : protéger vos proches.
 
+Ce message correspond à =FIN6 (consultation_surveillance_3)= dans la [[https://github.com/Delegation-numerique-en-sante/covid19-algorithme-orientation/blob/master/pseudo-code.org#messages-dorientation-possibles][documentation détaillée]].
+
 ** 3.6 Tout patient sans fièvre ni aucun autre symptôme
 
 : Votre situation ne relève probablement pas du Covid-19.
@@ -245,6 +269,8 @@ Message à afficher pour tous : /Restez chez vous au maximum en attendant que le
 : la situation.
 :
 : Pour toute information concernant le Covid-19, composer le 0 800 130 000.
+
+Ce message correspond à =FIN8 (surveillance)= dans la [[https://github.com/Delegation-numerique-en-sante/covid19-algorithme-orientation/blob/master/pseudo-code.org#messages-dorientation-possibles][documentation détaillée]].
 
 * 4 Diagramme de l'arbre de décision
 
