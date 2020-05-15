@@ -124,7 +124,7 @@ Ce message correspond à =FIN6 (consultation_surveillance_3)= dans la [[https://
 
 *** Tout patient avec un facteur pronostique ou plus
 
-**** Si un ou deux facteurs de gravité mineurs
+**** Si un facteur de gravité mineur
 
 : Votre situation peut relever d’un Covid-19.
 :
