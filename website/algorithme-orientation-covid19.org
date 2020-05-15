@@ -141,7 +141,7 @@ Message à afficher pour tous : /Restez chez vous au maximum en attendant que le
 : conseillons de vous isoler et de respecter les gestes barrières pour
 : protéger vos proches.
 
-** 3.4 Tout patient avec fièvre ou (sans fièvre et avec (diarrhée ou (toux et douleurs) ou (toux et anosmie))
+** 3.4 Tout patient avec fièvre ou (sans fièvre et avec (diarrhée ou (toux et douleurs) ou (douleurs et anosmie))
 *** Tout patient sans facteur pronostique
 **** Si pas de facteur de gravité mineur et moins de 50 ans
 
