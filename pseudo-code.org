@@ -6,9 +6,10 @@
 
 1. /Pensez-vous avoir eu de la fièvre ces derniers jours (frissons, sueurs) ?/
    - Si =OUI= : /Quelle a été votre température la plus élevée ces dernières 48h ?/
-2. /Avez-vous une toux ou une augmentation de votre toux habituelle ces derniers jours ?/
-3. /Avez-vous noté une forte diminution de votre goût ou de votre odorat ces derniers jours ?/
-4. /Avez-vous un mal de gorge ou des douleurs musculaires ou des courbatures inhabituelles ces derniers jours ?/
+2. /Avez-vous une toux ou votre toux habituelle s’est-elle modifiée ces derniers jours ?/
+3. /Avez-vous noté une perte ou une forte diminution de votre goût ou de votre odorat ces derniers jours ?/
+4. /Avez-vous un mal de gorge ou des douleurs musculaires ou des courbatures inhabituelles ou des maux de tête inhabituels ces derniers jours ?/
+   - Si =OUI=, afficher le message : /Si vous avez des maux de tête qui ne disparaissent pas après la prise de médicaments anti-douleurs (dont paracétamol) et que vous décririez comme intolérables : Appelez le 15./
 5. /Avez-vous de la diarrhée ces dernières 24 heures (au moins 3 selles molles) ?/
 6. /Avez-vous une fatigue inhabituelle ces derniers jours ?/
    - Si =OUI= : /Cette fatigue vous oblige-t-elle à vous reposer plus de la moitié de la journée ?/
@@ -19,15 +20,15 @@
 
 1. /Quel est votre âge ?/
 2. /Quel est votre poids ? Quelle est votre taille ?/
-3. /Avez-vous de l’hypertension artérielle mal équilibrée ? Ou avez-vous une maladie cardiaque ou vasculaire ? Ou prenez-vous un traitement à visée cardiologique ?/
-4. /Êtes-vous diabétique ?/
-5. /Avez-vous ou avez-vous eu un cancer dans les 3 dernières années ?/
-6. /Avez-vous une maladie respiratoire ? Ou êtes-vous suivi par un pneumologue ?/
-7. /Avez-vous une insuffisance rénale chronique dialysée ?/
-8. /Avez-vous une maladie chronique du foie ?/
-9. /Êtes-vous enceinte ?/
-10. /Avez-vous une maladie connue pour diminuer vos défenses immunitaires/
-11. /Prenez-vous un traitement immunosuppresseur ? C’est un traitement qui diminue vos défenses contre les infections.  Voici quelques exemples : corticoïdes, méthotrexate, ciclosporine, tacrolimus, azathioprine, cyclophosphamide (liste non exhaustive)./ =OUI / NON / Je ne sais pas : NON=
+3. /Avez-vous des antécédents de maladie cardiovasculaire : hypertension artérielle compliquée (avec complications cardiaques, rénales), accident vasculaire cérébral, maladie coronaire (infarctus), chirurgie cardiaque, insuffisance cardiaque avec essoufflement au moindre effort ?/
+4. /Avez-vous un diabète mal équilibré ou avec des complications (yeux, reins) ?/
+5. /Avez-vous un cancer évolutif sous traitement (hors hormonothérapie) ?/
+6. /Avez-vous une maladie respiratoire chronique (bronchopneumopathie obstructive, asthme sévère, fibrose pulmonaire, syndrome d’apnées du sommeil, mucoviscidose) ou êtes-vous suivi par un pneumologue ?/
+7. /Avez-vous une insuffisance rénale chronique avec besoin de faire de la dialyse ?/
+8. /Avez-vous une cirrhose ?/
+9. /Êtes-vous enceinte au 3ème trimestre de votre grossesse ?/
+10. /Avez-vous une drépanocytose homozygote (forme majeure) ou j’ai bénéficié d’une splénectomie (ablation de la rate) à cause de la drépanocytose ?/
+11. /Avez-vous une immunodépression, par exemple : médicamenteuse (chimiothérapie anti cancéreuse, traitement immunosuppresseur, biothérapie et/ou corticothérapie à dose immunosuppressive depuis plus de 15 jours) ; infection à VIH non contrôlée ou avec des CD4 <200/mm3 ; consécutive à une greffe d'organe solide ou de cellules souches hématopoïétiques ; liée à une hémopathie maligne en cours de traitement ?/
 
 *** Question supplémentaire
 
