@@ -173,7 +173,7 @@
 
 (deftest all-conclusions-are-reached?
   (testing "Is each conclusion reached at least once?"
-    (is (= (count (distinct (map :msg all-results))) 8))))
+    (is (= (count (distinct (map :msg all-results))) 7))))
 
 (defn -main [& [arg]]
   (let [samples (gen/sample
