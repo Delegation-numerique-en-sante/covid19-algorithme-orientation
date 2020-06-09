@@ -1,5 +1,9 @@
 * 2020-06-09
 
+** Correction de l'algorithme
+
+Une [[https://github.com/Delegation-numerique-en-sante/covid19-algorithme-orientation/pull/49][correction]] a été apportée à l'une des branches de l'algorithme.
+
 ** Mise à jour des questions
 
 Plusieurs questions ont été reformulées :
@@ -25,7 +29,7 @@ Une question a été supprimée :
 
 - /Prenez-vous un traitement immunosuppresseur ?/
 
-** Mise à jour des données
+** Mise à jour des variables exigées
 
 - La variable =sickle_cell= correspondant à la question sur la
   drépanocytose a été ajoutée dans la liste des données exigées.
@@ -33,6 +37,10 @@ Une question a été supprimée :
 - Les variables =immunosuppressant_drug= et =immunosuppressant_drug_algo=
   ne sont plus exigées, car la question /Prenez-vous un traitement
   immunosuppresseur ?/ a été supprimée.
+
+** Harmonisation en « Covid-19 »
+
+L'appellation « Covid-19 » est désormais utilisée partout dans la documentation.
 
 * 2020-05-10
 
