@@ -1,25 +1,25 @@
 
 # Table des matières
 
--   [1 Présentation générale](#orged0e3f5)
--   [2 Questionnaire d’auto-évaluation](#orgd0c4e65)
-    -   [2.1 Symptômes](#org30b1e1b)
-    -   [2.2 Facteur pronostique défavorable lié au terrain](#org050ff05)
-    -   [2.3 Autre question](#org1bb141e)
-    -   [2.4 Définition des facteurs de gravité](#orgf89a08f)
-    -   [2.5 Calcul de l'indice de masse corporelle (IMC)](#orgd098e19)
--   [3 Définition de l'arbre de décision](#org432f52e)
-    -   [3.1 Patient de moins de 15 ans](#orgf91fb31)
-    -   [3.2 Tout patient avec au moins un facteur de gravité majeur](#org4f14087)
-    -   [3.3 Tout patient avec fièvre et toux](#org8091889)
-    -   [3.4 Tout patient avec fièvre ou (sans fièvre et avec (diarrhée ou (toux et douleurs) ou (toux et anosmie) ou (douleurs et anosmie)))](#org6269e19)
-    -   [3.5 Tout patient sans fièvre avec un seul symptôme parmi toux, douleurs, anosmie](#org9525ada)
-    -   [3.6 Tout patient sans fièvre ni aucun autre symptôme](#orgb44e250)
--   [4 Diagramme de l'arbre de décision](#orgafa3fb5)
+-   [1 Présentation générale](#orga3ac63b)
+-   [2 Questionnaire d’auto-évaluation](#org9c12666)
+    -   [2.1 Symptômes](#orgf969023)
+    -   [2.2 Facteur pronostique défavorable lié au terrain](#orga59efc7)
+    -   [2.3 Autre question](#org96241dd)
+    -   [2.4 Définition des facteurs de gravité](#orgd68124b)
+    -   [2.5 Calcul de l'indice de masse corporelle (IMC)](#org0f242a2)
+-   [3 Définition de l'arbre de décision](#org670c3be)
+    -   [3.1 Patient de moins de 15 ans](#org7aea958)
+    -   [3.2 Tout patient avec au moins un facteur de gravité majeur](#org54f298d)
+    -   [3.3 Tout patient avec fièvre et toux](#org1e12f0f)
+    -   [3.4 Tout patient avec fièvre ou (sans fièvre et avec (diarrhée ou (toux et douleurs) ou (toux et anosmie) ou (douleurs et anosmie)))](#orgf504c43)
+    -   [3.5 Tout patient sans fièvre avec un seul symptôme parmi toux, douleurs, anosmie](#orga977cb8)
+    -   [3.6 Tout patient sans fièvre ni aucun autre symptôme](#org5da6751)
+-   [4 Diagramme de l'arbre de décision](#org260c8ec)
 
 
 
-<a id="orged0e3f5"></a>
+<a id="orga3ac63b"></a>
 
 # 1 Présentation générale
 
@@ -49,12 +49,12 @@ Ce document est [téléchargeable en version PDF](https://esante.gouv.fr/algorit
 **Attention : cette documentation, le questionnaire et l'algorithme sont potentiellement modifiables après étude de cas et veille scientifique.**
 
 
-<a id="orgd0c4e65"></a>
+<a id="org9c12666"></a>
 
 # 2 Questionnaire d’auto-évaluation
 
 
-<a id="org30b1e1b"></a>
+<a id="orgf969023"></a>
 
 ## 2.1 Symptômes
 
@@ -64,9 +64,10 @@ Ce document est [téléchargeable en version PDF](https://esante.gouv.fr/algorit
     -   37,8°C - 38,9°C
     -   **>= 39°C** `-> Facteur de gravité mineur`
     -   **Je ne sais pas** `-> Facteur de gravité mineur`
--   *Avez-vous une toux ou une augmentation de votre toux habituelle ces derniers jours ?* `OUI / NON`
--   *Avez-vous noté une forte diminution de votre goût ou de votre odorat ces derniers jours ?* `OUI / NON`
--   *Avez-vous un mal de gorge ou des douleurs musculaires ou des courbatures inhabituelles ces derniers jours ?* `OUI / NON`
+-   *Avez-vous une toux ou votre toux habituelle s’est-elle modifiée ces derniers jours ?* `OUI / NON`
+-   *Avez-vous noté une perte ou une forte diminution de votre goût ou de votre odorat ces derniers jours ?* `OUI / NON`
+-   *Avez-vous un mal de gorge ou des douleurs musculaires ou des courbatures inhabituelles ou des maux de tête inhabituels ces derniers jours ?* `OUI / NON`
+    -   Si `OUI`, afficher le message : *Si vous avez des maux de tête qui ne disparaissent pas après la prise de médicaments anti-douleurs (dont paracétamol) et que vous décririez comme intolérables : Appelez le 15.*
 -   *Avez-vous de la diarrhée ces dernières 24 heures (au moins 3 selles molles) ?* `OUI / NON`
 -   *Avez-vous une fatigue inhabituelle ces derniers jours ?* `OUI / NON`
     -   Si `OUI` : *Cette fatigue vous oblige-t-elle à vous reposer plus de la moitié de la journée ?* `OUI / NON (OUI -> Facteur de gravité mineur)`
@@ -74,7 +75,7 @@ Ce document est [téléchargeable en version PDF](https://esante.gouv.fr/algorit
 -   *Dans les dernières 24 heures, avez-vous noté un manque de souffle INHABITUEL lorsque vous parlez ou faites un petit effort ?* `OUI / NON (OUI -> Facteur de gravité majeur)`
 
 
-<a id="org050ff05"></a>
+<a id="orga59efc7"></a>
 
 ## 2.2 Facteur pronostique défavorable lié au terrain
 
@@ -86,27 +87,27 @@ Ce document est [téléchargeable en version PDF](https://esante.gouv.fr/algorit
 -   *Quel est votre poids ? Quelle est votre taille ?*
     -   Indice de masse corporelle (IMC) < 30 kg/m²
     -   **Indice de masse corporelle (IMC) >= 30 kg/m²**
--   *Avez-vous de l’hypertension artérielle mal équilibrée ? Ou avez-vous une maladie cardiaque ou vasculaire ? Ou prenez-vous un traitement à visée cardiologique ?* **OUI** / NON / Je ne sais pas (OUI)
--   *Êtes-vous diabétique ?* **OUI** / NON
--   *Avez-vous ou avez-vous eu un cancer dans les 3 dernières années ?* **OUI** / NON
--   *Avez-vous une maladie respiratoire ? Ou êtes-vous suivi par un pneumologue ?* **OUI** / NON
--   *Avez-vous une insuffisance rénale chronique dialysée ?* **OUI** / NON
--   *Avez-vous une maladie chronique du foie ?* **OUI** / NON
--   *Êtes-vous enceinte ?* **OUI** / NON / Non applicable
--   *Avez-vous une maladie connue pour diminuer vos défenses immunitaires* **OUI** / NON / Je ne sais pas (NON)
--   *Prenez-vous un traitement immunosuppresseur ? C’est un traitement qui diminue vos défenses contre les infections.  Voici quelques exemples : corticoïdes, méthotrexate, ciclosporine, tacrolimus, azathioprine, cyclophosphamide (liste non exhaustive).* **OUI** / NON / Je ne sais pas (NON)
+-   *Avez-vous des antécédents de maladie cardiovasculaire : hypertension artérielle compliquée (avec complications cardiaques, rénales), accident vasculaire cérébral, maladie coronaire (infarctus), chirurgie cardiaque, insuffisance cardiaque avec essoufflement au moindre effort ?* **OUI** / NON / Je ne sais pas (OUI)
+-   *Avez-vous un diabète mal équilibré ou avec des complications (yeux, reins) ?* **OUI** / NON
+-   *Avez-vous un cancer évolutif sous traitement (hors hormonothérapie) ?* **OUI** / NON
+-   *Avez-vous une maladie respiratoire chronique (bronchopneumopathie obstructive, asthme sévère, fibrose pulmonaire, syndrome d’apnées du sommeil, mucoviscidose) ou êtes-vous suivi par un pneumologue ?* **OUI** / NON
+-   *Avez-vous une insuffisance rénale chronique avec besoin de faire de la dialyse ?* **OUI** / NON
+-   *Avez-vous une cirrhose ?* **OUI** / NON
+-   *Êtes-vous enceinte au 3ème trimestre de votre grossesse ?* **OUI** / NON / Non applicable
+-   *Avez-vous une drépanocytose homozygote (forme majeure) ou avez-vous bénéficié d’une splénectomie (ablation de la rate) à cause de la drépanocytose ?* **OUI** / NON
+-   *Avez-vous une immunodépression, par exemple : médicamenteuse (chimiothérapie anti cancéreuse, traitement immunosuppresseur, biothérapie et/ou corticothérapie à dose immunosuppressive depuis plus de 15 jours) ; infection à VIH non contrôlée ou avec des CD4 <200/mm3 ; consécutive à une greffe d'organe solide ou de cellules souches hématopoïétiques ; liée à une hémopathie maligne en cours de traitement ?* **OUI** / NON / Je ne sais pas (NON)
 
 Le facteur pronostique est considéré positif s'il y a au moins 1 item **OUI** ou en gras (âge supérieur ou égal à 65 ans, indice de masse corporelle supérieur à 30 kg/m²).
 
 
-<a id="org1bb141e"></a>
+<a id="org96241dd"></a>
 
 ## 2.3 Autre question
 
 -   *Quel est le code postal de votre lieu de résidence actuel ?*
 
 
-<a id="orgf89a08f"></a>
+<a id="orgd68124b"></a>
 
 ## 2.4 Définition des facteurs de gravité
 
@@ -119,21 +120,21 @@ Le facteur pronostique est considéré positif s'il y a au moins 1 item **OUI** 
     -   Difficultés importantes pour s’alimenter ou boire depuis plus de 24 heures
 
 
-<a id="orgd098e19"></a>
+<a id="org0f242a2"></a>
 
 ## 2.5 Calcul de l'indice de masse corporelle (IMC)
 
 L'indice de masse corporelle est égal au `POIDS` en kilogrammes divisé par le carré de la `TAILLE` en mètres.
 
 
-<a id="org432f52e"></a>
+<a id="org670c3be"></a>
 
 # 3 Définition de l'arbre de décision
 
 Message à afficher pour tous : *Restez chez vous au maximum en attendant que les symptômes disparaissent. Prenez votre température deux fois par jour. Rappel des mesures d’hygiène. Un dispositif national grand public de soutien psychologique au bénéfice des personnes qui en auraient besoin est accessible via le numéro vert : 0 800 130 000.*
 
 
-<a id="orgf91fb31"></a>
+<a id="org7aea958"></a>
 
 ## 3.1 Patient de moins de 15 ans
 
@@ -145,7 +146,7 @@ Message à afficher pour tous : *Restez chez vous au maximum en attendant que le
 Ce message correspond à `FIN1 (less_15)` dans la [documentation détaillée](https://github.com/Delegation-numerique-en-sante/covid19-algorithme-orientation/blob/master/pseudo-code.org#messages-dorientation-possibles).
 
 
-<a id="org4f14087"></a>
+<a id="org54f298d"></a>
 
 ## 3.2 Tout patient avec au moins un facteur de gravité majeur
 
@@ -154,7 +155,7 @@ Ce message correspond à `FIN1 (less_15)` dans la [documentation détaillée](ht
 Ce message correspond à `FIN5 (SAMU)` dans la [documentation détaillée](https://github.com/Delegation-numerique-en-sante/covid19-algorithme-orientation/blob/master/pseudo-code.org#messages-dorientation-possibles).
 
 
-<a id="org8091889"></a>
+<a id="org1e12f0f"></a>
 
 ## 3.3 Tout patient avec fièvre et toux
 
@@ -205,7 +206,7 @@ Ce message correspond à `FIN6 (consultation_surveillance_3)` dans la [documenta
 Ce message correspond à `FIN4 (consultation_surveillance_2)` dans la [documentation détaillée](https://github.com/Delegation-numerique-en-sante/covid19-algorithme-orientation/blob/master/pseudo-code.org#messages-dorientation-possibles).
 
 
-<a id="org6269e19"></a>
+<a id="orgf504c43"></a>
 
 ## 3.4 Tout patient avec fièvre ou (sans fièvre et avec (diarrhée ou (toux et douleurs) ou (toux et anosmie) ou (douleurs et anosmie)))
 
@@ -296,7 +297,7 @@ Ce message correspond à `FIN3 (consultation_surveillance_1)` dans la [documenta
 Ce message correspond à `FIN4 (consultation_surveillance_2)` dans la [documentation détaillée](https://github.com/Delegation-numerique-en-sante/covid19-algorithme-orientation/blob/master/pseudo-code.org#messages-dorientation-possibles).
 
 
-<a id="org9525ada"></a>
+<a id="orga977cb8"></a>
 
 ## 3.5 Tout patient sans fièvre avec un seul symptôme parmi toux, douleurs, anosmie
 
@@ -328,7 +329,7 @@ Ce message correspond à `FIN7 (consultation_surveillance_4)` dans la [documenta
 Ce message correspond à `FIN6 (consultation_surveillance_3)` dans la [documentation détaillée](https://github.com/Delegation-numerique-en-sante/covid19-algorithme-orientation/blob/master/pseudo-code.org#messages-dorientation-possibles).
 
 
-<a id="orgb44e250"></a>
+<a id="org5da6751"></a>
 
 ## 3.6 Tout patient sans fièvre ni aucun autre symptôme
 
@@ -344,7 +345,7 @@ Ce message correspond à `FIN6 (consultation_surveillance_3)` dans la [documenta
 Ce message correspond à `FIN8 (surveillance)` dans la [documentation détaillée](https://github.com/Delegation-numerique-en-sante/covid19-algorithme-orientation/blob/master/pseudo-code.org#messages-dorientation-possibles).
 
 
-<a id="orgafa3fb5"></a>
+<a id="org260c8ec"></a>
 
 # 4 Diagramme de l'arbre de décision
 

@@ -40,9 +40,10 @@ Ce document est [[https://esante.gouv.fr/algorithme-orientation][téléchargeabl
   - 37,8°C - 38,9°C
   - *>= 39°C* =-> Facteur de gravité mineur=
   - *Je ne sais pas* =-> Facteur de gravité mineur=
-- /Avez-vous une toux ou une augmentation de votre toux habituelle ces derniers jours ?/ =OUI / NON=
-- /Avez-vous noté une forte diminution de votre goût ou de votre odorat ces derniers jours ?/ =OUI / NON=
-- /Avez-vous un mal de gorge ou des douleurs musculaires ou des courbatures inhabituelles ces derniers jours ?/ =OUI / NON=
+- /Avez-vous une toux ou votre toux habituelle s’est-elle modifiée ces derniers jours ?/ =OUI / NON=
+- /Avez-vous noté une perte ou une forte diminution de votre goût ou de votre odorat ces derniers jours ?/ =OUI / NON=
+- /Avez-vous un mal de gorge ou des douleurs musculaires ou des courbatures inhabituelles ou des maux de tête inhabituels ces derniers jours ?/ =OUI / NON=
+  - Si =OUI=, afficher le message : /Si vous avez des maux de tête qui ne disparaissent pas après la prise de médicaments anti-douleurs (dont paracétamol) et que vous décririez comme intolérables : Appelez le 15./
 - /Avez-vous de la diarrhée ces dernières 24 heures (au moins 3 selles molles) ?/ =OUI / NON=
 - /Avez-vous une fatigue inhabituelle ces derniers jours ?/ =OUI / NON=
   - Si =OUI= : /Cette fatigue vous oblige-t-elle à vous reposer plus de la moitié de la journée ?/ =OUI / NON (OUI -> Facteur de gravité mineur)=
@@ -59,15 +60,15 @@ Ce document est [[https://esante.gouv.fr/algorithme-orientation][téléchargeabl
 - /Quel est votre poids ? Quelle est votre taille ?/
   - Indice de masse corporelle (IMC) < 30 kg/m²
   - *Indice de masse corporelle (IMC) >= 30 kg/m²*
-- /Avez-vous de l’hypertension artérielle mal équilibrée ? Ou avez-vous une maladie cardiaque ou vasculaire ? Ou prenez-vous un traitement à visée cardiologique ?/ *OUI* / NON / Je ne sais pas (OUI)
-- /Êtes-vous diabétique ?/ *OUI* / NON
-- /Avez-vous ou avez-vous eu un cancer dans les 3 dernières années ?/ *OUI* / NON
-- /Avez-vous une maladie respiratoire ? Ou êtes-vous suivi par un pneumologue ?/ *OUI* / NON
-- /Avez-vous une insuffisance rénale chronique dialysée ?/ *OUI* / NON
-- /Avez-vous une maladie chronique du foie ?/ *OUI* / NON
-- /Êtes-vous enceinte ?/ *OUI* / NON / Non applicable
-- /Avez-vous une maladie connue pour diminuer vos défenses immunitaires/ *OUI* / NON / Je ne sais pas (NON)
-- /Prenez-vous un traitement immunosuppresseur ? C’est un traitement qui diminue vos défenses contre les infections.  Voici quelques exemples : corticoïdes, méthotrexate, ciclosporine, tacrolimus, azathioprine, cyclophosphamide (liste non exhaustive)./ *OUI* / NON / Je ne sais pas (NON)
+- /Avez-vous des antécédents de maladie cardiovasculaire : hypertension artérielle compliquée (avec complications cardiaques, rénales), accident vasculaire cérébral, maladie coronaire (infarctus), chirurgie cardiaque, insuffisance cardiaque avec essoufflement au moindre effort ?/ *OUI* / NON / Je ne sais pas (OUI)
+- /Avez-vous un diabète mal équilibré ou avec des complications (yeux, reins) ?/ *OUI* / NON
+- /Avez-vous un cancer évolutif sous traitement (hors hormonothérapie) ?/ *OUI* / NON
+- /Avez-vous une maladie respiratoire chronique (bronchopneumopathie obstructive, asthme sévère, fibrose pulmonaire, syndrome d’apnées du sommeil, mucoviscidose) ou êtes-vous suivi par un pneumologue ?/ *OUI* / NON
+- /Avez-vous une insuffisance rénale chronique avec besoin de faire de la dialyse ?/ *OUI* / NON
+- /Avez-vous une cirrhose ?/ *OUI* / NON
+- /Êtes-vous enceinte au 3ème trimestre de votre grossesse ?/ *OUI* / NON / Non applicable
+- /Avez-vous une drépanocytose homozygote (forme majeure) ou avez-vous bénéficié d’une splénectomie (ablation de la rate) à cause de la drépanocytose ?/ *OUI* / NON
+- /Avez-vous une immunodépression, par exemple : médicamenteuse (chimiothérapie anti cancéreuse, traitement immunosuppresseur, biothérapie et/ou corticothérapie à dose immunosuppressive depuis plus de 15 jours) ; infection à VIH non contrôlée ou avec des CD4 <200/mm3 ; consécutive à une greffe d'organe solide ou de cellules souches hématopoïétiques ; liée à une hémopathie maligne en cours de traitement ?/ *OUI* / NON / Je ne sais pas (NON)
 
 Le facteur pronostique est considéré positif s'il y a au moins 1 item *OUI* ou en gras (âge supérieur ou égal à 65 ans, indice de masse corporelle supérieur à 30 kg/m²).
 
