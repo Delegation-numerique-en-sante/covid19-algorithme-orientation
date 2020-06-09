@@ -67,7 +67,7 @@
                 consultation_surveillance_3
                 (>= pronostic-factors 1)
                 (if (< minor-severity-factors 2)
-                  consultation_surveillance_3
+                  consultation_surveillance_4
                   consultation_surveillance_2))
           ;; Branche 4
           (or fever

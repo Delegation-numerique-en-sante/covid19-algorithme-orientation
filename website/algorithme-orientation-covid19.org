@@ -1,6 +1,6 @@
 #+title: Algorithme d'orientation Covid-19
 #+author: Ministère des Solidarités et de la Santé
-#+date: 10 mai 2020
+#+date: 9 juin 2020
 #+options: toc:2 H:4
 
 * 1 Présentation générale
@@ -129,14 +129,14 @@ Ce message correspond à =FIN6 (consultation_surveillance_3)= dans la [[https://
 
 : Votre situation peut relever d’un Covid-19.
 :
-: Demandez une téléconsultation ou un médecin généraliste ou une visite
-: à domicile (SOS médecins, etc.)
+: Demandez une téléconsultation ou un médecin généraliste. Au moindre
+: doute, appelez le 15.
 :
 : En attendant et pour casser les chaînes de transmission, nous vous
 : conseillons de vous isoler et de respecter les gestes barrières pour
 : protéger vos proches.
 
-Ce message correspond à =FIN6 (consultation_surveillance_3)= dans la [[https://github.com/Delegation-numerique-en-sante/covid19-algorithme-orientation/blob/master/pseudo-code.org#messages-dorientation-possibles][documentation détaillée]].
+Ce message correspond à =FIN7 (consultation_surveillance_4)= dans la [[https://github.com/Delegation-numerique-en-sante/covid19-algorithme-orientation/blob/master/pseudo-code.org#messages-dorientation-possibles][documentation détaillée]].
 
 **** Avec au moins deux facteurs de gravité mineurs
 
@@ -157,10 +157,10 @@ Ce message correspond à =FIN4 (consultation_surveillance_2)= dans la [[https://
 **** Si pas de facteur de gravité mineur et moins de 50 ans
 
 : Votre situation peut relever d’un Covid-19.
-: 
+:
 : Demandez une téléconsultation ou un médecin généraliste ou une visite
 : à domicile (SOS médecins, etc.)
-: 
+:
 : En attendant et pour casser les chaînes de transmission, nous vous
 : conseillons de vous isoler et de respecter les gestes barrières pour
 : protéger vos proches.
@@ -170,12 +170,12 @@ Ce message correspond à =FIN6 (consultation_surveillance_3)= dans la [[https://
 **** Si pas de facteur de gravité mineur et 50 ans ou plus
 
 : Votre situation peut relever d’un Covid-19.
-: 
+:
 : Demandez une téléconsultation ou un médecin généraliste ou une visite à domicile.
-: 
+:
 : Appelez le 15 si une gêne respiratoire ou des difficultés importantes
 : pour vous alimenter ou boire apparaissent pendant plus de 24 heures.
-: 
+:
 : En attendant et pour casser les chaînes de transmission, nous vous
 : conseillons de vous isoler et de respecter les gestes barrières pour
 : protéger vos proches.
@@ -188,10 +188,10 @@ Ce message correspond à =FIN3 (consultation_surveillance_1)= dans la [[https://
 :
 : Demandez une téléconsultation ou un médecin généraliste ou une visite
 : à domicile.
-: 
+:
 : Appelez le 15 si une gêne respiratoire ou des difficultés importantes
 : pour vous alimenter ou boire apparaissent pendant plus de 24 heures.
-: 
+:
 : En attendant et pour casser les chaînes de transmission, nous vous
 : conseillons de vous isoler et de respecter les gestes barrières pour
 : protéger vos proches.
@@ -206,10 +206,10 @@ Ce message correspond à =FIN3 (consultation_surveillance_1)= dans la [[https://
 :
 : Demandez une téléconsultation ou un médecin généraliste ou une visite
 : à domicile.
-: 
+:
 : Appelez le 15 si une gêne respiratoire ou des difficultés importantes
 : pour vous alimenter ou boire apparaissent pendant plus de 24 heures.
-: 
+:
 : En attendant et pour casser les chaînes de transmission, nous vous
 : conseillons de vous isoler et de respecter les gestes barrières pour
 : protéger vos proches.
@@ -222,9 +222,9 @@ Ce message correspond à =FIN3 (consultation_surveillance_1)= dans la [[https://
 :
 : Demandez une téléconsultation ou un médecin généraliste ou une visite
 : à domicile.
-: 
+:
 : Si vous n'arrivez pas à obtenir de consultation, appelez le 15.
-: 
+:
 : En attendant et pour casser les chaînes de transmission, nous vous
 : conseillons de vous isoler et de respecter les gestes barrières pour
 : protéger vos proches.
@@ -238,9 +238,9 @@ Ce message correspond à =FIN4 (consultation_surveillance_2)= dans la [[https://
 *** Au moins un facteur pronostique
 
 : Votre situation peut relever d’un Covid-19.
-: 
+:
 : Demandez une téléconsultation ou un médecin généraliste.
-: 
+:
 : Au moindre doute, appelez le 15. En attendant et pour casser les
 : chaînes de transmission, nous vous conseillons de vous isoler et de
 : respecter les gestes barrières pour protéger vos proches.
@@ -250,10 +250,10 @@ Ce message correspond à =FIN7 (consultation_surveillance_4)= dans la [[https://
 *** Pas de facteur pronostique
 
 : Votre situation peut relever d’un Covid-19.
-: 
+:
 : Demandez une téléconsultation ou un médecin généraliste ou une visite
 : à domicile (SOS médecins, etc.)
-: 
+:
 : En attendant et pour casser les chaînes de transmission, nous vous
 : conseillons de vous isoler et de respecter les gestes barrières pour
 : protéger vos proches.
@@ -276,4 +276,3 @@ Ce message correspond à =FIN8 (surveillance)= dans la [[https://github.com/Dele
 * 4 Diagramme de l'arbre de décision
 
 #+HTML: <a href="https://raw.githubusercontent.com/Delegation-numerique-en-sante/covid19-algorithme-orientation/master/diagramme-algorithme-orientation-covid19.png"><img src="https://raw.githubusercontent.com/Delegation-numerique-en-sante/covid19-algorithme-orientation/master/diagramme-algorithme-orientation-covid19.png" alg="Diagramme de l'arbre de décision pour l'algorithme d'orientation Covid-19" /></a>
-
