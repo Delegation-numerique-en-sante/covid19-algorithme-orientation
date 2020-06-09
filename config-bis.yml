@@ -129,24 +129,24 @@ conditional-score-outputs:
     notification: "is-danger"
   consultation_surveillance_2:
     priority: 3
-    message: "Votre situation peut relever d’un COVID 19. Demandez une téléconsultation ou un médecin généraliste ou une visite à domicile. Si vous n'arrivez pas à obtenir de consultation, appelez le [15](tel:16). En attendant et pour casser les chaînes de transmission, nous vous conseillons de vous isoler et de respecter les gestes barrières pour protéger vos proches."
+    message: "Votre situation peut relever d’un Covid-19. Demandez une téléconsultation ou un médecin généraliste ou une visite à domicile. Si vous n'arrivez pas à obtenir de consultation, appelez le [15](tel:16). En attendant et pour casser les chaînes de transmission, nous vous conseillons de vous isoler et de respecter les gestes barrières pour protéger vos proches."
     notification: "is-danger"
   consultation_surveillance_1:
     priority: 4
     notification: "is-warning"
-    message: "Votre situation peut relever d’un COVID 19. Demandez une téléconsultation ou un médecin généraliste ou une visite à domicile. Appelez le [15](tel:15) si une gêne respiratoire ou des difficultés importantes pour vous alimenter ou boire apparaissent pendant plus de 24 heures. En attendant et pour casser les chaînes de transmission, nous vous conseillons de vous isoler et de respecter les gestes barrières pour protéger vos proches."
+    message: "Votre situation peut relever d’un Covid-19. Demandez une téléconsultation ou un médecin généraliste ou une visite à domicile. Appelez le [15](tel:15) si une gêne respiratoire ou des difficultés importantes pour vous alimenter ou boire apparaissent pendant plus de 24 heures. En attendant et pour casser les chaînes de transmission, nous vous conseillons de vous isoler et de respecter les gestes barrières pour protéger vos proches."
   consultation_surveillance_4:
     priority: 5
     notification: "is-warning"
-    message: "Votre situation peut relever d’un COVID 19. Demandez une téléconsultation ou un médecin généraliste. Au moindre doute, appelez le [15](tel:15). En attendant et pour casser les chaînes de transmission, nous vous conseillons de vous isoler et de respecter les gestes barrières pour protéger vos proches."
+    message: "Votre situation peut relever d’un Covid-19. Demandez une téléconsultation ou un médecin généraliste. Au moindre doute, appelez le [15](tel:15). En attendant et pour casser les chaînes de transmission, nous vous conseillons de vous isoler et de respecter les gestes barrières pour protéger vos proches."
   consultation_surveillance_3:
     priority: 7
     notification: "is-warning"
-    message: "Votre situation peut relever d’un COVID 19. Demandez une téléconsultation ou un médecin généraliste ou une visite à domicile (SOS médecins, etc.). En attendant et pour casser les chaînes de transmission, nous vous conseillons de vous isoler et de respecter les gestes barrières pour protéger vos proches."
+    message: "Votre situation peut relever d’un Covid-19. Demandez une téléconsultation ou un médecin généraliste ou une visite à domicile (SOS médecins, etc.). En attendant et pour casser les chaînes de transmission, nous vous conseillons de vous isoler et de respecter les gestes barrières pour protéger vos proches."
   surveillance:
     priority: 8
     notification: "is-success"
-    message: "Votre situation ne relève probablement pas du COVID 19. N’hésitez pas à contacter votre médecin en cas de doute. Vous pouvez refaire le test en cas de nouveau symptôme pour réévaluer la situation. Pour toute information concernant le COVID 19, composer le 0 800 130 000."
+    message: "Votre situation ne relève probablement pas du Covid-19. N’hésitez pas à contacter votre médecin en cas de doute. Vous pouvez refaire le test en cas de nouveau symptôme pour réévaluer la situation. Pour toute information concernant le Covid-19, composer le 0 800 130 000."
 
 # Mandatory configuration option
 # FIXME: complete documentation

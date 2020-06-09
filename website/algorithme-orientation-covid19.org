@@ -156,7 +156,7 @@ Ce message correspond à =FIN4 (consultation_surveillance_2)= dans la [[https://
 *** Tout patient sans facteur pronostique
 **** Si pas de facteur de gravité mineur et moins de 50 ans
 
-: Votre situation peut relever d’un COVID 19.
+: Votre situation peut relever d’un Covid-19.
 : 
 : Demandez une téléconsultation ou un médecin généraliste ou une visite
 : à domicile (SOS médecins, etc.)
@@ -237,7 +237,7 @@ Ce message correspond à =FIN4 (consultation_surveillance_2)= dans la [[https://
 
 *** Au moins un facteur pronostique
 
-: Votre situation peut relever d’un COVID 19.
+: Votre situation peut relever d’un Covid-19.
 : 
 : Demandez une téléconsultation ou un médecin généraliste.
 : 
@@ -249,7 +249,7 @@ Ce message correspond à =FIN7 (consultation_surveillance_4)= dans la [[https://
 
 *** Pas de facteur pronostique
 
-: Votre situation peut relever d’un COVID 19.
+: Votre situation peut relever d’un Covid-19.
 : 
 : Demandez une téléconsultation ou un médecin généraliste ou une visite
 : à domicile (SOS médecins, etc.)
