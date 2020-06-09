@@ -50,17 +50,16 @@ respecter [[https://github.com/Delegation-numerique-en-sante/covid19-algorithme-
 | =diarrhea=                       | Diarrhée                             | Saisi                  | boolean             | ~true~ ou ~false~                                                 |
 |--------------------------------+--------------------------------------+------------------------+---------------------+---------------------------------------------------------------|
 | =diabetes=                       | Diabète                              | Saisi                  | boolean             | ~true~ ou ~false~                                                 |
-| =cancer=                         | Cancer actuel ou < moins de 3 ans    | Saisi                  | boolean             | ~true~ ou ~false~                                                 |
+| =cancer=                         | Cancer évolutif                      | Saisi                  | boolean             | ~true~ ou ~false~                                                 |
 | =breathing_disease=              | Maladie respiratoire                 | Saisi                  | boolean             | ~true~ ou ~false~                                                 |
 | =kidney_disease=                 | Insuffisance rénale                  | Saisi                  | boolean             | ~true~ ou ~false~                                                 |
-| =liver_disease=                  | Maladie chronique du foie            | Saisi                  | boolean             | ~true~ ou ~false~                                                 |
+| =liver_disease=                  | Cirrhose                             | Saisi                  | boolean             | ~true~ ou ~false~                                                 |
 | =pregnant=                       | Enceinte                             | Saisi                  | number              | 0 (non) ou 1 ou 888 ("Non applicable")                        |
+| =sickle_cell=                    | Drépanocytose homozygote             | Saisi                  | boolean             | ~true~ ou ~false~                                                 |
 | =heart_disease=                  | Maladie cardiaque                    | Saisi                  | number              | 0 (non) ou 1 ou 999 ("Je ne sais pas")                        |
 | =heart_disease_algo=             | Maladie cardiaque (algo)             | Calculé                | boolean             | ~true~ (1 ou 999) ou ~false~ (0)                                  |
 | =immunosuppressant_disease=      | Maladie défenses immunitaires        | Saisi                  | number              | 0 (non) ou 1 ou 999 ("Je ne sais pas")                        |
 | =immunosuppressant_disease_algo= | Maladie défenses immunitaires (algo) | Calculé                | boolean             | ~true~ (1) ou ~false~ (0 ou 999)                                  |
-| =immunosuppressant_drug=         | Traitement immunodépresseur          | Saisi                  | number              | 0 (non) ou 1 ou 999 ("Je ne sais pas")                        |
-| =immunosuppressant_drug_algo=    | Traitement immunodépresseur (algo)   | Calculé                | boolean             | ~true~ (1) ou ~false~ (0 ou 999)                                  |
 |--------------------------------+--------------------------------------+------------------------+---------------------+---------------------------------------------------------------|
 | =id= (5)                         | Identifiant unique                   | Calculé                | uuid                | "7b3215d8-ef17-4bd8-b441-c74a36dfcd67"                        |
 
