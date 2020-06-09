@@ -499,7 +499,7 @@ tree:
 
   - node:    "2.11"
     progress:   "[20 22]"
-    text:    "Avez-vous une drépanocytose homozygote (forme majeure) ou j’ai bénéficié d’une splénectomie (ablation de la rate) à cause de la drépanocytose ?"
+    text:    "Avez-vous une drépanocytose homozygote (forme majeure) ou avez-vous bénéficié d’une splénectomie (ablation de la rate) à cause de la drépanocytose ?"
     choices:
     - answer:  "Oui"
       goto:    "2.12"
