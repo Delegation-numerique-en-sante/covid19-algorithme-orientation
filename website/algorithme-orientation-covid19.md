@@ -1,25 +1,25 @@
 
 # Table des matières
 
--   [1 Présentation générale](#orga3ac63b)
--   [2 Questionnaire d’auto-évaluation](#org9c12666)
-    -   [2.1 Symptômes](#orgf969023)
-    -   [2.2 Facteur pronostique défavorable lié au terrain](#orga59efc7)
-    -   [2.3 Autre question](#org96241dd)
-    -   [2.4 Définition des facteurs de gravité](#orgd68124b)
-    -   [2.5 Calcul de l'indice de masse corporelle (IMC)](#org0f242a2)
--   [3 Définition de l'arbre de décision](#org670c3be)
-    -   [3.1 Patient de moins de 15 ans](#org7aea958)
-    -   [3.2 Tout patient avec au moins un facteur de gravité majeur](#org54f298d)
-    -   [3.3 Tout patient avec fièvre et toux](#org1e12f0f)
-    -   [3.4 Tout patient avec fièvre ou (sans fièvre et avec (diarrhée ou (toux et douleurs) ou (toux et anosmie) ou (douleurs et anosmie)))](#orgf504c43)
-    -   [3.5 Tout patient sans fièvre avec un seul symptôme parmi toux, douleurs, anosmie](#orga977cb8)
-    -   [3.6 Tout patient sans fièvre ni aucun autre symptôme](#org5da6751)
--   [4 Diagramme de l'arbre de décision](#org260c8ec)
+-   [1 Présentation générale](#org3f7b563)
+-   [2 Questionnaire d’auto-évaluation](#org399f972)
+    -   [2.1 Symptômes](#org270b09a)
+    -   [2.2 Facteur pronostique défavorable lié au terrain](#org93a3fe8)
+    -   [2.3 Autre question](#orgeaf3349)
+    -   [2.4 Définition des facteurs de gravité](#org57faafb)
+    -   [2.5 Calcul de l'indice de masse corporelle (IMC)](#org7443d44)
+-   [3 Définition de l'arbre de décision](#org458e9f2)
+    -   [3.1 Patient de moins de 15 ans](#orgc408998)
+    -   [3.2 Tout patient avec au moins un facteur de gravité majeur](#org35b27d3)
+    -   [3.3 Tout patient avec fièvre et toux](#org44c2523)
+    -   [3.4 Tout patient avec fièvre ou (sans fièvre et avec (diarrhée ou (toux et douleurs) ou (toux et anosmie) ou (douleurs et anosmie)))](#org4b96033)
+    -   [3.5 Tout patient sans fièvre avec un seul symptôme parmi toux, douleurs, anosmie](#org78515fa)
+    -   [3.6 Tout patient sans fièvre ni aucun autre symptôme](#orgbc5022f)
+-   [4 Diagramme de l'arbre de décision](#org99a4904)
 
 
 
-<a id="orga3ac63b"></a>
+<a id="org3f7b563"></a>
 
 # 1 Présentation générale
 
@@ -42,19 +42,19 @@ parcouru de façon séquentielle et en fonction des valeurs finales de
 toutes les variables, pour déterminer le message d'orientation à
 afficher.
 
-Version du document : `2020-05-10`
+Version du document : `2020-06-09`
 
 Ce document est [téléchargeable en version PDF](https://esante.gouv.fr/algorithme-orientation).
 
 **Attention : cette documentation, le questionnaire et l'algorithme sont potentiellement modifiables après étude de cas et veille scientifique.**
 
 
-<a id="org9c12666"></a>
+<a id="org399f972"></a>
 
 # 2 Questionnaire d’auto-évaluation
 
 
-<a id="orgf969023"></a>
+<a id="org270b09a"></a>
 
 ## 2.1 Symptômes
 
@@ -75,7 +75,7 @@ Ce document est [téléchargeable en version PDF](https://esante.gouv.fr/algorit
 -   *Dans les dernières 24 heures, avez-vous noté un manque de souffle INHABITUEL lorsque vous parlez ou faites un petit effort ?* `OUI / NON (OUI -> Facteur de gravité majeur)`
 
 
-<a id="orga59efc7"></a>
+<a id="org93a3fe8"></a>
 
 ## 2.2 Facteur pronostique défavorable lié au terrain
 
@@ -100,14 +100,14 @@ Ce document est [téléchargeable en version PDF](https://esante.gouv.fr/algorit
 Le facteur pronostique est considéré positif s'il y a au moins 1 item **OUI** ou en gras (âge supérieur ou égal à 65 ans, indice de masse corporelle supérieur à 30 kg/m²).
 
 
-<a id="org96241dd"></a>
+<a id="orgeaf3349"></a>
 
 ## 2.3 Autre question
 
 -   *Quel est le code postal de votre lieu de résidence actuel ?*
 
 
-<a id="orgd68124b"></a>
+<a id="org57faafb"></a>
 
 ## 2.4 Définition des facteurs de gravité
 
@@ -120,21 +120,21 @@ Le facteur pronostique est considéré positif s'il y a au moins 1 item **OUI** 
     -   Difficultés importantes pour s’alimenter ou boire depuis plus de 24 heures
 
 
-<a id="org0f242a2"></a>
+<a id="org7443d44"></a>
 
 ## 2.5 Calcul de l'indice de masse corporelle (IMC)
 
 L'indice de masse corporelle est égal au `POIDS` en kilogrammes divisé par le carré de la `TAILLE` en mètres.
 
 
-<a id="org670c3be"></a>
+<a id="org458e9f2"></a>
 
 # 3 Définition de l'arbre de décision
 
 Message à afficher pour tous : *Restez chez vous au maximum en attendant que les symptômes disparaissent. Prenez votre température deux fois par jour. Rappel des mesures d’hygiène. Un dispositif national grand public de soutien psychologique au bénéfice des personnes qui en auraient besoin est accessible via le numéro vert : 0 800 130 000.*
 
 
-<a id="org7aea958"></a>
+<a id="orgc408998"></a>
 
 ## 3.1 Patient de moins de 15 ans
 
@@ -146,7 +146,7 @@ Message à afficher pour tous : *Restez chez vous au maximum en attendant que le
 Ce message correspond à `FIN1 (less_15)` dans la [documentation détaillée](https://github.com/Delegation-numerique-en-sante/covid19-algorithme-orientation/blob/master/pseudo-code.org#messages-dorientation-possibles).
 
 
-<a id="org54f298d"></a>
+<a id="org35b27d3"></a>
 
 ## 3.2 Tout patient avec au moins un facteur de gravité majeur
 
@@ -155,7 +155,7 @@ Ce message correspond à `FIN1 (less_15)` dans la [documentation détaillée](ht
 Ce message correspond à `FIN5 (SAMU)` dans la [documentation détaillée](https://github.com/Delegation-numerique-en-sante/covid19-algorithme-orientation/blob/master/pseudo-code.org#messages-dorientation-possibles).
 
 
-<a id="org1e12f0f"></a>
+<a id="org44c2523"></a>
 
 ## 3.3 Tout patient avec fièvre et toux
 
@@ -206,7 +206,7 @@ Ce message correspond à `FIN6 (consultation_surveillance_3)` dans la [documenta
 Ce message correspond à `FIN4 (consultation_surveillance_2)` dans la [documentation détaillée](https://github.com/Delegation-numerique-en-sante/covid19-algorithme-orientation/blob/master/pseudo-code.org#messages-dorientation-possibles).
 
 
-<a id="orgf504c43"></a>
+<a id="org4b96033"></a>
 
 ## 3.4 Tout patient avec fièvre ou (sans fièvre et avec (diarrhée ou (toux et douleurs) ou (toux et anosmie) ou (douleurs et anosmie)))
 
@@ -297,7 +297,7 @@ Ce message correspond à `FIN3 (consultation_surveillance_1)` dans la [documenta
 Ce message correspond à `FIN4 (consultation_surveillance_2)` dans la [documentation détaillée](https://github.com/Delegation-numerique-en-sante/covid19-algorithme-orientation/blob/master/pseudo-code.org#messages-dorientation-possibles).
 
 
-<a id="orga977cb8"></a>
+<a id="org78515fa"></a>
 
 ## 3.5 Tout patient sans fièvre avec un seul symptôme parmi toux, douleurs, anosmie
 
@@ -329,7 +329,7 @@ Ce message correspond à `FIN7 (consultation_surveillance_4)` dans la [documenta
 Ce message correspond à `FIN6 (consultation_surveillance_3)` dans la [documentation détaillée](https://github.com/Delegation-numerique-en-sante/covid19-algorithme-orientation/blob/master/pseudo-code.org#messages-dorientation-possibles).
 
 
-<a id="org5da6751"></a>
+<a id="orgbc5022f"></a>
 
 ## 3.6 Tout patient sans fièvre ni aucun autre symptôme
 
@@ -345,7 +345,7 @@ Ce message correspond à `FIN6 (consultation_surveillance_3)` dans la [documenta
 Ce message correspond à `FIN8 (surveillance)` dans la [documentation détaillée](https://github.com/Delegation-numerique-en-sante/covid19-algorithme-orientation/blob/master/pseudo-code.org#messages-dorientation-possibles).
 
 
-<a id="org260c8ec"></a>
+<a id="org99a4904"></a>
 
 # 4 Diagramme de l'arbre de décision
 

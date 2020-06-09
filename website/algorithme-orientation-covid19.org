@@ -24,7 +24,7 @@ parcouru de façon séquentielle et en fonction des valeurs finales de
 toutes les variables, pour déterminer le message d'orientation à
 afficher.
 
-Version du document : =2020-05-10=
+Version du document : =2020-06-09=
 
 Ce document est [[https://esante.gouv.fr/algorithme-orientation][téléchargeable en version PDF]].
 
