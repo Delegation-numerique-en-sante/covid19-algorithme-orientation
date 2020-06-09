@@ -18,7 +18,7 @@ elseif (IF fièvre AND toux) then (oui)
           stop
        else (Plus de facteurs pronostiques)
           if (IF 0 OR 1 facteur de gravité mineur) then (oui)
-             :FIN6;
+             :FIN7;
              stop
           else (non)
              :FIN4;
