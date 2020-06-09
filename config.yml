@@ -219,6 +219,7 @@ tree:
   - node:    "1.4"
     progress:   "[4 23]"
     text:    "Avez-vous un mal de gorge ou des douleurs musculaires ou des courbatures inhabituelles ou des maux de tête inhabituels ces derniers jours ?"
+    help: "Si vous avez des maux de tête qui ne disparaissent pas après la prise de médicaments anti-douleurs (dont paracétamol) et que vous décririez comme intolérables : Appelez le 15."
     choices:
     - answer:  "Oui"
       score:
